@@ -1,5 +1,5 @@
 @extends('layouts.merge.dashboard')
-@section('titulo', ' Detalhes da Startup')
+@section('titulo', ' Detalhes da Vistoria de Empresa')
 
 @section('content')
 
@@ -9,8 +9,8 @@
                 <div class="row">
                     <div class="col">
                         <h5><b>
-                                <a href="{{ url('admin/startup/list') }}">Listar Startups</a>
-                                > Detalhes da Startup - {{ $startup->name }}
+                                <a href="{{ url('admin/startup/list') }}">Listar Vistoria de Empresa</a>
+                                > Detalhes da Vistoria de Empresa - {{ $startup->name }}
 
 
                             </b></h5>
@@ -65,7 +65,7 @@
                             <div class="row">
                                 <div class="col-md-3">
                                     <p class="text-dark">
-                                        <b>Nome da Startup</b><br>
+                                        <b>Nome da Empresa</b><br>
                                         <small> {{ $startup->name }}</small>
                                     </p>
                                 </div>
@@ -116,7 +116,7 @@
 
                                 <div class="col-md-3">
                                     <p class="text-dark">
-                                        <b>Detalhes Sobre a Startup</b><br>
+                                        <b>Detalhes Sobre a Empresa</b><br>
                                         <small> {{ $startup->StartupDetails }}</small>
                                     </p>
                                 </div>

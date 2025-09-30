@@ -24,22 +24,24 @@
 
             @if ('Finanças' == Auth::user()->level || 'Gestor' == Auth::user()->level || 'Fábrica de Software' == Auth::user()->level || 'Administrador' == Auth::user()->level)
                 <li class="nav-item nav-category mt-2">Serviços</li>
-                {{-- manufactures --}}
+                {{-- manufactures
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('admin.manufactures.list') }}">
                         <i class="menu-icon typcn typcn-document-text"></i>
                         <span class="menu-title">Fábrica de Software</span>
                     </a>
                 </li>
+                --}}
             @endif
             @if ('Finanças' == Auth::user()->level || 'Gestor' == Auth::user()->level || 'Reparação de Equipamentos' == Auth::user()->level || 'Administrador' == Auth::user()->level)
-                {{-- equipmentRepair --}}
+                {{-- equipmentRepair
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('admin.equipmentRepair.list.index') }}">
                         <i class="menu-icon typcn typcn-document-text"></i>
                         <span class="menu-title">Reparação de Equipamentos</span>
                     </a>
                 </li>
+                --}}
             @endif
             @if ('Finanças' == Auth::user()->level || 'Gestor' == Auth::user()->level || 'Administrador' == Auth::user()->level)
                 {{-- elernings
@@ -50,12 +52,14 @@
                     </a>
                 </li>
                  --}}
+               {{--
                 <li class="nav-item nav-category mt-2">Agendamento de Vistoria</li>
+                 --}}
                 {{-- startups --}}
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('admin.startup.list.index') }}">
                         <i class="menu-icon typcn typcn-document-text"></i>
-                        <span class="menu-title">Cadastro de Vistoria</span>
+                        <span class="menu-title">Vistoria de Empresa</span>
                     </a>
                 </li>
 
@@ -72,19 +76,21 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('admin.auditoriums.list.index') }}">
                         <i class="menu-icon typcn typcn-document-text"></i>
-                        <span class="menu-title">Programa de Vistoria</span>
+                        <span class="menu-title">Agenda de Vistoria</span>
                     </a>
                 </li>
 
-                {{-- meetingRoom --}}
+                {{--
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('admin.meetingRoom.list.index') }}">
                         <i class="menu-icon typcn typcn-document-text"></i>
                         <span class="menu-title">Salas de Reuniões</span>
                     </a>
                 </li>
-
+                   --}}
+                    {{--
                 <li class="nav-item nav-category mt-2">Estatísticas</li>
+                  --}}
                 {{-- PayChart
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('admin.generalStatistics.index') }}">
@@ -96,7 +102,7 @@
                 --}}
                 {{-- Clients --}}
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('admin.client.list.index') }}">
+                    <a class="nav-link" href="{{ route('admin.client.create.index') }}">
                         <i class="menu-icon typcn typcn-document-text"></i>
                         <span class="menu-title">Cadastro de Empresa</span>
                     </a>

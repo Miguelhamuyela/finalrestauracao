@@ -59,6 +59,29 @@
 
                                     <div class="col-md-3">
                                         <p class="text-dark">
+                                            <b>Tipo de Empresa</b><br>
+                                            <small> {{ $client->clienttype}}</small>
+                                        </p>
+                                    </div>
+
+
+                                      <div class="col-md-3">
+                                        <p class="text-dark">
+                                            <b>Endereço da empresa</b><br>
+                                            <small> {{ $client->address}}</small>
+                                        </p>
+                                    </div>
+
+
+                                      <div class="col-md-3">
+                                        <p class="text-dark">
+                                            <b>Origem</b><br>
+                                            <small> {{ $client->email}}</small>
+                                        </p>
+                                    </div>
+
+                                   <div class="col-md-3">
+                                        <p class="text-dark">
                                             <b>Origem</b><br>
                                             <small> {{ $client->origin}}</small>
                                         </p>

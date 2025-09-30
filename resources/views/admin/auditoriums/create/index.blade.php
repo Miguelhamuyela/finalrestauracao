@@ -21,8 +21,8 @@
                      @endif
 
                         <h4 class="card-title"><b>
-                        <a href="{{ url('admin/auditoriums/list') }}">Listar Auditório </a>
-                        > Auditório</b></h4>
+                        <a href="{{ url('admin/auditoriums/list') }}">Listar Equipa de Vistoria </a>
+                        > Vistoria</b></h4>
                         <hr>
                         @include('forms._formAuditoriums.index')
                     </div>
