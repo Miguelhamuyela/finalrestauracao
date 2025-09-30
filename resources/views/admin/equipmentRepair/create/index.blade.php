@@ -27,7 +27,7 @@
                     @include('forms._formEquipmentRepairs.index')
                 </div>
                 <div class="card-body bg-light">
-                    <h4 class="card-title"><b>Cliente</b></h4>
+                    <h4 class="card-title"><b>Empresa</b></h4>
                     <hr>
                     @include('forms._formClients.index')
                 </div>

@@ -1,5 +1,5 @@
 @extends('layouts.merge.dashboard')
-@section('titulo', 'Editar Cliente')
+@section('titulo', 'Editar Empresa')
 @section('content')
 
     <div class="card shadow">
@@ -22,7 +22,7 @@
                     @method('PUT')
 
                     <div class="card-body bg-light">
-                        <h4 class="card-title "><b>Clientes</b></h4>
+                        <h4 class="card-title "><b>Empresas</b></h4>
                         <hr>
                         @include('forms._formClients.index')
                     </div>
@@ -33,7 +33,7 @@
                                 <button type="submit" class="btn px-5 col-md-4 btn-primary">
                                     Salvar Alterações
                                 </button>
-    
+
                             </div>
                         </div>
                     </div>

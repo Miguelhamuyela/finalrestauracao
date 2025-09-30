@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-body row">
                     <div class="col-md-10">
-                        <h5><b>Auditório</b></h5>
+                        <h5><b>Equipa de Vistoria</b></h5>
                     </div>
                     <div class="col-md-2 text-center">
                         <a href="{{ route('admin.auditoriums.create.index') }}" class="btn btn-primary">Cadastrar</a>
@@ -27,7 +27,7 @@
                                     <th>#</th>
                                     <th>TÍTULO DA CONFERÊNCIA</th>
                                     <th>AGENDAMENTO</th>
-                                    <th>NOME DO CLIENTE</th>
+                                    <th>NOME DA EMPRESA</th>
                                     <th>NIF</th>
                                     <th>TELEFONE</th>
                                     <th>STATUS</th>

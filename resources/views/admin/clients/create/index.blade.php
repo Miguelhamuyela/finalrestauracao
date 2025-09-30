@@ -1,5 +1,5 @@
 @extends('layouts.merge.dashboard')
-@section('titulo', 'Lista de Clientes')
+@section('titulo', 'Lista de Empresas')
 
 @section('content')
     <div class="row">
@@ -9,12 +9,12 @@
                 <form  method="POST" action="{{ route('admin.client.store') }}" >
                     @csrf
                 <div class="card-body bg-light">
-                    <h4 class="card-title"><b>Lista de Clientes</b></h4>
+                    <h4 class="card-title"><b>Lista de Empresas</b></h4>
                     <hr>
                     @include('forms._formClients.index')
                 </div>
 
-               
+
                 <div class="card-body bg-light">
                     <div class="col-md-12">
                         <div class="form-group text-center">

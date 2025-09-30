@@ -22,7 +22,7 @@
                                 <option value="Reparação de Equipamentos">Reparação de Equipamentos</option>
                                 <option value="Fábrica de Software">Fábrica de Software</option>
                                 <option value="Startup">Startup</option>
-                                <option value="all">Todos Clientes</option>
+                                <option value="all">Todos as Empresas</option>
                             </select>
                         </div>
                     </div>
@@ -34,7 +34,7 @@
 
                                 <div class="form-check col-md-4">
                                     <input type="checkbox" class="form-check-input" name="name" checked>
-                                    <small>Nome do Cliente</small>
+                                    <small>Nome da Empresa</small>
                                 </div>
                                 <div class="form-check col-md-4">
                                     <input type="checkbox" class="form-check-input" name="nif" checked>
@@ -50,7 +50,7 @@
                                 </div>
                                 <div class="form-check col-md-4">
                                     <input type="checkbox" class="form-check-input" name="clienttype">
-                                    <small>Tipo de Cliente</small>
+                                    <small>Tipo de Empresa</small>
                                 </div>
                                 <div class="form-check col-md-4">
                                     <input type="checkbox" class="form-check-input" name="created_at">

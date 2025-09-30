@@ -1,5 +1,5 @@
 @extends('layouts.merge.dashboard')
-@section('titulo', 'Lista de Clientes')
+@section('titulo', 'Lista de Empresas')
 
 @section('content')
 
@@ -8,7 +8,7 @@
             <div class="card">
                 <div class="card-body row">
                     <div class="col-md-9">
-                        <h5><b>Lista de Clientes</b></h5>
+                        <h5><b>Lista de Empresas</b></h5>
                     </div>
                     <div class="col-md-3 text-center">
                         <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
@@ -28,9 +28,9 @@
                             <thead class="bg-primary thead-dark">
                                 <tr class="text-center">
                                     <th>#</th>
-                                    <th>NOME DO CLIENTE</th>
+                                    <th>NOME DA EMPRESA</th>
                                     <th>NIF</th>
-                                    <th>ORIGEM</th>
+                                    <th>TIPO DE EMPRESA</th>
                                     <th>TELEFONE</th>
                                     <th class="text-left">ACÇÕES</th>
                                 </tr>
@@ -41,7 +41,7 @@
                                         <td>{{ $item->id }}</td>
                                         <td>{{ $item->name }} </td>
                                         <td>{{ $item->nif }} </td>
-                                        <td>{{ $item->origin }} </td>
+                                        <td>{{ $item->clienttype }} </td>
                                         <td>{{ $item->tel }} </td>
                                         <td>
 

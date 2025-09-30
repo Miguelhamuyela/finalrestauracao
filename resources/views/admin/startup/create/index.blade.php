@@ -1,5 +1,5 @@
 @extends('layouts.merge.dashboard')
-@section('titulo', 'Cadastrar Startup')
+@section('titulo', 'Cadastrar Vistoria de Empresa')
 
 @section('content')
     <div class="row">
@@ -19,8 +19,8 @@
                             </div>
                         @endif
                         <h4 class="card-title"><b>
-                                <a href="{{ url('admin/startup/list') }}">Listar Startups</a>
-                                > Startups
+                                <a href="{{ url('admin/startup/list') }}">Listar Vistoria de Empresas</a>
+                                > Empresa
                             </b></h4>
                         <hr>
                         @include('forms._formStartups.index')

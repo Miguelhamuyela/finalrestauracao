@@ -1,5 +1,5 @@
 @extends('layouts.merge.dashboard')
-@section('titulo', 'Lista de Startups')
+@section('titulo', 'Lista de Vistoria de Empresa')
 
 @section('content')
     <div class="row">
@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-body row">
                     <div class="col-md-10">
-                        <h5><b>Lista de Startups</b></h5>
+                        <h5><b>Lista de Vistoria de Empresa</b></h5>
                     </div>
                     <div class="col-md-2 text-center">
                         <a href="{{ route('admin.startup.create.index') }}" class="btn btn-primary">Cadastrar</a>
@@ -24,7 +24,7 @@
                             <thead class="bg-primary thead-dark">
                                 <tr class="text-center">
                                     <th>#</th>
-                                    <th>NOME DA STARTUP</th>
+                                    <th>NOME DA EMPRESA</th>
                                     <th>TELEFONE</th>
                                     <th>FIM DE CONTRATO</th>
                                     <th>MODELO DE INCUBAÇÃO</th>

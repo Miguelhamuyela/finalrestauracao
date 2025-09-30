@@ -24,14 +24,14 @@
 
 
                             <div class="col-12 mt-2">
-                                <h5 class=""><b>Informações do Cliente </b> </h5>
+                                <h5 class=""><b>Informações da Empresa </b> </h5>
                                 <hr>
                             </div>
                             <div class="col-12 mb-5">
                                 <div class="row">
                                     <div class="col-md-3">
                                         <p class="text-dark">
-                                            <b>Cliente</b><br>
+                                            <b>Empresas</b><br>
                                             <small> {{ $elerning->clients->name }}</small>
                                         </p>
                                     </div>
@@ -57,7 +57,7 @@
 
                                     <div class="col-md-3">
                                         <p class="text-dark">
-                                            <b>Tipo de cliente</b><br>
+                                            <b>Tipo de Empresa</b><br>
                                             <small> {{ $elerning->clients->clienttype}}</small>
                                         </p>
                                     </div>

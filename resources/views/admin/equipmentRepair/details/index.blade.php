@@ -92,14 +92,14 @@
 
                                 </div>
                                 <div class="col-12 mt-2">
-                                    <h5 class=""><b>Informações do Cliente </b> </h5>
+                                    <h5 class=""><b>Informações do Empresa </b> </h5>
                                     <hr>
                                 </div>
                                 <div class="col-12 mb-5">
                                     <div class="row">
                                         <div class="col-md-3">
                                             <p class="text-dark">
-                                                <b>Nome do Cliente</b><br>
+                                                <b>Nome do Empresa</b><br>
                                                 <small> {{ $equipmentRepair->clients->name }}</small>
                                             </p>
                                         </div>
@@ -124,7 +124,7 @@
                                         </div>
                                         <div class="col-md-3">
                                             <p class="text-dark">
-                                                <b>Tipo de Cliente</b><br>
+                                                <b>Tipo de Empresa</b><br>
                                                 <small> {{ $equipmentRepair->clients->clienttype }}</small>
                                             </p>
                                         </div>
