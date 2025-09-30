@@ -1,16 +1,16 @@
 @extends('layouts.merge.dashboard')
-@section('titulo', ' Detalhes do Cliente')
+@section('titulo', ' Detalhes do Empresa')
 
 @section('content')
     <div class="card mb-2">
         <div class="card-body">
             <h2 class="h5 page-title">
-                
+
 
             </h2>
             <h5><b>
-                <a href="{{ route('admin.client.list.index') }}">Listar Clientes</a>
-                > Detalhes do Cliente - {{ $client->name }}
+                <a href="{{ route('admin.client.list.index') }}">Listar Empresas</a>
+                > Detalhes do Empresa - {{ $client->name }}
             </b></h5>
         </div>
     </div>
@@ -26,14 +26,14 @@
 
 
                             <div class="col-12 mt-2">
-                                <h5 class=""><b>Informações do Cliente </b> </h5>
+                                <h5 class=""><b>Informações do Empresa </b> </h5>
                                 <hr>
                             </div>
                             <div class="col-12 mb-2">
                                 <div class="row">
                                     <div class="col-md-3">
                                         <p class="text-dark">
-                                            <b>Nome do Cliente</b><br>
+                                            <b>Nome da Empresa</b><br>
                                             <small> {{ $client->name }}</small>
                                         </p>
                                     </div>
@@ -67,7 +67,7 @@
                                 </div>
                             </div>
 
-                
+
                             <div class="col-12 my-5">
                                 <hr>
                                 <div class="row">

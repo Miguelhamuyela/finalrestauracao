@@ -27,7 +27,7 @@
                                     <th>#</th>
                                     <th>TÍTULO DA CONFERÊNCIA</th>
                                     <th>AGENDAMENTO</th>
-                                    <th>NOME DO CLIENTE</th>
+                                    <th>NOME DA EMPRESA</th>
                                     <th>NIF</th>
                                     <th>TELEFONE</th>
                                     <th>STATUS</th>

@@ -19,7 +19,7 @@
                             </div>
                         @endif
                         <h4 class="card-title"><b>
-                                <a href="{{ url('admin/startup/list') }}">Listar Startups</a>
+                                <a href="{{ url('admin/startup/list') }}">Listar Empresas</a>
                                 > Startups
                             </b></h4>
                         <hr>

@@ -42,31 +42,32 @@
                 </li>
             @endif
             @if ('Finanças' == Auth::user()->level || 'Gestor' == Auth::user()->level || 'Administrador' == Auth::user()->level)
-                {{-- elernings --}}
+                {{-- elernings
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('admin.elernings.list.index') }}">
                         <i class="menu-icon typcn typcn-document-text"></i>
                         <span class="menu-title">E-learning</span>
                     </a>
                 </li>
-
-                <li class="nav-item nav-category mt-2">Alugueres</li>
+                 --}}
+                <li class="nav-item nav-category mt-2">Agendamento de Vistoria</li>
                 {{-- startups --}}
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('admin.startup.list.index') }}">
                         <i class="menu-icon typcn typcn-document-text"></i>
-                        <span class="menu-title">Startup</span>
+                        <span class="menu-title">Cadastro de Vistoria</span>
                     </a>
                 </li>
 
-                {{-- coworks --}}
-                <li class="nav-item">
+                {{-- coworks
+             <li class="nav-item">
                     <a class="nav-link" href="{{ route('admin.coworks.list.index') }}">
                         <i class="menu-icon typcn typcn-document-text"></i>
                         <span class="menu-title">Cowork</span>
                     </a>
                 </li>
 
+                --}}
                 {{-- auditoriums --}}
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('admin.auditoriums.list.index') }}">
@@ -84,7 +85,7 @@
                 </li>
 
                 <li class="nav-item nav-category mt-2">Estatísticas</li>
-                {{-- PayChart --}}
+                {{-- PayChart
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('admin.generalStatistics.index') }}">
                         <i class="menu-icon typcn typcn-document-text"></i>
@@ -92,9 +93,10 @@
                     </a>
                 </li>
 
+                --}}
                 {{-- Clients --}}
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('admin.client.create.index') }}">
+                    <a class="nav-link" href="{{ route('admin.client.list.index') }}">
                         <i class="menu-icon typcn typcn-document-text"></i>
                         <span class="menu-title">Cadastro de Empresa</span>
                     </a>

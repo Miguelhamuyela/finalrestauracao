@@ -24,7 +24,7 @@
                                 <tr class="text-center">
                                     <th>#</th>
                                     <th>CURSO</th>
-                                    <th>CLIENTE</th>
+                                    <th>Empresa</th>
                                     <th>TELEFONE</th>
 
                                     <th class="text-center">ACÇÕES</th>
