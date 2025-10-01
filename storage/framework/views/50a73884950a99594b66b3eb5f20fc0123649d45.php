@@ -1,3 +1,4 @@
+
 <?php $__env->startSection('titulo', 'Lista de Integrates '); ?>
 
 <?php $__env->startSection('content'); ?>

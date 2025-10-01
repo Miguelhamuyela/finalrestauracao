@@ -1,3 +1,4 @@
+
 <?php $__env->startSection('titulo', 'Empresa'); ?>
 
 <?php $__env->startSection('content'); ?>

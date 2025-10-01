@@ -1,3 +1,4 @@
+
 <?php $__env->startSection('titulo', 'Auditorio'); ?>
 
 <?php $__env->startSection('content'); ?>

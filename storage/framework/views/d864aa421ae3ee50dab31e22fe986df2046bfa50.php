@@ -1,3 +1,4 @@
+
 <?php $__env->startSection('titulo', 'Lista de Vistoria de Empresa'); ?>
 
 <?php $__env->startSection('content'); ?>
