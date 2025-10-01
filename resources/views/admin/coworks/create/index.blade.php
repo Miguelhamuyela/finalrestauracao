@@ -21,8 +21,8 @@
                      @endif
 
                         <h4 class="card-title"><b>
-                        <a href="{{ url('admin/cowork/list') }}">Listar Coworks</a>
-                        > Coworks
+                        <a href="{{ url('admin/cowork/list') }}">Listar Empresas Legais</a>
+                        > Empresas
                         </b></h4>
                         <hr>
                         @include('forms._formCoworks.index')

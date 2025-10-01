@@ -1,5 +1,5 @@
 @extends('layouts.merge.dashboard')
-@section('titulo', 'Editar Coworks')
+@section('titulo', 'Editar Empresa')
 @section('content')
 
     <div class="card shadow">
@@ -32,7 +32,7 @@
                      </div>
                      @endif
 
-                        <h4 class="card-title"><b>Coworks</b></h4>
+                        <h4 class="card-title"><b>Empresa</b></h4>
                         <hr>
                         @include('forms._formCoworks.index')
                     </div>

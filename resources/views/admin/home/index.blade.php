@@ -23,7 +23,7 @@
                             <div class="d-flex">
                                 <div class="wrapper">
                                     <h3 class="mb-0 font-weight-semibold">{{ $startup }}</h3>
-                                    <a class="mb-0 font-weight-medium text-primary h5" href="{{ route('admin.startup.list.index') }}">Startups</a>
+                                    <a class="mb-0 font-weight-medium text-primary h5" href="{{ route('admin.startup.list.index') }}">Vistoria de Empresa</a>
                                     <p class="mb-0 text-muted">{{ $startup/100 }}%</p>
                                 </div>
                                 <div class="wrapper my-auto ml-auto ml-lg-2">
@@ -49,7 +49,7 @@
                             <div class="d-flex">
                                 <div class="wrapper">
                                     <h3 class="mb-0 font-weight-semibold">{{ $auditorium }}</h3>
-                                    <a class="mb-0 font-weight-medium text-primary h5" href="{{ route('admin.auditoriums.list.index') }}">Auditório</a>
+                                    <a class="mb-0 font-weight-medium text-primary h5" href="{{ route('admin.auditoriums.list.index') }}">Agenda de Vistoria</a>
                                     <p class="mb-0 text-muted">{{ $auditorium/100 }}%</p>
                                 </div>
                                 <div class="wrapper my-auto ml-auto ml-lg-4">
@@ -62,7 +62,7 @@
                             <div class="d-flex">
                                 <div class="wrapper">
                                     <h3 class="mb-0 font-weight-semibold">{{ $cowork }}</h3>
-                                    <a class="mb-0 font-weight-medium text-primary h5" href="{{ route('admin.coworks.list.index') }}">Coworks</a>
+                                    <a class="mb-0 font-weight-medium text-primary h5" href="{{ route('admin.coworks.list.index') }}">Empresas Legais</a>
                                     <p class="mb-0 text-muted">{{ $cowork/100 }}%</p>
                                 </div>
                                 <div class="wrapper my-auto ml-auto ml-lg-2">
@@ -75,7 +75,7 @@
                             <div class="d-flex">
                                 <div class="wrapper">
                                     <h3 class="mb-0 font-weight-semibold">{{ $client }}</h3>
-                                    <a class="mb-0 font-weight-medium text-primary h5" href="{{ route('admin.client.list.index') }}">Clientes</a>
+                                    <a class="mb-0 font-weight-medium text-primary h5" href="{{ route('admin.client.list.index') }}">Cadastro de Empresa</a>
                                     <p class="mb-0 text-muted">{{ $client/100 }}%</p>
                                 </div>
                                 <div class="wrapper my-auto ml-auto ml-lg-2">
