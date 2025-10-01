@@ -60,6 +60,7 @@
 
                         <div class="col-lg-2 col-md-6 mt-md-0 mt-4">
                             <div class="d-flex">
+                                
                                 <div class="wrapper">
                                     <h3 class="mb-0 font-weight-semibold">{{ $cowork }}</h3>
                                     <a class="mb-0 font-weight-medium text-primary h5" href="{{ route('admin.coworks.list.index') }}">Empresas Legais</a>
