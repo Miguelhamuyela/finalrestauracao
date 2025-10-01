@@ -63,15 +63,6 @@
                     </a>
                 </li>
 
-                {{-- coworks
-             <li class="nav-item">
-                    <a class="nav-link" href="{{ route('admin.coworks.list.index') }}">
-                        <i class="menu-icon typcn typcn-document-text"></i>
-                        <span class="menu-title">Cowork</span>
-                    </a>
-                </li>
-
-                --}}
                 {{-- auditoriums --}}
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('admin.auditoriums.list.index') }}">
@@ -108,27 +99,23 @@
                     </a>
                 </li>
 
-
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('admin.payments.index') }}">
                         <i class="menu-icon typcn typcn-document-text"></i>
                         <span class="menu-title">Pagamentos</span>
                     </a>
                 </li>
-            @endif
 
-            @if ('Administrador' == Auth::user()->level)
-
-                {{-- employees --}}
-
-                <li class="nav-item nav-category mt-2">rwrwrwrwerwr</li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('admin.inspections.index') }}">
+               <li class="nav-item">
+                    <a class="nav-link" href="{{ route('admin.coworks.list.index') }}">
                         <i class="menu-icon typcn typcn-document-text"></i>
-                        <span class="menu-title">adadadasd</span>
+                        <span class="menu-title">Empresas Legais</span>
                     </a>
                 </li>
 
+            @endif
+
+            @if ('Administrador' == Auth::user()->level)
 
                 {{-- employees --}}
                 <li class="nav-item nav-category mt-2">Equipa de Vistoria</li>

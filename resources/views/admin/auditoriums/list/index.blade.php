@@ -25,7 +25,7 @@
                             <thead class="bg-primary thead-dark">
                                 <tr class="text-center">
                                     <th>#</th>
-                                    <th>TÍTULO DA CONFERÊNCIA</th>
+                                    <th>TIPO DE VISTORIA</th>
                                     <th>AGENDAMENTO</th>
                                     <th>NOME DA EMPRESA</th>
                                     <th>NIF</th>

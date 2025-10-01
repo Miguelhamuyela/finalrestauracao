@@ -1,5 +1,5 @@
 @extends('layouts.merge.dashboard')
-@section('titulo', ' Detalhes do Auditorio')
+@section('titulo', ' Detalhes do Vistoria')
 
 @section('content')
 
@@ -7,8 +7,8 @@
         <div class="card-body">
             <h2 class="h5 page-title"><b>
 
-                    <a href="{{ url('admin/auditoriums/list') }}">Listar Auditório </a>
-                    > Detalhes do Auditório - {{ $auditorium->titleConference }}
+                    <a href="{{ url('admin/auditoriums/list') }}">Listar Vistoria </a>
+                    > Detalhes do Vistoria - {{ $auditorium->titleConference }}
                 </b></h2>
         </div>
     </div>

@@ -1,5 +1,5 @@
 @extends('layouts.merge.dashboard')
-@section('titulo', ' Detalhes do Cowork')
+@section('titulo', ' Detalhes de Empresa Legais')
 
 @section('content')
 
@@ -7,8 +7,8 @@
         <div class="card-body">
             <h2 class="h5 page-title">
                 <b>
-                    <a href="{{ url('admin/cowork/list') }}">Listar Coworks</a>
-                    > Detalhes do Cowork - {{ $cowork->title }}
+                    <a href="{{ url('admin/cowork/list') }}">Listar Empresa Legal</a>
+                    > Detalhes de Empresa Legal - {{ $cowork->title }}
 
                 </b>
             </h2>
@@ -80,13 +80,13 @@
                             <div class="row">
                                 <div class="col-md-3">
                                     <p class="text-dark">
-                                        <b> Área de Actuação da Empresa</b><br>
+                                        <b> Actividade Principal da Empresa</b><br>
                                         <small> {{ $cowork->title }}</small>
                                     </p>
                                 </div>
                                 <div class="col-md-3">
                                     <p class="text-dark">
-                                        <b>Actividades Realizadas</b><br>
+                                        <b>Outras Actividades</b><br>
                                         <small> {{ $cowork->activities }}</small>
                                     </p>
                                 </div>

@@ -8,7 +8,7 @@
     <meta name="description" content="sistema de gestão do digital.ao">
     <meta name="author" content="Developers infosi">
 
-    <title>@yield('titulo') - Gestão do Digital.ao</title>
+    <title>@yield('titulo') - Gestão de Restauraçao</title>
 
     {{-- sweetalert --}}
     <link rel="stylesheet" href="/css/sweetalert2.css">

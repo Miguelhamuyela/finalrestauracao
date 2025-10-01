@@ -16,12 +16,12 @@
                         <label class="col-md-3 col-form-label">Origem <span class="text-danger">*</span></label>
                         <div class="col-md-9">
                             <select required name="origin" class="form-control" name="select">
-                                <option value="Auditório">Auditório</option>
-                                <option value="Cowork">Cowork</option>
+                                <option value="Auditório">Agenda de Vistoria</option>
+                                <option value="Cowork">Empresas Legais</option>
                                 <option value="E-Learning">E-Learning</option>
                                 <option value="Reparação de Equipamentos">Reparação de Equipamentos</option>
                                 <option value="Fábrica de Software">Fábrica de Software</option>
-                                <option value="Startup">Startup</option>
+                                <option value="Startup">Vistoria de Empresa</option>
                                 <option value="all">Todos as Empresas</option>
                             </select>
                         </div>
