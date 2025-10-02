@@ -22,7 +22,7 @@
 
                             <!-- Validation Errors -->
                             <x-auth-validation-errors class="my-4 alert alert-danger" :errors="$errors" />
-                            
+
                             <div class="my-4 text-sm text-gray-600">
                                 {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
                             </div>
@@ -53,7 +53,7 @@
                                 <div class="text-center mt-2 text-gray">
                                     <small class="text-muted">Todos os Direitos Reservados ao
                                         <a href="https://www.infosi.gov.ao" target="_blank">
-                                            INFOSI
+                                            Maria Fernandes
                                         </a>
                                         ©
                                         {{ date('Y') }}

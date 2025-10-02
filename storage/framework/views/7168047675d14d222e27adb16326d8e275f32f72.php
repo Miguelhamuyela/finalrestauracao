@@ -1,4 +1,3 @@
-
 <?php $__env->startSection('titulo', 'Login'); ?>
 <?php $__env->startSection('content'); ?>
 
@@ -99,7 +98,7 @@
                                 <div class="text-center mt-2 text-gray">
                                     <small class="text-muted">Todos os Direitos Reservados ao
                                         <a href="https://www.infosi.gov.ao" target="_blank">
-                                            INFOSI
+                                            Maria Fernandes
                                         </a>
                                         ©
                                         <?php echo e(date('Y')); ?>

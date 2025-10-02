@@ -34,7 +34,7 @@
 
                 <div class="col-12">
                     <img src="dashboard/images/logo_blue.png" alt="logo DIGITAL.AO" width="150" class="mt-3">
-                    <img src="dashboard/images/logo_infosi.png" alt="logo INFOSI.GOV.AO" width="250">
+                    <img src="" alt="" width="250">
                 </div>
 
         <p class="text-left mt-2">

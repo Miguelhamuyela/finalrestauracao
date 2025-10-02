@@ -1,4 +1,3 @@
-
 <?php $__env->startSection('titulo', 'Dashboard'); ?>
 <?php $__env->startSection('content'); ?>
 
@@ -60,7 +59,7 @@
 
                         <div class="col-lg-2 col-md-6 mt-md-0 mt-4">
                             <div class="d-flex">
-                                
+
                                 <div class="wrapper">
                                     <h3 class="mb-0 font-weight-semibold"><?php echo e($cowork); ?></h3>
                                     <a class="mb-0 font-weight-medium text-primary h5" href="<?php echo e(route('admin.coworks.list.index')); ?>">Empresas Legais</a>
@@ -93,9 +92,10 @@
     </div>
 
     <div class="row">
+
         <div class="col-md-12">
             <div class="row">
-                <div class="col-md-3 grid-margin stretch-card">
+                <div class="col-md-6 grid-margin stretch-card">
                     <div class="card">
                         <div class="card-body pb-0">
                             <div class="d-flex justify-content-between">
@@ -108,36 +108,14 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 grid-margin stretch-card">
-                    <div class="card">
-                        <div class="card-body pb-0">
-                            <div class="d-flex justify-content-between">
-                                <a class="mb-0 font-weight-medium text-primary h5" href="<?php echo e(route('admin.meetingRoom.list.index')); ?>">Salas de Reuniões</a>
-                                <p class="font-weight-semibold mb-0"><?php echo e($meetingRoom/100); ?>%</p>
-                            </div>
-                            <h3 class="font-weight-medium mb-4"><?php echo e($meetingRoom); ?></h3>
-                        </div>
-                        <canvas class="mt-n4" height="90" id="total-meetingRoom"></canvas>
-                    </div>
-                </div>
 
-                <div class="col-md-3 grid-margin stretch-card">
+ 
+
+                <div class="col-md-6 grid-margin stretch-card">
                     <div class="card">
                         <div class="card-body pb-0">
                             <div class="d-flex justify-content-between">
-                                <a class="mb-0 font-weight-medium text-primary h5" href="<?php echo e(route('admin.manufactures.list')); ?>">Solicitação Fabrica de Software</a>
-                                <p class="font-weight-semibold mb-0"><?php echo e($manufacturesSoftware/100); ?>%</p>
-                            </div>
-                            <h3 class="font-weight-medium mb-4"><?php echo e($manufacturesSoftware); ?></h3>
-                        </div>
-                        <canvas class="mt-n4" height="90" id="total-manufactures"></canvas>
-                    </div>
-                </div>
-                <div class="col-md-3 grid-margin stretch-card">
-                    <div class="card">
-                        <div class="card-body pb-0">
-                            <div class="d-flex justify-content-between">
-                                <a class="mb-0 font-weight-medium text-primary h5" href="<?php echo e(route('admin.equipmentRepair.list.index')); ?>">Solicitação de reparação de Equipamentos</a>
+                                <a class="mb-0 font-weight-medium text-primary h5" href="<?php echo e(route('admin.payments.index')); ?>">Pagamentos</a>
                                 <p class="font-weight-semibold mb-0"><?php echo e($equipmentRepair/100); ?>%</p>
                             </div>
                             <h3 class="font-weight-medium"><?php echo e($equipmentRepair); ?></h3>
