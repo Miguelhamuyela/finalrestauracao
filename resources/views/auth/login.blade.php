@@ -76,7 +76,7 @@
                                 <div class="text-center mt-2 text-gray">
                                     <small class="text-muted">Todos os Direitos Reservados ao
                                         <a href="https://www.infosi.gov.ao" target="_blank">
-                                            INFOSI
+                                            Maria Fernandes
                                         </a>
                                         ©
                                         {{ date('Y') }}

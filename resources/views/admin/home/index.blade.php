@@ -60,7 +60,7 @@
 
                         <div class="col-lg-2 col-md-6 mt-md-0 mt-4">
                             <div class="d-flex">
-                                
+
                                 <div class="wrapper">
                                     <h3 class="mb-0 font-weight-semibold">{{ $cowork }}</h3>
                                     <a class="mb-0 font-weight-medium text-primary h5" href="{{ route('admin.coworks.list.index') }}">Empresas Legais</a>
@@ -93,9 +93,10 @@
     </div>
 
     <div class="row">
+
         <div class="col-md-12">
             <div class="row">
-                <div class="col-md-3 grid-margin stretch-card">
+                <div class="col-md-6 grid-margin stretch-card">
                     <div class="card">
                         <div class="card-body pb-0">
                             <div class="d-flex justify-content-between">
@@ -108,6 +109,8 @@
                     </div>
                 </div>
 
+
+ {{-- Clients
                 <div class="col-md-3 grid-margin stretch-card">
                     <div class="card">
                         <div class="card-body pb-0">
@@ -121,6 +124,9 @@
                     </div>
                 </div>
 
+--}}
+{{-- Clients
+
                 <div class="col-md-3 grid-margin stretch-card">
                     <div class="card">
                         <div class="card-body pb-0">
@@ -133,11 +139,12 @@
                         <canvas class="mt-n4" height="90" id="total-manufactures"></canvas>
                     </div>
                 </div>
-                <div class="col-md-3 grid-margin stretch-card">
+ --}}
+                <div class="col-md-6 grid-margin stretch-card">
                     <div class="card">
                         <div class="card-body pb-0">
                             <div class="d-flex justify-content-between">
-                                <a class="mb-0 font-weight-medium text-primary h5" href="{{ route('admin.equipmentRepair.list.index') }}">Solicitação de reparação de Equipamentos</a>
+                                <a class="mb-0 font-weight-medium text-primary h5" href="{{ route('admin.payments.index') }}">Pagamentos</a>
                                 <p class="font-weight-semibold mb-0">{{ $equipmentRepair/100 }}%</p>
                             </div>
                             <h3 class="font-weight-medium">{{ $equipmentRepair }}</h3>

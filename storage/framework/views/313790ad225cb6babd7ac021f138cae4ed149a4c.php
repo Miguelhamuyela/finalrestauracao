@@ -14,7 +14,7 @@
         <div class="container-fluid clearfix">
             <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Todos os Direitos Reservados ao
                 <a href="https://www.infosi.gov.ao" target="_blank">
-                   INFOSI
+                   Maria Fernandes
                 </a>
                 ©
                 <?php echo e(date('Y')); ?>

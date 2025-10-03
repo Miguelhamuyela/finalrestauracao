@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <meta name="description" content="sistema de gestão do digital.ao">
-    <meta name="author" content="Developers infosi">
+    <meta name="author" content="Developers Maria Fernandes">
 
-    <title><?php echo $__env->yieldContent('titulo'); ?> - Gestão do Digital.ao</title>
-   
+    <title><?php echo $__env->yieldContent('titulo'); ?> - Gestão de Vistoria de Empresa</title>
+
 
     <!-- plugins:css -->
     <link rel="stylesheet" href="/dashboard/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="/dashboard/vendors/css/vendor.bundle.base.css">
     <link rel="stylesheet" href="/dashboard/vendors/css/vendor.bundle.addons.css">
     <!-- endinject -->
-   
+
     <!-- inject:css -->
     <link rel="stylesheet" href="/dashboard/css/shared/style.css">
     <!-- endinject -->
@@ -27,8 +27,8 @@
 
 </head>
 <body>
-  
-<div class="container-scroller">    
+
+<div class="container-scroller">
 
 <?php echo $__env->yieldContent('content'); ?>
 </div>
