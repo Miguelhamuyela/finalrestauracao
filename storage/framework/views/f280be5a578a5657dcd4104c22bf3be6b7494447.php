@@ -8,7 +8,7 @@
     <meta name="description" content="sistema de gestão do digital.ao">
     <meta name="author" content="Developers Maria Fernandes">
 
-    <title><?php echo $__env->yieldContent('titulo'); ?> - Gestão do Digital.ao</title>
+    <title><?php echo $__env->yieldContent('titulo'); ?> - Gestão de Vistoria de Empresa</title>
 
 
     <!-- plugins:css -->
