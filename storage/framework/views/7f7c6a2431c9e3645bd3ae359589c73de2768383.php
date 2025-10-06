@@ -36,7 +36,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="<?php echo e(route('admin.startup.list.index')); ?>">
                         <i class="menu-icon typcn typcn-document-text"></i>
-                        <span class="menu-title">Vistoria de Empresa</span>
+                        <span class="menu-title">Auto de Vistoria</span>
                     </a>
                 </li>
 
@@ -69,7 +69,7 @@
                <li class="nav-item">
                     <a class="nav-link" href="<?php echo e(route('admin.coworks.list.index')); ?>">
                         <i class="menu-icon typcn typcn-document-text"></i>
-                        <span class="menu-title">Empresas Legais</span>
+                        <span class="menu-title">Licença Industrial Hoteleira</span>
                     </a>
                 </li>
 

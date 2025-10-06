@@ -69,7 +69,6 @@ return array(
     'App\\Models\\Payment' => $baseDir . '/app/Models/Payment.php',
     'App\\Models\\Scheduling' => $baseDir . '/app/Models/Scheduling.php',
     'App\\Models\\Scheldule' => $baseDir . '/app/Models/Scheldule.php',
-    'App\\Models\\Startup' => $baseDir . '/app/Models/Startup.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',

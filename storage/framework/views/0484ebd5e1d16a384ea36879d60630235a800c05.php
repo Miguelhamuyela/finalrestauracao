@@ -1,3 +1,4 @@
+
 <?php $__env->startSection('titulo', 'Cadastrar Integrate'); ?>
 
 <?php $__env->startSection('content'); ?>

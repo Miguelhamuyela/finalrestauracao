@@ -610,7 +610,6 @@ class ComposerStaticInitdc7288b46a5df238067c426df90fc568
         'App\\Models\\Payment' => __DIR__ . '/../..' . '/app/Models/Payment.php',
         'App\\Models\\Scheduling' => __DIR__ . '/../..' . '/app/Models/Scheduling.php',
         'App\\Models\\Scheldule' => __DIR__ . '/../..' . '/app/Models/Scheldule.php',
-        'App\\Models\\Startup' => __DIR__ . '/../..' . '/app/Models/Startup.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
