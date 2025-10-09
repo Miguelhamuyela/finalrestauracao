@@ -562,6 +562,7 @@ class ComposerStaticInitdc7288b46a5df238067c426df90fc568
         'App\\Http\\Controllers\\Admin\\EquipmentRepairsController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/EquipmentRepairsController.php',
         'App\\Http\\Controllers\\Admin\\GeneralStatisticController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/GeneralStatisticController.php',
         'App\\Http\\Controllers\\Admin\\InspectionTeamController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/InspectionTeamController.php',
+        'App\\Http\\Controllers\\Admin\\InspectionsController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/InspectionsController.php',
         'App\\Http\\Controllers\\Admin\\InvoiceController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/InvoiceController.php',
         'App\\Http\\Controllers\\Admin\\ManufacturesSoftwaresController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/ManufacturesSoftwaresController.php',
         'App\\Http\\Controllers\\Admin\\MeetingRoomsController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/MeetingRoomsController.php',

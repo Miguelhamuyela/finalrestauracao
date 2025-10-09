@@ -194,6 +194,18 @@ Route::middleware(['auth'])->group(function () {
     });
 
 
+  Route::middleware(['RepEqui'])->group(function () {
+        /**equipmentRepair */
+        Route::get('admin/autoInspection/create', ['as' => 'admin.autoInspection.create.index', 'uses' => 'Admin\AutoinspectionController@create']);
+        Route::get('admin/autoInspection/list', ['as' => 'admin.autoInspection.list.index', 'uses' => 'Admin\AutoinspectionController@index']);
+        Route::post('admin/autoInspection/store', ['as' => 'admin.autoInspection.store', 'uses' => 'Admin\AutoinspectionController@store']);
+        Route::get('admin/autoInspection/show/{id}', ['as' => 'admin.autoInspection.show', 'uses' => 'Admin\AutoinspectionController@show']);
+        Route::get('admin/autoInspection/delete/{id}', ['as' => 'admin.autoInspection.delete', 'uses' => 'Admin\AutoinspectionController@destroy']);
+        Route::put('admin/autoInspection/update/{id}', ['as' => 'admin.autoInspection.update', 'uses' => 'Admin\AutoinspectionController@update']);
+        Route::get('admin/autoInspection/edit/{id}', ['as' => 'admin.autoInspection.edit.index', 'uses' => 'Admin\AutoinspectionController@edit']);
+        /**End equipmentRepair */
+    });
+
     Route::middleware(['FabSoft'])->group(function () {
         /**
          *  ManufacturesSoftwares

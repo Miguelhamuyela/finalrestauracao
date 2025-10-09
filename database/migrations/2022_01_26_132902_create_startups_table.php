@@ -35,6 +35,7 @@ class CreateStartupsTable extends Migration
 
 
 
+
         });
     }
 

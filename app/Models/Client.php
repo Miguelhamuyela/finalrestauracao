@@ -43,4 +43,6 @@ class Client extends Model
 
         return $this->belongsTo(Auditorium::class, 'fk_Payments_id');
     }
+
+    
 }

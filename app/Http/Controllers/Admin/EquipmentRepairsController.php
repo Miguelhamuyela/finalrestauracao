@@ -30,6 +30,8 @@ class EquipmentRepairsController extends Controller
         return view('admin.equipmentRepair.list.index', $response);
     }
 
+
+
     public function create()
     {
         $response['employees'] = Employee::where('departament', 'Departamento de Gestão de Infra-Estruturas Tecnológicas e Serviços Partilhados')->orderBy('name', 'asc')->get();
@@ -38,6 +40,8 @@ class EquipmentRepairsController extends Controller
         return view('admin.equipmentRepair.create.index', $response);
     }
 
+
+    
     public function store(Request $request)
     {
         $request->validate([
@@ -101,6 +105,10 @@ class EquipmentRepairsController extends Controller
         //Logger
         $this->Logger->log('info', 'Cadastrou Reparação de  Equipamentos com o Identificador ' . $EquipmentRepair->id);
         return redirect("admin/reparação-equipamentos/show/$EquipmentRepair->id")->with('create', '1');
+
+
+
+
     }
 
 

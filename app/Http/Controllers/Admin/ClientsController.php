@@ -17,11 +17,8 @@ class ClientsController extends Controller
     {
         $this->Logger = new Logger();
     }
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
+  
     public function index()
     {
         //
@@ -65,6 +62,11 @@ class ClientsController extends Controller
             ->with('create', '1');
     }
 
+
+
+
+
+
     /**
      * Display the specified resource.
      *
@@ -77,6 +79,10 @@ class ClientsController extends Controller
         $response['client'] = Client::find($id);
         return view('admin.clients.details.index', $response);
     }
+
+
+
+
 
     /**
      * Show the form for editing the specified resource.
@@ -98,6 +104,12 @@ class ClientsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+
+
+
+
+
     public function update(Request $request, $id)
     {
         $request->validate([
@@ -117,6 +129,10 @@ class ClientsController extends Controller
             ->with('edit', '1');
     }
 
+
+
+
+
     /**Imprimir Lista de Clientes */
     public function printClient(Request $request)
     {
@@ -135,6 +151,10 @@ class ClientsController extends Controller
         $pdf = PDF::loadview('pdf.client.index', $response);
         return $pdf->setPaper('a4', 'landscape')->stream('pdf');
     }
+
+
+
+
 
     /**
      * Remove the specified resource from storage.

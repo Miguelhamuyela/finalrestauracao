@@ -28,6 +28,23 @@
             <?php endif; ?>
             <?php if('Finanças' == Auth::user()->level || 'Gestor' == Auth::user()->level || 'Reparação de Equipamentos' == Auth::user()->level || 'Administrador' == Auth::user()->level): ?>
                 
+
+
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo e(route('admin.autoInspection.create.index')); ?>">
+                        <i class="menu-icon typcn typcn-document-text"></i>
+                        <span class="menu-title">Vistoria</span>
+                    </a>
+                </li>
+
+
+
+
+
+
+
             <?php endif; ?>
             <?php if('Finanças' == Auth::user()->level || 'Gestor' == Auth::user()->level || 'Administrador' == Auth::user()->level): ?>
                 
@@ -36,7 +53,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="<?php echo e(route('admin.startup.list.index')); ?>">
                         <i class="menu-icon typcn typcn-document-text"></i>
-                        <span class="menu-title">Vistoria de Empresa</span>
+                        <span class="menu-title">Auto de Vistoria</span>
                     </a>
                 </li>
 
@@ -69,7 +86,7 @@
                <li class="nav-item">
                     <a class="nav-link" href="<?php echo e(route('admin.coworks.list.index')); ?>">
                         <i class="menu-icon typcn typcn-document-text"></i>
-                        <span class="menu-title">Empresas Legais</span>
+                        <span class="menu-title">Licença Industrial Hoteleira</span>
                     </a>
                 </li>
 

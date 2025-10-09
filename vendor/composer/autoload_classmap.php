@@ -21,6 +21,7 @@ return array(
     'App\\Http\\Controllers\\Admin\\EquipmentRepairsController' => $baseDir . '/app/Http/Controllers/Admin/EquipmentRepairsController.php',
     'App\\Http\\Controllers\\Admin\\GeneralStatisticController' => $baseDir . '/app/Http/Controllers/Admin/GeneralStatisticController.php',
     'App\\Http\\Controllers\\Admin\\InspectionTeamController' => $baseDir . '/app/Http/Controllers/Admin/InspectionTeamController.php',
+    'App\\Http\\Controllers\\Admin\\InspectionsController' => $baseDir . '/app/Http/Controllers/Admin/InspectionsController.php',
     'App\\Http\\Controllers\\Admin\\InvoiceController' => $baseDir . '/app/Http/Controllers/Admin/InvoiceController.php',
     'App\\Http\\Controllers\\Admin\\ManufacturesSoftwaresController' => $baseDir . '/app/Http/Controllers/Admin/ManufacturesSoftwaresController.php',
     'App\\Http\\Controllers\\Admin\\MeetingRoomsController' => $baseDir . '/app/Http/Controllers/Admin/MeetingRoomsController.php',
