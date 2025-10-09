@@ -42,6 +42,10 @@ class MembersController extends Controller
      */
     public function store(Request $request, $id)
     {
+
+
+
+
         $request->validate([
             /**Member Information */
             'name' => 'required|string|max:255',
@@ -75,6 +79,11 @@ class MembersController extends Controller
             'Cadastrou membros da Startup com identificador ' . $id
         );
         return redirect("admin/startup/show/$id")->with('create', '1');
+
+
+
+
+        
     }
 
     /**
