@@ -19,11 +19,24 @@ class CreateInspectionsTable extends Migration
             $table->string('tel');
             $table->string('email');
             $table->string('nif');
-          //  $table->string('representative');
-          //  $table->string('TypesHotel');
+            $table->string('TypesHotel');
+            $table->string('typestar');
+            $table->string('mainActivity');
+            $table->string('numberRoom');
+            $table->string('bedNumber');
+            $table->string('tableNumber');
+            $table->string('yearSelfinspection');
+            $table->string('monthselfInspection');
+            $table->string('workforce');
+            $table->string('men');
+            $table->string('women');
+            $table->string('expatriateWork');
+            $table->string('agreeInstallation');
+            $table->string('description');
             $table->string('address');
+
             $table->string('origin')->nullable();
-            $table->enum('clienttype', ['Singular', 'Colectivo' ,  'Nome Individual', 'Sociedade por Quotas',  'Sociedade por Quotas Pluripessoal',  'Sociedade por Quotas Unipessoal', 'Sociedade Anónima', 'Cooperativas'])->nullable();
+            $table->enum('inspectiontype', ['Singular', 'Colectivo' ,  'Nome Individual', 'Sociedade por Quotas',  'Sociedade por Quotas Pluripessoal',  'Sociedade por Quotas Unipessoal', 'Sociedade Anónima', 'Cooperativas'])->nullable();
 
             $table->softDeletes();
             $table->timestamps();

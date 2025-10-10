@@ -98,6 +98,18 @@ Route::middleware(['auth'])->group(function () {
         Route::get('admin/clients/relatorios', ['as' => 'admin.clients.report', 'uses' => 'Admin\ClientsController@printClient']);
         /**End Clients */
 
+       /** inspections */
+        Route::get('admin/inspection/index', ['as' => 'admin.inspection.create.index', 'uses' => 'Admin\InspectionsController@create']);
+        Route::get('admin/inspection/list', ['as' => 'admin.inspection.list.index', 'uses' => 'Admin\InspectionsController@index']);
+        Route::post('admin/inspection/store', ['as' => 'admin.inspection.store', 'uses' => 'Admin\InspectionsController@store']);
+        Route::get('admin/inspection/show/{id}', ['as' => 'admin.inspection.show', 'uses' => 'Admin\InspectionsController@show']);
+        Route::get('admin/inspection/edit/{id}', ['as' => 'admin.inspection.edit.index', 'uses' => 'Admin\InspectionsController@edit']);
+        Route::get('admin/inspection/delete/{id}', ['as' => 'admin.inspection.delete', 'uses' => 'Admin\InspectionsController@destroy']);
+        Route::put('admin/inspection/update/{id}', ['as' => 'admin.inspection.update', 'uses' => 'Admin\InspectionsController@update']);
+
+        //Relatórios PDF
+        Route::get('admin/inspections/relatorios', ['as' => 'admin.inspections.report', 'uses' => 'Admin\InspectionsController@printInspections']);
+        /**End  */
 
 
         /**Startups */

@@ -18,6 +18,7 @@
                             <select required name="origin" class="form-control">
                                 <option value="Cowork">Empresas Legais</option>
                                 <option value="Fábrica de Software">Fábrica de Software</option>
+                                  <option value="Inspection">Agenda</option>
                                 <option value="Startup">Vistoria de Empresa</option>
                                 <option value="Reparação de Equipamentos">Reparação de Equipamentos</option>
                                 <option value="Auditório">Agenda de Vistoria</option>

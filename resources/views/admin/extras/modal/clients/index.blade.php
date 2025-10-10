@@ -17,6 +17,7 @@
                         <div class="col-md-9">
                             <select required name="origin" class="form-control" name="select">
                                 <option value="Auditório">Agenda de Vistoria</option>
+                                 <option value="Inspection">Agenda</option>
                                 <option value="Cowork">Empresas Legais</option>
                                 <option value="E-Learning">E-Learning</option>
                                 <option value="Reparação de Equipamentos">Reparação de Equipamentos</option>
