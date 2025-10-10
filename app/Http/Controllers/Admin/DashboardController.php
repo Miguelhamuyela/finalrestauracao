@@ -37,6 +37,7 @@ class DashboardController extends Controller
         $response['startup'] = Startup::count();
         $response['employee'] = Employee::count();
         $response['client'] = Client::count();
+      //  $response['inspection'] = Inspection::count();
         $response['manufacturesSoftware'] = ManufacturesSoftware::count();
         $response['equipmentRepair'] = EquipmentRepair::count();
         /* fim contadores */

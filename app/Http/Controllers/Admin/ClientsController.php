@@ -17,8 +17,11 @@ class ClientsController extends Controller
     {
         $this->Logger = new Logger();
     }
-
-  
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function index()
     {
         //
@@ -62,11 +65,6 @@ class ClientsController extends Controller
             ->with('create', '1');
     }
 
-
-
-
-
-
     /**
      * Display the specified resource.
      *
@@ -79,10 +77,6 @@ class ClientsController extends Controller
         $response['client'] = Client::find($id);
         return view('admin.clients.details.index', $response);
     }
-
-
-
-
 
     /**
      * Show the form for editing the specified resource.
@@ -104,12 +98,6 @@ class ClientsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-
-
-
-
-
-
     public function update(Request $request, $id)
     {
         $request->validate([
@@ -128,7 +116,6 @@ class ClientsController extends Controller
             ->route('admin.client.list.index')
             ->with('edit', '1');
     }
-
 
 
 
@@ -153,9 +140,7 @@ class ClientsController extends Controller
     }
 
 
-
-
-
+    
     /**
      * Remove the specified resource from storage.
      *

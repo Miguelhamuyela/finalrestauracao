@@ -9,8 +9,8 @@
 
             </h2>
             <h5><b>
-                <a href="{{ route('admin.client.list.index') }}">Listar Empresas</a>
-                > Detalhes do Empresa - {{ $client->name }}
+                <a href="{{ route('admin.inspection.list.index') }}">Listar Empresas</a>
+                > Detalhes do Empresa - {{ $inspection->name }}
             </b></h5>
         </div>
     </div>
@@ -34,33 +34,33 @@
                                     <div class="col-md-3">
                                         <p class="text-dark">
                                             <b>Nome da Empresa</b><br>
-                                            <small> {{ $client->name }}</small>
+                                            <small> {{ $inspection->name }}</small>
                                         </p>
                                     </div>
                                     <div class="col-md-3">
                                         <p class="text-dark">
                                             <b>Número de Identificação Fiscal</b><br>
-                                            <small> {{ $client->nif }}</small>
+                                            <small> {{ $inspection->nif }}</small>
                                         </p>
                                     </div>
 
                                     <div class="col-md-3">
                                         <p class="text-dark">
                                             <b>Email</b><br>
-                                            <small> {{ $client->email }}</small>
+                                            <small> {{ $inspection->email }}</small>
                                         </p>
                                     </div>
                                     <div class="col-md-3">
                                         <p class="text-dark">
                                             <b>Telefone</b><br>
-                                            <small> {{ $client->tel }}</small>
+                                            <small> {{ $inspection->tel }}</small>
                                         </p>
                                     </div>
 
                                     <div class="col-md-3">
                                         <p class="text-dark">
                                             <b>Tipo de Empresa</b><br>
-                                            <small> {{ $client->clienttype}}</small>
+                                            <small> {{ $inspection->clienttype}}</small>
                                         </p>
                                     </div>
 
@@ -68,7 +68,7 @@
                                       <div class="col-md-3">
                                         <p class="text-dark">
                                             <b>Endereço da empresa</b><br>
-                                            <small> {{ $client->address}}</small>
+                                            <small> {{ $inspection->address}}</small>
                                         </p>
                                     </div>
 
@@ -76,14 +76,14 @@
                                       <div class="col-md-3">
                                         <p class="text-dark">
                                             <b>Origem</b><br>
-                                            <small> {{ $client->email}}</small>
+                                            <small> {{ $inspection->email}}</small>
                                         </p>
                                     </div>
 
                                    <div class="col-md-3">
                                         <p class="text-dark">
                                             <b>Origem</b><br>
-                                            <small> {{ $client->origin}}</small>
+                                            <small> {{ $inspection->origin}}</small>
                                         </p>
                                     </div>
 
@@ -99,11 +99,11 @@
                                     <div class="col-md-8">
                                         <small class="mb-1 text-dark">
                                             <b>Data de Cadastro:</b>
-                                            {{ $client->created_at }}
+                                            {{ $inspection->created_at }}
                                         </small><br>
                                         <small class="mb-1 text-dark">
                                             <b>Última Actualização:</b>
-                                            {{ $client->updated_at }}
+                                            {{ $inspection->updated_at }}
                                         </small>
                                     </div>
                                     <div class="col-md-4 text-dark text-right">

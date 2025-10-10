@@ -44,19 +44,12 @@
                 --}}
 
 
-
-
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('admin.autoInspection.create.index') }}">
+                    <a class="nav-link" href="{{ route('admin.inspection.list.index') }}">
                         <i class="menu-icon typcn typcn-document-text"></i>
                         <span class="menu-title">Vistoria</span>
                     </a>
                 </li>
-
-
-
-
-
 
 
             @endif

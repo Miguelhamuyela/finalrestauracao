@@ -6,12 +6,12 @@
 
         <div class="col-lg-12 grid-margin stretch-card ">
             <div class="card">
-                <form  method="POST" action="{{ route('admin.client.store') }}" >
+                <form  method="POST" action="{{ route('admin.inspection.store') }}" >
                     @csrf
                 <div class="card-body bg-light">
                     <h4 class="card-title"><b>Lista de Empresas</b></h4>
                     <hr>
-                    @include('forms._formClients.index')
+                    @include('forms._formInspections.index')
                 </div>
 
 
