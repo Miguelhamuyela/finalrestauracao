@@ -148,7 +148,7 @@
           @else
               <option disabled selected value="">selecione uma outra opção</option>
           @endif
-           <option>Sem Nenhuma Classificação</option>
+          <option>Sem Nenhuma Classificação</option>
           <option>⭐ 1 Estrela – Simples</option>
           <option>⭐⭐ 2 Estrelas – Econômico</option>
           <option>⭐⭐⭐ 3 Estrelas – Confortável</option>
@@ -199,21 +199,71 @@
     </div>
 </div>
 
+
 <div class="col-md-2">
     <div class="form-group">
         <label for="yearSelfinspection">Ano da Auto Vistoria<small class="text-danger"></small></label>
-        <input type="year" name="yearSelfinspection" id="yearSelfinspection" value="{{ isset($inspection->yearSelfinspection) ? $inspection->yearSelfinspection : old('yearSelfinspection') }}"
-            class="form-control border rounded" placeholder="Ano da Auto Vistoria" required>
+        <select type="text" name="yearSelfinspection" id="yearSelfinspection" class="form-control border rounded" required>
+
+          @if (isset($inspection->yearSelfinspection))
+              <option value="{{ $inspection->yearSelfinspection }}" class="text-primary h6 bg-primary text-white" selected>
+                  {{ $inspection->yearSelfinspection }}
+              </option>
+          @else
+              <option disabled selected value="">selecione uma outra opção</option>
+          @endif
+          <option>2024</option>
+          <option>2025</option>
+          <option>2026</option>
+          <option>2027</option>
+          <option>2028</option>
+          <option>2029</option>
+          <option>2030</option>
+          <option>2031</option>
+          <option>2032</option>
+          <option>2033</option>
+          <option>2034</option>
+          <option>2035</option>
+          <option>2036</option>
+          <option>2037</option>
+          <option>2038</option>
+          <option>2039</option>
+          <option>2040</option>
+      </select>
     </div>
 </div>
+
 
 <div class="col-md-2">
     <div class="form-group">
         <label for="monthselfInspection">Mes da Vistoria<small class="text-danger"></small></label>
-        <input type="text" name="monthselfInspection" id="monthselfInspection" value="{{ isset($inspection->monthselfInspection) ? $inspection->monthselfInspection : old('monthselfInspection') }}"
-            class="form-control border rounded" placeholder="Mes da Auto Vistoria" required>
+        <select type="text" name="monthselfInspection" id="monthselfInspection" class="form-control border rounded" required>
+
+          @if (isset($inspection->typestar))
+              <option value="{{ $inspection->monthselfInspection }}" class="text-primary h6 bg-primary text-white" selected>
+                  {{ $inspection->monthselfInspection }}
+              </option>
+          @else
+              <option disabled selected value="">selecione uma outra opção</option>
+          @endif
+          <option>Sem Nenhuma Classificação</option>
+          <option>Janeiro</option>
+          <option>Fevereiro</option>
+          <option>Março</option>
+          <option>Abril</option>
+          <option>Maio</option>
+          <option>Junho</option>
+          <option>Julho</option>
+          <option>Agosto</option>
+          <option>Setembro</option>
+          <option>Outubro</option>
+          <option>Novembro</option>
+          <option>Dezembro</option>
+      </select>
     </div>
 </div>
+
+
 
 <div class="col-md-2">
     <div class="form-group">
@@ -222,6 +272,7 @@
             class="form-control border rounded" placeholder="Nome do Chefe da Equipa " required>
     </div>
 </div>
+
 
 <div class="col-md-2">
     <div class="form-group">

@@ -23,7 +23,33 @@
             </li>
 
             @if ('Finanças' == Auth::user()->level || 'Gestor' == Auth::user()->level || 'Fábrica de Software' == Auth::user()->level || 'Administrador' == Auth::user()->level)
-                <li class="nav-item nav-category mt-2">Serviços</li>
+                <li class="nav-item nav-category mt-2">Cadastramento da Equipa</li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('admin.employees.index') }}">
+                        <i class="menu-icon typcn typcn-document-text"></i>
+                        <span class="menu-title">Equipa da Vistoria</span>
+                    </a>
+                </li>
+
+
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('admin.autinspection.list.index') }}">
+                        <i class="menu-icon typcn typcn-document-text"></i>
+                        <span class="menu-title">Autoasadasd</span>
+                    </a>
+                </li>
+
+
+
+
+
+
+
+
+
+
                 {{-- manufactures
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('admin.manufactures.list') }}">
@@ -42,15 +68,29 @@
                     </a>
                 </li>
                 --}}
+                  {{-- Clients --}}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('admin.client.create.index') }}">
+                        <i class="menu-icon typcn typcn-document-text"></i>
+                        <span class="menu-title">Cadastro de Empresa</span>
+                    </a>
+                </li>
+
+                {{-- auditoriums --}}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('admin.auditoriums.list.index') }}">
+                        <i class="menu-icon typcn typcn-document-text"></i>
+                        <span class="menu-title">Agenda de Vistoria</span>
+                    </a>
+                </li>
 
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('admin.inspection.list.index') }}">
+                    <a class="nav-link" href="{{ route('admin.inspection.create.index') }}">
                         <i class="menu-icon typcn typcn-document-text"></i>
                         <span class="menu-title">Vistoria</span>
                     </a>
                 </li>
-
 
             @endif
             @if ('Finanças' == Auth::user()->level || 'Gestor' == Auth::user()->level || 'Administrador' == Auth::user()->level)
@@ -70,14 +110,6 @@
                     <a class="nav-link" href="{{ route('admin.startup.list.index') }}">
                         <i class="menu-icon typcn typcn-document-text"></i>
                         <span class="menu-title">Auto de Vistoria</span>
-                    </a>
-                </li>
-
-                {{-- auditoriums --}}
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('admin.auditoriums.list.index') }}">
-                        <i class="menu-icon typcn typcn-document-text"></i>
-                        <span class="menu-title">Agenda de Vistoria</span>
                     </a>
                 </li>
 
@@ -101,13 +133,6 @@
                 </li>
 
                 --}}
-                {{-- Clients --}}
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('admin.client.create.index') }}">
-                        <i class="menu-icon typcn typcn-document-text"></i>
-                        <span class="menu-title">Cadastro de Empresa</span>
-                    </a>
-                </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('admin.payments.index') }}">
@@ -127,7 +152,8 @@
 
             @if ('Administrador' == Auth::user()->level)
 
-                {{-- employees --}}
+                {{-- employees
+
                 <li class="nav-item nav-category mt-2">Equipa de Vistoria</li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('admin.employees.index') }}">
@@ -136,7 +162,7 @@
                     </a>
                 </li>
 
-
+                --}}
                 <li class="nav-item mb-5">
                     <a class="nav-link" href="{{ route('admin.user.index') }}">
                         <i class="menu-icon typcn typcn-document-text"></i>

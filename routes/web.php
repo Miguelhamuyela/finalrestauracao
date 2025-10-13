@@ -125,6 +125,19 @@ Route::middleware(['auth'])->group(function () {
         /**End Startups */
 
 
+        /**Autnspection */
+        Route::get('admin/autinspection/index', ['as' => 'admin.autinspection.create.index', 'uses' => 'Admin\AutnspectionsController@create']);
+        Route::get('admin/autinspection/list', ['as' => 'admin.autinspection.list.index', 'uses' => 'Admin\AutnspectionsController@index']);
+        Route::post('admin/autinspection/store', ['as' => 'admin.autinspection.store', 'uses' => 'Admin\AutnspectionsController@store']);
+        Route::get('admin/autinspection/edit/{id}', ['as' => 'admin.autinspection.edit.index', 'uses' => 'Admin\AutnspectionsController@edit']);
+        Route::put('admin/autinspection/update/{id}', ['as' => 'admin.autinspection.update', 'uses' => 'Admin\AutnspectionsController@update']);
+        Route::get('admin/autinspection/delete/{id}', ['as' => 'admin.autinspection.delete', 'uses' => 'Admin\AutnspectionsController@destroy']);
+        Route::get('admin/autinspection/show/{id}', ['as' => 'admin.autinspection.show', 'uses' => 'Admin\AutnspectionsController@show']);
+
+        Route::get('admin/autinspection/print/{id}', ['as' => 'admin.autinspection.print', 'uses' => 'Admin\AutnspectionsController@print']);
+        /**End Autnspection */
+
+
         /**Cowork */
         Route::get('admin/cowork/index', ['as' => 'admin.coworks.create.index', 'uses' => 'Admin\CoworkController@create']);
         Route::get('admin/cowork/list', ['as' => 'admin.coworks.list.index', 'uses' => 'Admin\CoworkController@index']);
