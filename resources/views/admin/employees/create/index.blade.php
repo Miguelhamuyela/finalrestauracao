@@ -1,5 +1,5 @@
 @extends('layouts.merge.dashboard')
-@section('titulo', 'Cadastrar Integrate')
+@section('titulo', 'Cadastrar Equipa')
 
 @section('content')
     <div class="row">
@@ -10,7 +10,7 @@
                 <div class="card-body bg-light">
                     <h4 class="card-title">
                         <b>
-                            <a href="{{ url('admin/funcionários/list') }}">Listar Integrate</a> >Cadastrar Integrate
+                            <a href="{{ url('admin/funcionários/list') }}">Listar a Equipa</a> >Cadastrar Equipa
                         </b>
                     </h4>
                     <hr>

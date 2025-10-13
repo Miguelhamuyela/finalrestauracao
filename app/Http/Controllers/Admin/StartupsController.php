@@ -143,6 +143,7 @@ class StartupsController extends Controller
         return view('admin.startup.details.index', $response);
     }
 
+    
     public function print($id)
     {
 
@@ -156,6 +157,8 @@ class StartupsController extends Controller
         $pdf->setPaper('A3', 'landscape');
         return $pdf->stream('Emitiu informações sobre a startup com id ' . $data->id . ".pdf");
     }
+
+
 
 
     public function edit($id)

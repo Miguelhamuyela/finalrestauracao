@@ -23,20 +23,60 @@
             </li>
 
             <?php if('Finanças' == Auth::user()->level || 'Gestor' == Auth::user()->level || 'Fábrica de Software' == Auth::user()->level || 'Administrador' == Auth::user()->level): ?>
-                <li class="nav-item nav-category mt-2">Serviços</li>
+                <li class="nav-item nav-category mt-2">Cadastramento da Equipa</li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo e(route('admin.employees.index')); ?>">
+                        <i class="menu-icon typcn typcn-document-text"></i>
+                        <span class="menu-title">Equipa da Vistoria</span>
+                    </a>
+                </li>
+
+
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo e(route('admin.autinspection.list.index')); ?>">
+                        <i class="menu-icon typcn typcn-document-text"></i>
+                        <span class="menu-title">Autoasadasd</span>
+                    </a>
+                </li>
+
+
+
+
+
+
+
+
+
+
                 
             <?php endif; ?>
             <?php if('Finanças' == Auth::user()->level || 'Gestor' == Auth::user()->level || 'Reparação de Equipamentos' == Auth::user()->level || 'Administrador' == Auth::user()->level): ?>
                 
+                  
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo e(route('admin.client.create.index')); ?>">
+                        <i class="menu-icon typcn typcn-document-text"></i>
+                        <span class="menu-title">Cadastro de Empresa</span>
+                    </a>
+                </li>
+
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo e(route('admin.auditoriums.list.index')); ?>">
+                        <i class="menu-icon typcn typcn-document-text"></i>
+                        <span class="menu-title">Agenda de Vistoria</span>
+                    </a>
+                </li>
 
 
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo e(route('admin.inspection.list.index')); ?>">
+                    <a class="nav-link" href="<?php echo e(route('admin.inspection.create.index')); ?>">
                         <i class="menu-icon typcn typcn-document-text"></i>
                         <span class="menu-title">Vistoria</span>
                     </a>
                 </li>
-
 
             <?php endif; ?>
             <?php if('Finanças' == Auth::user()->level || 'Gestor' == Auth::user()->level || 'Administrador' == Auth::user()->level): ?>
@@ -51,23 +91,8 @@
                 </li>
 
                 
-                <li class="nav-item">
-                    <a class="nav-link" href="<?php echo e(route('admin.auditoriums.list.index')); ?>">
-                        <i class="menu-icon typcn typcn-document-text"></i>
-                        <span class="menu-title">Agenda de Vistoria</span>
-                    </a>
-                </li>
-
-                
                     
                 
-                
-                <li class="nav-item">
-                    <a class="nav-link" href="<?php echo e(route('admin.client.create.index')); ?>">
-                        <i class="menu-icon typcn typcn-document-text"></i>
-                        <span class="menu-title">Cadastro de Empresa</span>
-                    </a>
-                </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="<?php echo e(route('admin.payments.index')); ?>">
@@ -88,15 +113,6 @@
             <?php if('Administrador' == Auth::user()->level): ?>
 
                 
-                <li class="nav-item nav-category mt-2">Equipa de Vistoria</li>
-                <li class="nav-item">
-                    <a class="nav-link" href="<?php echo e(route('admin.employees.index')); ?>">
-                        <i class="menu-icon typcn typcn-document-text"></i>
-                        <span class="menu-title">Equipa de Vistoria </span>
-                    </a>
-                </li>
-
-
                 <li class="nav-item mb-5">
                     <a class="nav-link" href="<?php echo e(route('admin.user.index')); ?>">
                         <i class="menu-icon typcn typcn-document-text"></i>

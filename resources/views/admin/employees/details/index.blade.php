@@ -1,5 +1,5 @@
 @extends('layouts.merge.dashboard')
-@section('titulo', ' Detalhes de Integrate')
+@section('titulo', ' Detalhes de Equipa')
 
 @section('content')
 
@@ -7,8 +7,8 @@
     <div class="card mb-2">
         <div class="card-body">
             <h2 class="h5 page-title"><b>
-                    <a href="{{ url('admin/funcionários/list') }}">Listar Integrates</a>
-                    > Detalhes de Integrate - {{ $Employee->name }}
+                    <a href="{{ url('admin/funcionários/list') }}">Listar Equipa</a>
+                    > Detalhes de Equipa - {{ $Employee->name }}
 
                 </b></h2>
         </div>
@@ -60,6 +60,19 @@
                         </p>
                     </div>
 
+                     <div class="col-md-3">
+                        <p class="text-dark">
+                            <b>Ministerio</b><br>
+                            <small>{{ $Employee->ministry }} </small>
+                        </p>
+                    </div>
+
+                      <div class="col-md-3">
+                        <p class="text-dark">
+                            <b>Team Lider da Equipa</b><br>
+                            <small>{{ $Employee->teamLeader }} </small>
+                        </p>
+                    </div>
                     <div class="col-md-3">
                         <p class="text-dark">
                             <b>Foto </b><br>

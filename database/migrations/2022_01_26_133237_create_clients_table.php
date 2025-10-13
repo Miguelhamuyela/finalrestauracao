@@ -22,7 +22,7 @@ class CreateClientsTable extends Migration
             $table->string('nif');
           //  $table->string('representative');
           //  $table->string('TypesHotel');
-            $table->string('address');
+          //  $table->string('address');
             $table->string('origin')->nullable();
             $table->enum('clienttype', ['Singular', 'Colectivo' ,  'Nome Individual', 'Sociedade por Quotas',  'Sociedade por Quotas Pluripessoal',  'Sociedade por Quotas Unipessoal', 'Sociedade Anónima', 'Cooperativas'])->nullable();
 
