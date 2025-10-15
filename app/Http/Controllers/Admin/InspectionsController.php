@@ -116,7 +116,7 @@ class InspectionsController extends Controller
 
 
 
-    
+
 
  /**Imprimir Lista de Inspections */
     public function printInspection(Request $request)
@@ -137,8 +137,6 @@ class InspectionsController extends Controller
         return $pdf->setPaper('a4', 'landscape')->stream('pdf');
 
     }
-
-
 
     public function destroy($id)
     {

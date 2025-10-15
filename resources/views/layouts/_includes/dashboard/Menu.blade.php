@@ -31,7 +31,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('admin.client.create.index') }}">
+                    <a class="nav-link" href="{{ route('admin.client.list.index') }}">
                         <i class="menu-icon typcn typcn-document-text"></i>
                         <span class="menu-title">Cadastro de Empresa</span>
                     </a>
@@ -67,14 +67,14 @@
                     </a>
                 </li>
               --}}
-
+  {{-- auditoriums
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('admin.manufactures.list') }}">
                         <i class="menu-icon typcn typcn-document-text"></i>
                         <span class="menu-title">Fábrica de Software</span>
                     </a>
                 </li>
-
+ --}}
             @endif
             @if ('Finanças' == Auth::user()->level || 'Gestor' == Auth::user()->level || 'Reparação de Equipamentos' == Auth::user()->level || 'Administrador' == Auth::user()->level)
                 {{-- equipmentRepair

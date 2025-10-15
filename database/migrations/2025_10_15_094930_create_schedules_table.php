@@ -14,22 +14,19 @@ class CreateSchedulesTable extends Migration
     public function up()
     {
         Schema::create('schedules', function (Blueprint $table) {
-             $table->id();
+            $table->id();
             $table->string('name');
             $table->string('roomName');
             $table->string('site')->nullable();
             $table->string('email');
             $table->string('tel');
             $table->string('nif');
-            $table->enum('incubatorModel', ['Residente', 'Não Residente']);
+            $table->enum('incubatorModel', [ 'Nome Individual', 'Sociedade por Quotas',  'Sociedade por Quotas Pluripessoal',  'Sociedade por Quotas Unipessoal', 'Sociedade Anónima', 'Cooperativas'])->nullable();
             $table->longText('StartupDetails');
-
             $table->unsignedBigInteger('fk_Scheldules_id');
             $table->foreign('fk_Scheldules_id')->references('id')->on('scheldules')->onDelete('CASCADE')->onUpgrade('CASCADE');
-
             $table->unsignedBigInteger('fk_Payments_id');
             $table->foreign('fk_Payments_id')->references('id')->on('payments')->onDelete('CASCADE')->onUpgrade('CASCADE');
-
             $table->softDeletes();
             $table->timestamps();
 

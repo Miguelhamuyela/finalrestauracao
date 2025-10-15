@@ -27,7 +27,7 @@
                                     <th>NOME DA EMPRESA</th>
                                     <th>TELEFONE</th>
                                     <th>FIM DE CONTRATO</th>
-                                    <th>MODELO DE INCUBAÇÃO</th>
+                                    <th>TIPO DE EMPRESA</th>
                                     <th>STATUS</th>
                                     <th>ACÇÕES</th>
                                 </tr>

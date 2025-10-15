@@ -9,7 +9,7 @@
                 <div class="row">
                     <div class="col">
                         <h5><b>
-                                <a href="{{ url('admin/schedule/list') }}">Listar Agenda de Vistoria </a>
+                                <a href="{{ url('admin/schedule/list') }}">Ver a Listade  agenda de Vistoria </a>
                                 > Detalhes da Agenda de Vistoria  - {{ $schedule->name }}
 
 
@@ -50,7 +50,6 @@
 
             <div class="row justify-content-center">
                 <div class="col-12">
-
 
 
 
