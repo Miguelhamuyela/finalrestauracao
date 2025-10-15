@@ -30,31 +30,6 @@
                         <span class="menu-title">Equipa da Vistoria</span>
                     </a>
                 </li>
-
-
-
-
-                <li class="nav-item">
-                    <a class="nav-link" href="<?php echo e(route('admin.autinspection.list.index')); ?>">
-                        <i class="menu-icon typcn typcn-document-text"></i>
-                        <span class="menu-title">Autoasadasd</span>
-                    </a>
-                </li>
-
-
-
-
-
-
-
-
-
-
-                
-            <?php endif; ?>
-            <?php if('Finanças' == Auth::user()->level || 'Gestor' == Auth::user()->level || 'Reparação de Equipamentos' == Auth::user()->level || 'Administrador' == Auth::user()->level): ?>
-                
-                  
                 <li class="nav-item">
                     <a class="nav-link" href="<?php echo e(route('admin.client.create.index')); ?>">
                         <i class="menu-icon typcn typcn-document-text"></i>
@@ -62,34 +37,40 @@
                     </a>
                 </li>
 
-                
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo e(route('admin.auditoriums.list.index')); ?>">
+                    <a class="nav-link" href="<?php echo e(route('admin.schedule.list.index')); ?>">
                         <i class="menu-icon typcn typcn-document-text"></i>
                         <span class="menu-title">Agenda de Vistoria</span>
                     </a>
                 </li>
 
-
-                <li class="nav-item">
-                    <a class="nav-link" href="<?php echo e(route('admin.inspection.create.index')); ?>">
+                 <li class="nav-item">
+                    <a class="nav-link" href="<?php echo e(route('admin.autinspection.list.index')); ?>">
                         <i class="menu-icon typcn typcn-document-text"></i>
-                        <span class="menu-title">Vistoria</span>
+                        <span class="menu-title">Empresa Verificadas</span>
                     </a>
                 </li>
 
+                   
+                 
+
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo e(route('admin.manufactures.list')); ?>">
+                        <i class="menu-icon typcn typcn-document-text"></i>
+                        <span class="menu-title">Fábrica de Software</span>
+                    </a>
+                </li>
+
+            <?php endif; ?>
+            <?php if('Finanças' == Auth::user()->level || 'Gestor' == Auth::user()->level || 'Reparação de Equipamentos' == Auth::user()->level || 'Administrador' == Auth::user()->level): ?>
+                
+                  
+                   
             <?php endif; ?>
             <?php if('Finanças' == Auth::user()->level || 'Gestor' == Auth::user()->level || 'Administrador' == Auth::user()->level): ?>
                 
                
                 
-                <li class="nav-item">
-                    <a class="nav-link" href="<?php echo e(route('admin.startup.list.index')); ?>">
-                        <i class="menu-icon typcn typcn-document-text"></i>
-                        <span class="menu-title">Auto de Vistoria</span>
-                    </a>
-                </li>
-
                 
                     
                 
@@ -100,14 +81,7 @@
                         <span class="menu-title">Pagamentos</span>
                     </a>
                 </li>
-
-               <li class="nav-item">
-                    <a class="nav-link" href="<?php echo e(route('admin.coworks.list.index')); ?>">
-                        <i class="menu-icon typcn typcn-document-text"></i>
-                        <span class="menu-title">Licença Industrial Hoteleira</span>
-                    </a>
-                </li>
-
+               
             <?php endif; ?>
 
             <?php if('Administrador' == Auth::user()->level): ?>

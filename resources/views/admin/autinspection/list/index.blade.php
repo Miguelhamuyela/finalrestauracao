@@ -1,5 +1,5 @@
 @extends('layouts.merge.dashboard')
-@section('titulo', 'Lista de Vistoria de Empresa')
+@section('titulo', 'Lista de  Verificação de Empresa')
 
 @section('content')
     <div class="row">
@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-body row">
                     <div class="col-md-10">
-                        <h5><b>Lista de Vistoria de Empresa</b></h5>
+                        <h5><b>Lista de Verificação de Empresa</b></h5>
                     </div>
                     <div class="col-md-2 text-center">
                         <a href="{{ route('admin.autinspection.create.index') }}" class="btn btn-primary">Cadastrar</a>
@@ -25,10 +25,15 @@
                                 <tr class="text-center">
                                     <th>#</th>
                                     <th>EMPRESA</th>
-                                    <th>TELEFONE</th>
+                                    <th>TNº DE TELEFONE</th>
                                     <th>NIF</th>
-                                    <th>MODELO DE INCUBAÇÃO</th>
+                                    <th>Nº DE QUARTOS</th>
+                                    <th>Nº DE CAMAS</th>
+                                    <th>Nº DE MESAS</th>
+                                    <th>PERIODO DE VISTORIA</th>
                                     <th>STATUS</th>
+
+
                                     <th>ACÇÕES</th>
                                 </tr>
                             </thead>
@@ -38,8 +43,11 @@
                                         <td>{{ $item->id }}</td>
                                         <td>{{ $item->name }} </td>
                                         <td>{{ $item->tel }} </td>
+                                        <td>{{ $item->nif }} </td>
+                                        <td>{{ $item->numberRoomm }} </td>
+                                        <td>{{ $item->bedNumber }} </td>
+                                        <td>{{ $item->workforce }} </td>
                                         <td>{{ $item->scheldules->end }} </td>
-                                        <td>{{ $item->incubatorModel }} </td>
                                         @if ($item->payments->status == 'Pago')
                                             <td>
                                                 <div class="btn btn-success btn-fw btn-rounded text-dark ">

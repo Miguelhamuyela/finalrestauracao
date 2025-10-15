@@ -64,6 +64,23 @@ class AutnspectionsController extends Controller
             'document' => 'mimes:pdf,docx,xlsx',
 
 
+
+
+            'bedNumber' => 'max:255',
+            'tableNumber' => 'required|string|max:50',
+            'yearSelfinspection' => 'required|string|max:255',
+            'monthselfInspection' => 'max:50',
+            'workforce' => 'required|string|max:50',
+
+            'men' => 'required|string|max:255',
+            'women' => 'max:255',
+            'expatriateWork' => 'required|string|max:50',
+
+            'expatriateWork' => 'max:255',
+            'agreeInstallation' => 'required|string|max:255',
+
+
+
             /***Payment Information */
             'type' => 'required|string|max:255',
             'value' =>  'required|numeric|min:2',
@@ -93,7 +110,7 @@ class AutnspectionsController extends Controller
             'currency' => $request->currency,
             'status' => $request->status,
             'origin' => "Autinspection",
-            'code' =>  'DIGITAL' . "-" . rand() . "-" . date('Y')
+            'code' =>  'HAMUYELA' . "-" . rand() . "-" . date('Y')
         ]);
         $schedule = Scheldule::create($request->all());
 
@@ -107,6 +124,17 @@ class AutnspectionsController extends Controller
             'email' => $request->email,
             'tel' => $request->tel,
             'nif' => $request->nif,
+            'numberRoomm' => $request->numberRoomm,
+            'bedNumber' => $request->bedNumber,
+            'tableNumber' => $request->tableNumber,
+            'yearSelfinspection' => $request->yearSelfinspection,
+            'monthselfInspection' => $request->monthselfInspection,
+            'workforce' => $request->workforce,
+            'men' => $request->men,
+            'women' => $request->women,
+            'expatriateWork' => $request->expatriateWork,
+            'expatriateWork' => $request->expatriateWork,
+            'agreeInstallation' => $request->agreeInstallation,
             'incubatorModel' => $request->incubatorModel,
             'StartupDetails' => $request->StartupDetails,
             'fk_Payments_id' => $payment->id,
@@ -237,7 +265,7 @@ class AutnspectionsController extends Controller
         Payment::find($autinspection->fk_Payments_id)->update($request->all());
         Scheldule::find($autinspection->fk_Scheldules_id)->update($request->all());
 
-        $this->Logger->log('info', 'Actualizou Startups');
+        $this->Logger->log('info', 'Actualizou empresa');
         return redirect()->route('admin.autinspection.list.index')->with('edit', '1');
 
     }
@@ -263,7 +291,7 @@ class AutnspectionsController extends Controller
 
         Startup::find($id)->delete();
 
-        $this->Logger->log('info', 'Eliminou Startups');
-        return redirect()->route('admin.startup.list.index')->with('destroy', '1');
+        $this->Logger->log('info', 'Eliminou Uma empresa');
+        return redirect()->route('admin.autinspection.list.index')->with('destroy', '1');
     }
 }

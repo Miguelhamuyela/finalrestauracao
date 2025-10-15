@@ -137,6 +137,27 @@ Route::middleware(['auth'])->group(function () {
         Route::get('admin/autinspection/print/{id}', ['as' => 'admin.autinspection.print', 'uses' => 'Admin\AutnspectionsController@print']);
         /**End Autnspection */
 
+        /**schedule */
+        Route::get('admin/schedule/index', ['as' => 'admin.schedule.create.index', 'uses' => 'Admin\SchedulesController@create']);
+        Route::get('admin/schedule/list', ['as' => 'admin.schedule.list.index', 'uses' => 'Admin\SchedulesController@index']);
+        Route::post('admin/schedule/store', ['as' => 'admin.schedule.store', 'uses' => 'Admin\SchedulesController@store']);
+        Route::get('admin/schedule/edit/{id}', ['as' => 'admin.schedule.edit.index', 'uses' => 'Admin\SchedulesController@edit']);
+        Route::put('admin/schedule/update/{id}', ['as' => 'admin.schedule.update', 'uses' => 'Admin\SchedulesController@update']);
+        Route::get('admin/schedule/delete/{id}', ['as' => 'admin.schedule.delete', 'uses' => 'Admin\SchedulesController@destroy']);
+        Route::get('admin/schedule/show/{id}', ['as' => 'admin.schedule.show', 'uses' => 'Admin\SchedulesController@show']);
+
+        Route::get('admin/schedule/print/{id}', ['as' => 'admin.schedule.print', 'uses' => 'Admin\SchedulesController@print']);
+        /**End schedule */
+
+
+
+
+
+
+
+
+
+
 
         /**Cowork */
         Route::get('admin/cowork/index', ['as' => 'admin.coworks.create.index', 'uses' => 'Admin\CoworkController@create']);

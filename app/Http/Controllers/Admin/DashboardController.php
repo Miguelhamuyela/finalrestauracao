@@ -35,6 +35,7 @@ class DashboardController extends Controller
         $response['auditorium'] = Auditorium::count();
         $response['meetingRoom'] = MeetingRoom::count();
         $response['startup'] = Startup::count();
+        // $response['autinspection'] = Autinspection::count();
         $response['employee'] = Employee::count();
         $response['client'] = Client::count();
       //  $response['inspection'] = Inspection::count();

@@ -1,13 +1,13 @@
 @extends('layouts.merge.dashboardWithoutMenu')
 @section('titulo', 'Fatura Verificada')
 @section('content')
-   
+
     <div class="bg-white">
 
         <div class="col-md-6 grid-margin stretch-card mx-auto bg-secondary">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Fatura emitida pelo Sistema de Gestão do <b> DIGITAL.AO</b></h4>
+                    <h4 class="card-title">Fatura emitida pelo Sistema de Gestão do <b> AGOSTINHO MPANZU</b></h4>
 
                     <div class="template-demo">
 
@@ -24,7 +24,7 @@
                     <div class="text-center mt-5">
                         <img src="/dashboard/images/infosi.svg" width="150" class="mr-4">
                         <img src="/dashboard/images/minttics.jpg" width="300">
-            
+
                     </div>
                 </div>
             </div>
@@ -32,5 +32,5 @@
 
 
     </div>
-   
+
 @endsection

@@ -59,6 +59,8 @@ class StartupsController extends Controller
     public function store(Request $request)
     {
 
+
+        
         $request->validate([
             /**Startup informatio */
             'name' => 'required|string|max:255',
@@ -132,6 +134,11 @@ class StartupsController extends Controller
 
         $this->Logger->log('info', 'Cadastrou Startups');
         return redirect()->route('admin.startup.list.index')->with('create', '1');
+
+
+
+
+
     }
 
     public function show($id)
@@ -143,7 +150,7 @@ class StartupsController extends Controller
         return view('admin.startup.details.index', $response);
     }
 
-    
+
     public function print($id)
     {
 

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>INFOSI/Fatura de Pagamento-{{ date('d/m/Y', strtotime($lastUpdate)) }}</title>
+    <title>IMED/Fatura de Pagamento-{{ date('d/m/Y', strtotime($lastUpdate)) }}</title>
 
     <style>
         #footer {
@@ -33,16 +33,16 @@
     <header class="col-12 mt-2 row mb-5">
 
                 <div class="col-12">
-                    <img src="dashboard/images/logo_blue.png" alt="logo DIGITAL.AO" width="150" class="mt-3">
+                    <img src="dashboard/images/logo_blue.png" alt="IMED" width="150" class="mt-3">
                     <img src="" alt="" width="250">
                 </div>
 
         <p class="text-left mt-2">
             Luanda, Angola<br>
             Telef. (+244) 222 693 507<br>
-            Email: comercial@infosi.gov.ao<br>
-            Site: www.infosi.gov.ao<br>
-            NIF: <b>5000379263</b><br>
+            Email: mpanzu@julina.gov.ao<br>
+            Site: www.imed.gov.ao<br>
+            NIF: <b>XXXXXXXXX</b><br>
 
         </p>
         <p class="text-right">
@@ -150,7 +150,6 @@
 
         <small class="text-left text-dark">
             Documento Processado por Computador. <br>
-            OBS: O Pagamento Será Efectuado via RUPE, no Prazo de Trinta Dias (30 dias).
         </small>
 
         <div class="col-12 mt-5">
