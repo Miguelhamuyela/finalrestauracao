@@ -30,34 +30,51 @@
                         <span class="menu-title">Equipa da Vistoria</span>
                     </a>
                 </li>
-
-
-
-
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('admin.autinspection.list.index') }}">
+                    <a class="nav-link" href="{{ route('admin.client.create.index') }}">
                         <i class="menu-icon typcn typcn-document-text"></i>
-                        <span class="menu-title">Autoasadasd</span>
+                        <span class="menu-title">Cadastro de Empresa</span>
                     </a>
                 </li>
 
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('admin.schedule.list.index') }}">
+                        <i class="menu-icon typcn typcn-document-text"></i>
+                        <span class="menu-title">Agenda de Vistoria</span>
+                    </a>
+                </li>
 
+                 <li class="nav-item">
+                    <a class="nav-link" href="{{ route('admin.autinspection.list.index') }}">
+                        <i class="menu-icon typcn typcn-document-text"></i>
+                        <span class="menu-title">Empresa Verificadas</span>
+                    </a>
+                </li>
 
+                   {{-- auditoriums
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('admin.auditoriums.list.index') }}">
+                        <i class="menu-icon typcn typcn-document-text"></i>
+                        <span class="menu-title">Agenda de Vistoria</span>
+                    </a>
+                </li>
+                   --}}
+                 {{-- auditoriums
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('admin.autinspection.list.index') }}">
+                        <i class="menu-icon typcn typcn-document-text"></i>
+                        <span class="menu-title">Empresa Verificadas</span>
+                    </a>
+                </li>
+              --}}
 
-
-
-
-
-
-
-                {{-- manufactures
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('admin.manufactures.list') }}">
                         <i class="menu-icon typcn typcn-document-text"></i>
                         <span class="menu-title">Fábrica de Software</span>
                     </a>
                 </li>
-                --}}
+
             @endif
             @if ('Finanças' == Auth::user()->level || 'Gestor' == Auth::user()->level || 'Reparação de Equipamentos' == Auth::user()->level || 'Administrador' == Auth::user()->level)
                 {{-- equipmentRepair
@@ -68,30 +85,22 @@
                     </a>
                 </li>
                 --}}
-                  {{-- Clients --}}
+                  {{-- Clients
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('admin.client.create.index') }}">
                         <i class="menu-icon typcn typcn-document-text"></i>
                         <span class="menu-title">Cadastro de Empresa</span>
                     </a>
                 </li>
-
-                {{-- auditoriums --}}
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('admin.auditoriums.list.index') }}">
-                        <i class="menu-icon typcn typcn-document-text"></i>
-                        <span class="menu-title">Agenda de Vistoria</span>
-                    </a>
-                </li>
-
-
+                 --}}
+                   {{-- auditoriums
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('admin.inspection.create.index') }}">
                         <i class="menu-icon typcn typcn-document-text"></i>
                         <span class="menu-title">Vistoria</span>
                     </a>
                 </li>
-
+               --}}
             @endif
             @if ('Finanças' == Auth::user()->level || 'Gestor' == Auth::user()->level || 'Administrador' == Auth::user()->level)
                 {{-- elernings
@@ -105,14 +114,14 @@
                {{--
                 <li class="nav-item nav-category mt-2">Agendamento de Vistoria</li>
                  --}}
-                {{-- startups --}}
+                {{-- startups
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('admin.startup.list.index') }}">
                         <i class="menu-icon typcn typcn-document-text"></i>
                         <span class="menu-title">Auto de Vistoria</span>
                     </a>
                 </li>
-
+                --}}
                 {{--
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('admin.meetingRoom.list.index') }}">
@@ -140,14 +149,14 @@
                         <span class="menu-title">Pagamentos</span>
                     </a>
                 </li>
-
+               {{-- PayChart
                <li class="nav-item">
                     <a class="nav-link" href="{{ route('admin.coworks.list.index') }}">
                         <i class="menu-icon typcn typcn-document-text"></i>
                         <span class="menu-title">Licença Industrial Hoteleira</span>
                     </a>
                 </li>
-
+                --}}
             @endif
 
             @if ('Administrador' == Auth::user()->level)

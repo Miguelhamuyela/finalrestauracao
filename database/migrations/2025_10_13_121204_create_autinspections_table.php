@@ -6,11 +6,8 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateAutinspectionsTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+
+    
     public function up()
     {
         Schema::create('autinspections', function (Blueprint $table) {
@@ -22,6 +19,19 @@ class CreateAutinspectionsTable extends Migration
             $table->string('tel');
             $table->string('nif');
           //  $table->enum('incubatorModel', ['Residente', 'Não Residente']);
+
+            $table->string('numberRoomm');
+            $table->string('bedNumber');
+            $table->string('tableNumber');
+            $table->string('yearSelfinspection');
+
+            $table->string('monthselfInspection');
+            $table->string('workforce');
+            $table->string('men');
+            $table->string('women');
+            $table->string('expatriateWork');
+            $table->string('agreeInstallation');
+
             $table->longText('StartupDetails');
 
             $table->unsignedBigInteger('fk_Scheldules_id');

@@ -7,8 +7,8 @@
               class="form-control border rounded" placeholder="Nome do Membro" required>
       </div>
   </div>
-  
-  
+
+
   <div class="col-md-4">
     <div class="form-group">
         <label for="nif">NIF<small class="text-danger">*</small></label>
@@ -16,12 +16,12 @@
             class="form-control border rounded" placeholder="Nº de Identificação Fiscal" required>
     </div>
   </div>
-  
+
   </div>
-  
-  
+
+
   <div class="row">
-  
+
   <div class="col-md-4">
     <div class="form-group">
         <label for="email">Email<small class="text-danger">*</small></label>
@@ -29,7 +29,7 @@
             class="form-control border rounded" placeholder="Email" required>
     </div>
   </div>
-  
+
   <div class="col-md-4">
     <div class="form-group">
         <label for="tel">Telefone<small class="text-danger">*</small></label>
@@ -37,7 +37,7 @@
             class="form-control border rounded" placeholder="Telefone" required>
     </div>
   </div>
-  
+
   <div class="col-md-4">
     <div class="form-group">
         <label for="tel">Ocupação <small class="text-danger">*</small></label>

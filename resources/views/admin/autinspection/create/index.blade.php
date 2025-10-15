@@ -1,5 +1,5 @@
 @extends('layouts.merge.dashboard')
-@section('titulo', 'Cadastrar Vistoria de Empresa')
+@section('titulo', 'Cadastrar Empresa Verificada')
 
 @section('content')
     <div class="row">
@@ -19,7 +19,7 @@
                             </div>
                         @endif
                         <h4 class="card-title"><b>
-                                <a href="{{ url('admin/autinspection/list') }}">Listar Vistoria de Empresas</a>
+                                <a href="{{ url('admin/autinspection/list') }}">Listar Empresas Verificadas</a>
                                 > Empresa
                             </b></h4>
                         <hr>
@@ -29,7 +29,7 @@
 
 
                     <div class="card-body bg-light">
-                        <h4 class="card-title"><b>Período do Contrato</b></h4>
+                        <h4 class="card-title"><b>Período da Vistoria</b></h4>
                         <hr>
                         @include('forms._formScheldules.index')
                     </div>

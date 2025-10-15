@@ -43,7 +43,7 @@
                 <div class="row">
 
                     <div class="col-12 mt-2">
-                        <h5 class=""><b>Informações da Startup </b> </h5>
+                        <h5 class=""><b>Informações da Empresa Realizada </b> </h5>
                         <hr>
                     </div>
 

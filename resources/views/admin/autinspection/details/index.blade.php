@@ -1,5 +1,5 @@
 @extends('layouts.merge.dashboard')
-@section('titulo', ' Detalhes da Vistoria de Empresa')
+@section('titulo', ' Detalhes da Empresa Verificada')
 
 @section('content')
 
@@ -9,8 +9,8 @@
                 <div class="row">
                     <div class="col">
                         <h5><b>
-                                <a href="{{ url('admin/autinspection/list') }}">Listar Vistoria de Empresa</a>
-                                > Detalhes da Vistoria de Empresa - {{ $autinspection->name }}
+                                <a href="{{ url('admin/autinspection/list') }}">Listar Empresa Verificada</a>
+                                > Detalhes da Empresa Verificada - {{ $autinspection->name }}
 
 
                             </b></h5>
@@ -58,7 +58,7 @@
 
 
                         <div class="col-12 mt-2">
-                            <h5 class=""><b>Informações sobre Vistoria da Empresas </b> </h5>
+                            <h5 class=""><b>Informações sobre Verificação </b> </h5>
                             <hr>
                         </div>
                         <div class="col-12 mb-5">
@@ -92,43 +92,88 @@
 
                                 <div class="col-md-3">
                                     <p class="text-dark">
-                                        <b>Sala</b><br>
-                                        <small> {{ $autinspection->roomName }}</small>
+                                        <b>Nº DE QUARTOS</b><br>
+                                        <small> {{ $autinspection->numberRoomm }}</small>
                                     </p>
                                 </div>
 
                                 <div class="col-md-3">
                                     <p class="text-dark">
-                                        <b>Site</b><br>
-                                        <small> {{ $autinspection->site }}</small>
+                                        <b>Nº DE CAMAS</b><br>
+                                        <small> {{ $autinspection->bedNumber }}</small>
                                     </p>
                                 </div>
 
                                 <div class="col-md-3">
                                     <p class="text-dark">
-                                        <b>Modelo de Incubadora</b><br>
+                                        <b>FORÇA DE TRABALHO</b><br>
+                                        <small> {{ $autinspection->workforce }}</small>
+                                    </p>
+                                </div>
+
+
+                               <div class="col-md-3">
+                                    <p class="text-dark">
+                                        <b>HOMENS</b><br>
+                                        <small> {{ $autinspection->men }}</small>
+                                    </p>
+                                </div>
+
+                               <div class="col-md-3">
+                                    <p class="text-dark">
+                                        <b>MULHERES</b><br>
+                                        <small> {{ $autinspection->women }}</small>
+                                    </p>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <p class="text-dark">
+                                        <b>EXPATRIADOS</b><br>
+                                        <small> {{ $autinspection->expatriateWork }}</small>
+                                    </p>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <p class="text-dark">
+                                        <b>CONCORDAR COM A INSTALAÇAO</b><br>
+                                        <small> {{ $autinspection->agreeInstallation }}</small>
+                                    </p>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <p class="text-dark">
+                                        <b>MES DA INSPEÇAO</b><br>
+                                        <small> {{ $autinspection->monthselfInspection }}</small>
+                                    </p>
+                                </div>
+
+                                 <div class="col-md-3">
+                                    <p class="text-dark">
+                                        <b>ANO DA INSPEÇAO</b><br>
+                                        <small> {{ $autinspection->yearSelfinspection }}</small>
+                                    </p>
+                                </div>
+
+
+                                <div class="col-md-3">
+                                    <p class="text-dark">
+                                        <b>CLASSIFICAÇAO DA EMPRESA </b><br>
                                         <small> {{ $autinspection->incubatorModel }}</small>
                                     </p>
                                 </div>
 
-
-
-
                                 <div class="col-md-3">
                                     <p class="text-dark">
-                                        <b>Detalhes Sobre a Empresa</b><br>
+                                        <b>Detalhes Sobre a verificação da Empresa</b><br>
                                         <small> {{ $autinspection->StartupDetails }}</small>
                                     </p>
                                 </div>
-
 
 
                         @isset($autinspection->startupDocuments)
                         <div class="col-md-6">
                             <p class="text-dark">
                                 <b>Documentação</b><br>
-
-
 
 
                                 @foreach ($autinspection->startupDocuments as $item)
@@ -147,7 +192,7 @@
 
 
                         <div class="col-12 mt-2">
-                            <h5 class=""><b>Período Do Contrato </b> </h5>
+                            <h5 class=""><b>Período Da Vistoria</b> </h5>
                             <hr>
                         </div>
 
@@ -155,13 +200,13 @@
                             <div class="row">
                                 <div class="col-md-3">
                                     <p class="text-dark">
-                                        <b>Inicio do Contracto</b><br>
+                                        <b>INICIO DA VISTORIA</b><br>
                                         <small> {{ $autinspection->scheldules->started }}</small>
                                     </p>
                                 </div>
                                 <div class="col-md-3">
                                     <p class="text-dark">
-                                        <b>Fim do Contracto</b><br>
+                                        <b>FIM VISTORIA</b><br>
                                         <small> {{ $autinspection->scheldules->end }}</small>
                                     </p>
                                 </div>
