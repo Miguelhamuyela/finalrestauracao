@@ -26,7 +26,7 @@
 
 <body style='height:auto; width:100%; background: url("dashboard/images/digital.canvas.png") no-repeat center;'>
     <header>
-        <img src="dashboard/images/logo_blue.png" alt="logo digital.ao" width="200">
+        <img src="dashboard/images/logo_blue.png" alt="logo vistoria" width="200">
         <br>
         <b>Data:</b> {{ date('d-m-Y') }}
         <br>
@@ -92,12 +92,12 @@
 
 
                         <div style="display: inline-block;" class="mr-4">
-                            <b>Modelo de Incubadora</b>
+                            <b>Tipo de Empresa</b>
                             <p>{{$SingleAutinspection->incubatorModel}}</p>
                         </div>
 
                         <div style="display: inline-block;" class="mr-4">
-                            <b> Detalhes Sobre a Startup</b>
+                            <b> Detalhes Sobre a Empresa</b>
                             <p>{{$SingleAutinspection->StartupDetails }}</p>
                         </div>
 
@@ -108,7 +108,7 @@
 
 
                     <div class="col-12 mt-2">
-                        <h5 class=""><b>Período Do Contrato </b> </h5>
+                        <h5 class=""><b>Período de Vistoria</b> </h5>
                         <hr>
                     </div>
 

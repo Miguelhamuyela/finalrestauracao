@@ -12,7 +12,7 @@
     <title>Relatório de Pagamentos - {{ date('d-m-Y') }}</title>
 
     <style>
-      
+
         #footer {
             padding-top: 10px;
             padding-bottom: 0px;
@@ -27,7 +27,7 @@
 <body style='height:auto; width:100%; background: url("dashboard/images/digital.canvas.png") no-repeat center;'>
 
 
-        <img src="dashboard/images/logo_blue.png" alt="logo digital.ao" width="200">
+        <img src="dashboard/images/logo_blue.png" alt="logo vistoria" width="200">
 
         <p>
         <h2 class="text-center">Relatório de Pagamentos</h2>
@@ -106,7 +106,7 @@
 
     <footer class="col-12 mt-2" id="footer">
         <div class="text-right">
-            <img src="dashboard/images/minttics.jpg" width="350">
+            <img src="dashboard/images/hamuyela.jpg" width="350">
         </div>
     </footer>
 </body>

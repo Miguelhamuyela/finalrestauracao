@@ -4,7 +4,7 @@
 
     <div class="card shadow">
         <div class="card-body">
-            <h2 class="my-5 text-center">Criar conta no Sistema de Gestão do <b>DIGITAL.AO</b></h2>
+            <h2 class="my-5 text-center">Criar conta no Sistema de Gestão de <b> Vistoria de Restauraçao</b></h2>
 
             @if ($errors->any())
                 <div class="alert alert-danger">

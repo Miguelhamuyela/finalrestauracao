@@ -164,7 +164,7 @@ class AutnspectionsController extends Controller
     {
            $response['autinspection'] = Autinspection::with('startupDocuments','payments', 'scheldules', 'members')->find($id);
 
-        $this->Logger->log('info', 'Detalhes de Startups');
+        $this->Logger->log('info', 'Detalhes de Empresa Verificada');
         return view('admin.autinspection.details.index', $response);
     }
 
@@ -284,12 +284,12 @@ class AutnspectionsController extends Controller
 
         Payment::where('id', $sp->fk_Payments_id)->delete();
         Scheldule::where('id', $sp->fk_Scheldules_id)->delete();
-        Member::where('fk_startups_id', $id)->delete();
-        DocumentsStartup::where('fk_startups_id', $id)->delete();
+        Member::where('fk_autinspections_id', $id)->delete();
+        DocumentsStartup::where('fk_autinspections_id', $id)->delete();
         Client::where('name', $sp->name)->delete();
 
 
-        Startup::find($id)->delete();
+        Autinspection::find($id)->delete();
 
         $this->Logger->log('info', 'Eliminou Uma empresa');
         return redirect()->route('admin.autinspection.list.index')->with('destroy', '1');

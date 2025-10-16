@@ -7,14 +7,11 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-body row">
-                    <div class="col-md-9">
-                        <h5><b>Lista de Empresas</b></h5>
+                    <div class="col-md-10">
+                        <h5><b>Lista de Empresa Inscritos</b></h5>
                     </div>
-                    <div class="col-md-3 text-center">
-                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                            <i class="fa fa-file-pdf-o text-white"></i>Imprimir Relatório
-                        </a>
-
+                    <div class="col-md-2 text-center">
+                        <a href="{{ route('admin.client.create.index') }}" class="btn btn-primary">Cadastrar</a>
                     </div>
                 </div>
             </div>

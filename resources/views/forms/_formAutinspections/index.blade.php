@@ -211,38 +211,6 @@
             class="form-control border rounded" placeholder="Numero de Mulheres" required>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div>
 
 
