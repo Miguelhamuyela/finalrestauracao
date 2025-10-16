@@ -35,7 +35,7 @@
                             <div class="d-flex">
                                 <div class="wrapper">
                                     <h3 class="mb-0 font-weight-semibold">{{ $employee }}</h3>
-                                    <a class="mb-0 font-weight-medium text-primary h5" href="{{ route('admin.employees.index') }}">Funcionários</a>
+                                    <a class="mb-0 font-weight-medium text-primary h5" href="{{ route('admin.employees.index') }}">Equipa de Vistoria</a>
                                     <p class="mb-0 text-muted">{{ $employee/100 }}%</p>
                                 </div>
 

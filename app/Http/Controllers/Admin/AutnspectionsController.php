@@ -27,8 +27,9 @@ class AutnspectionsController extends Controller
 
     public function index()
     {
+        $response['autinspection'] = Autinspection::get();
         $response['autinspections'] = Autinspection::with('startupDocuments','payments', 'scheldules', 'members')->get();
-        $this->Logger->log('info', 'Lista de autinspection');
+        $this->Logger->log('info', 'Lista uma Agenda de Vistoria');
         return view('admin.autinspection.list.index', $response);
     }
 
@@ -39,7 +40,7 @@ class AutnspectionsController extends Controller
      */
     public function create()
     {
-        $this->Logger->log('info', 'Criar autinspection');
+        $this->Logger->log('info', 'Criar Agenda de Vistoria');
         return view('admin.autinspection.create.index');
     }
 
