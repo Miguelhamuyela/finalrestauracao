@@ -19,6 +19,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-lg-2 col-md-6 mt-md-0 mt-4">
                             <div class="d-flex">
                                 <div class="wrapper">
@@ -31,6 +32,9 @@
                                 </div>
                             </div>
                         </div>
+
+
+
                         <div class="col-lg-2 col-md-6 mt-md-0 mt-4">
                             <div class="d-flex">
                                 <div class="wrapper">
@@ -167,7 +171,6 @@
                 <div class="card-body">
                     <h4 class="card-title mb-0">Registo de Actividades</h4>
                     <div class="d-flex flex-column flex-lg-row">
-
 
                     </div>
                     <div class="d-flex flex-column flex-lg-row">

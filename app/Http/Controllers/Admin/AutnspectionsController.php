@@ -40,6 +40,7 @@ class AutnspectionsController extends Controller
      */
     public function create()
     {
+
         $this->Logger->log('info', 'Criar Agenda de Vistoria');
         return view('admin.autinspection.create.index');
     }
@@ -53,19 +54,12 @@ class AutnspectionsController extends Controller
     public function store(Request $request)
     {
          $request->validate([
-            /**Startup informatio */
             'name' => 'required|string|max:255',
-           // 'roomName' => 'required|string|max:255',
-          //  'site' => 'max:255',
             'email' => 'required|string|max:255',
             'tel' => 'max:50',
             'nif' => 'required|string|max:50',
-          //  'incubatorModel' => 'required|string|max:50',
             'StartupDetails' => 'required|string|min:5',
             'document' => 'mimes:pdf,docx,xlsx',
-
-
-
 
             'bedNumber' => 'max:255',
             'tableNumber' => 'required|string|max:50',
@@ -115,9 +109,6 @@ class AutnspectionsController extends Controller
         ]);
         $schedule = Scheldule::create($request->all());
 
-
-
-
         $autinspection = Autinspection::create([
             'name' => $request->name,
            // 'roomName' => $request->roomName,
@@ -151,7 +142,7 @@ class AutnspectionsController extends Controller
             'origin' => "Autinspection"
         ]);
 
-        $this->Logger->log('info', 'Cadastrou autinspection');
+        $this->Logger->log('info', 'Cadastrou uma agenda de Vistoria');
         return redirect()->route('admin.autinspection.list.index')->with('create', '1');
     }
 
@@ -163,9 +154,9 @@ class AutnspectionsController extends Controller
      */
     public function show($id)
     {
-           $response['autinspection'] = Autinspection::with('startupDocuments','payments', 'scheldules', 'members')->find($id);
-
-        $this->Logger->log('info', 'Detalhes de Empresa Verificada');
+        $response['autinspection'] = Autinspection::with('startupDocuments','payments', 'scheldules', 'members')->find($id);
+        $response['autinspection'] = Autinspection::get();
+        $this->Logger->log('info', 'Detalhes de uma agenda Verificada');
         return view('admin.autinspection.details.index', $response);
     }
 
@@ -174,27 +165,28 @@ class AutnspectionsController extends Controller
     public function print($id)
     {
 
-        $this->Logger->Log('info', 'Imprimiu Informações sobre a autinspection com id ' . $id);
+        $this->Logger->Log('info', 'Imprimiu Informações sobre a uma agenda de vistoria com id ' . $id);
 
         $data = autinspection::where('id', $id)->with('payments', 'scheldules')->first();
         $response['singleStartup'] = $data;
 
         $pdf = PDF::loadView('pdf/singleStartup/index', $response);
         $pdf->setPaper('A3', 'landscape');
-        return $pdf->stream('Emitiu informações sobre a autinspection com id ' . $data->id . ".pdf");
+        return $pdf->stream('Emitiu informações sobre a agenda vistoria com id ' . $data->id . ".pdf");
     }
 
 
 
     public function edit($id)
     {
+        $response['autinspection'] = Autinspection::find($id);
         $middle = autinspection::find($id);
         $response['autinspection'] = $middle;
 
         $response['scheldule'] =  Helper::scheldule($middle->fk_Scheldules_id);
         $response['payment'] =  Helper::payment($middle->fk_Payments_id);
 
-        $this->Logger->log('info', 'Editar Startups');
+        $this->Logger->log('info', 'Editar agenda de vistoria');
         return view('admin.autinspection.edit.index', $response);
     }
 
@@ -255,7 +247,7 @@ class AutnspectionsController extends Controller
         $autinspection = Autinspection::find($id);
 
 
-        Client::where([['nif', $autinspection->nif], ['origin', '=', 'autinspection']])->update([
+        Client::where([['nif', $autinspection->nif], ['origin', '=', 'agenda de vistoria']])->update([
             'name' => $autinspection->name,
             'email' => $autinspection->email,
             'tel' => $autinspection->tel,
@@ -265,20 +257,13 @@ class AutnspectionsController extends Controller
 
         Payment::find($autinspection->fk_Payments_id)->update($request->all());
         Scheldule::find($autinspection->fk_Scheldules_id)->update($request->all());
-
-        $this->Logger->log('info', 'Actualizou empresa');
+         $response['autinspection'] = Autinspection::get();
+        $this->Logger->log('info', 'Actualizou agenda de vistoria');
         return redirect()->route('admin.autinspection.list.index')->with('edit', '1');
 
     }
 
 
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function destroy($id)
     {
          $sp = Autinspection::find($id);
@@ -292,7 +277,7 @@ class AutnspectionsController extends Controller
 
         Autinspection::find($id)->delete();
 
-        $this->Logger->log('info', 'Eliminou Uma empresa');
+        $this->Logger->log('info', 'Eliminou  uma agenda de vistoria');
         return redirect()->route('admin.autinspection.list.index')->with('destroy', '1');
     }
 }
