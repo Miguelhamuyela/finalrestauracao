@@ -23,7 +23,7 @@
             </li>
 
             <?php if('Finanças' == Auth::user()->level || 'Gestor' == Auth::user()->level || 'Fábrica de Software' == Auth::user()->level || 'Administrador' == Auth::user()->level): ?>
-                <li class="nav-item nav-category mt-2">Cadastramento da Equipa</li>
+                <li class="nav-item nav-category mt-2"></li>
                 <li class="nav-item">
                     <a class="nav-link" href="<?php echo e(route('admin.employees.index')); ?>">
                         <i class="menu-icon typcn typcn-document-text"></i>

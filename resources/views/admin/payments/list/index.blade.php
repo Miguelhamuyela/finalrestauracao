@@ -27,7 +27,7 @@
                                 <i class="mdi mdi-poll-box icon-lg text-primary d-flex align-items-center"></i>
                                 <div class="d-flex flex-column ms-4">
                                     <span class="d-flex flex-column">
-                                        <p class="mb-0">Quantidade de Status Pago</p>
+                                        <p class="mb-0">Quantidade  Pago</p>
                                         <h4 class="font-weight-bold">{{ $paidStatus }}</h4>
                                     </span>
                                 </div>
@@ -40,7 +40,7 @@
                                 <i class="mdi mdi-poll-box icon-lg text-primary d-flex align-items-center"></i>
                                 <div class="d-flex flex-column ms-4">
                                     <span class="d-flex flex-column">
-                                        <p class="mb-0">Quantidade de Status Não Pago</p>
+                                        <p class="mb-0">Quantidade Não Pago</p>
                                         <h4 class="font-weight-bold">{{ $unpaidStatus }}</h4>
                                     </span>
                                 </div>
@@ -53,7 +53,7 @@
                                 <i class="mdi mdi-poll-box icon-lg text-primary d-flex align-items-center"></i>
                                 <div class="d-flex flex-column ms-4">
                                     <span class="d-flex flex-column">
-                                        <p class="mb-0">Valor Total Pagamentos</p>
+                                        <p class="mb-0">Valor Total de Pagamentos</p>
                                         <h4 class="font-weight-bold">{!! number_format($totalPayments, 2, ',', '.') . ' ' . 'KZ' !!}</h4>
                                     </span>
                                     <small class="text-muted">Valor Total de Pagamentos de Todos os Serviços</small>
