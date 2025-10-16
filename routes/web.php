@@ -150,15 +150,6 @@ Route::middleware(['auth'])->group(function () {
         /**End schedule */
 
 
-
-
-
-
-
-
-
-
-
         /**Cowork */
         Route::get('admin/cowork/index', ['as' => 'admin.coworks.create.index', 'uses' => 'Admin\CoworkController@create']);
         Route::get('admin/cowork/list', ['as' => 'admin.coworks.list.index', 'uses' => 'Admin\CoworkController@index']);

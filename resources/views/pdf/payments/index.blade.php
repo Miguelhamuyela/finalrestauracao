@@ -38,8 +38,8 @@
 
         <b>Data:</b> {{ date('d-m-Y') }}
         <br>
-        <b>Quantidade de Status Pago: </b>{{ $paidStatus }}<br>
-        <b>Quantidade de Status Não Pago: </b>{{ $unpaidStatus }}<br>
+        <b>Quantidade Pago: </b>{{ $paidStatus }}<br>
+        <b>Quantidade Não Pago: </b>{{ $unpaidStatus }}<br>
         <b> Valor Total de Pagamentos: </b>{!! number_format($totalPayments, 2, ',', '.') . ' ' . 'KZ' !!}
 
         </p>

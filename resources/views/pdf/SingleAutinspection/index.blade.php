@@ -50,7 +50,7 @@
                     <div style="" class="col-12 mb-5">
 
                         <div style="display: inline-block;" class="mr-4">
-                            <b>Nome da Startup</b>
+                            <b>Nome da Empresa</b>
                         <p>{{$SingleAutinspection->name}}</p>
 
                         </div>
@@ -69,14 +69,6 @@
                             <b>Email</b>
                             <p>{{$SingleAutinspection->email}}</p>
                         </div>
-
-
-                        <div style="display: inline-block;" class="mr-4">
-                            <b>SalaFSDFDSFDSFDSF</b>
-                            <p>{{$SingleAutinspection->roomName}}</p>
-                        </div>
-
-
 
 
                         @isset($SingleAutinspection->site)

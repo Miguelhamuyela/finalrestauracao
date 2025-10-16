@@ -9,7 +9,7 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Relatório De QWEQWEWEW - {{ date('d-m-Y') }}</title>
+    <title>Relatório De Pagamento - {{ date('d-m-Y') }}</title>
     <style>
         #footer {
             padding-top: 10px;
@@ -52,7 +52,7 @@
                         <th>NIF</th>
                     @endisset
                     @if ($checkbox['origin'] == 'all')
-                        <th>ORIGEMfafdsfdsf</th>
+                        <th>ORIGEM</th>
                     @endif
                     @isset($checkbox['tel'])
                         <th>TELEFONE</th>
@@ -102,7 +102,7 @@
 
     <footer class="col-12 mt-2" id="footer">
         <div class="text-right">
-            <img src="dashboard/images/minttics.jpg" width="350">
+            <img src="dashboard/images/asasdasd.jpg" width="350">
         </div>
     </footer>
 </body>

@@ -13,14 +13,11 @@
                 <div class="modal-body">
 
                     <div class="form-group row">
-                        <label class="col-md-3 col-form-label">Origem <span class="text-danger">*</span></label>
+                        <label class="col-md-3 col-form-label">Origem <span class="text-danger"></span></label>
                         <div class="col-md-9">
                             <select required name="origin" class="form-control">
-                                <option value="employees">Equipa de Vistoria</option>
-                                <option value="Fábrica de Software">Fábrica de Software</option>
-                                <option value="schedule">Agenda de Vistoria</option>
-                                <option value="Startup">Vistoria de Empresa</option>
-                                <option value="autinspection">Empresas Verificadas</option>
+                                <option value="Agenda de Vistoria">Agenda de Vistoria</option>
+                                <option value="Empresas Verificadas">Empresas Verificadas</option>
                                 <option value="client">Empresas Escritas</option>
                                 <option value="all">Todos Pagamentos</option>
                             </select>
