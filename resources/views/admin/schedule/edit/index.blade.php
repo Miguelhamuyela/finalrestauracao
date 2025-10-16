@@ -44,7 +44,7 @@
                     </div>
 
 
-                    @if (($startup->payments->status == 'Pago'))
+                    @if (($schedule->payments->status == 'Pago'))
                     <div class="card-body bg-light">
                         <h4 class="card-title "><b>Pagamentos</b></h4>
                         <hr>

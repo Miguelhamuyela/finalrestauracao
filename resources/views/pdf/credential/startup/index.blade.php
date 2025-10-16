@@ -1,5 +1,5 @@
 @extends('layouts.merge.dashboardWithoutMenu')
-@section('titulo', 'Credenciamento dos Membros das Startup')
+@section('titulo', 'Credenciamento  das Empresas')
 
 @section('content')
 
@@ -18,13 +18,13 @@
                             <img class=" justify-content-center  img-fluid rounded  " src="/dashboard/images/user.png"
                             width="150" height="150" alt="profile image">
                         </div>
-                            
+
                         @else
                         <div class="col-lg-4 text-center my-3  mt-4 mb-2">
                             <img class=" justify-content-center  img-fluid rounded  " src="/storage/{{$member->foto}}"
                             width="150" height="150" alt="profile image">
                         </div>
-                            
+
                         @endif
 
                         <h4 class="text-left mt-5 mb-2"><b> Credenciamento </b><br>{{ $member->name }}</h4>
@@ -58,10 +58,10 @@
 
                     <div class="col-md-12">
                         <div class="row">
-                            <a href="https://www.instagram.com/digital.ao2022/" target="_blank" class="col-2">
+                            <a href="https://www.instagram.com/VISTORIA2022/" target="_blank" class="col-2">
                                 <img src="/dashboard/images/social_icons/instagram.svg" alt="instagram">
                             </a>
-                            <a href="https://www.facebook.com/TEC.DIGITAL.AO" target="_blank" class="col-2">
+                            <a href="https://www.facebook.com/VISTORIA" target="_blank" class="col-2">
                                 <img src="/dashboard/images/social_icons/facebook.svg" alt="facebook">
                             </a>
                         </div>

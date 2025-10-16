@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta name="description" content="sistema de gestão do digital.ao">
+    <meta name="description" content="sistema de gestão  de Vistoria de Restauraçao.ao">
     <meta name="author" content="Developers Maria Fernandes">
 
     <title>@yield('titulo') - Gestão de Vistoria de Empresa</title>

@@ -39,10 +39,10 @@ class EmployeeController extends Controller
             'teamLeader' => 'required|string|max:255',
             'description' => 'required|string|max:255',
             'email' => 'required|string|email',
-            'tel' => 'max:12',
-            'address' => 'max:20',
-            'nif' => 'required|string|max:50',
-            'occupation' => 'required|string|max:100',
+            'tel' => 'max:255',
+            'address' => 'max:255',
+            'nif' => 'required|string|max:255',
+            'occupation' => 'required|string|max:255',
             'ministry' => 'required|string|max:255',
             'departament' => 'required|string|max:255',
             'photoEmployee' => 'mimes:jpg,png,gif,SVG,EPS'
@@ -54,6 +54,7 @@ class EmployeeController extends Controller
         } else {
             $file = null;
         }
+
         $employee = Employee::create([
             'name' => $request->name,
             'email' => $request->email,
@@ -98,10 +99,10 @@ class EmployeeController extends Controller
             'teamLeader' => 'required|string|max:255',
             'description' => 'required|string|max:255',
             'email' => 'required|string|email',
-            'tel' => 'max:12',
-            'address' => 'max:20',
-            'nif' => 'required|string|max:50',
-            'occupation' => 'required|string|max:100',
+            'tel' => 'max:255',
+            'address' => 'max:255',
+            'nif' => 'required|string|max:255',
+            'occupation' => 'required|string|max:255',
             'ministry' => 'required|string|max:255',
             'departament' => 'required|string|max:255',
             'photoEmployee' => 'mimes:jpg,png,gif,SVG,EPS'
