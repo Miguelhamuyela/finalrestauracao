@@ -97,8 +97,8 @@
                 </div>
                 <div class="col-lg-6 col-12">
                     <div class="about-five-content">
-                        <h6 class="small-title text-lg">OUR STORY</h6>
-                        <h2 class="main-title fw-bold">Our team comes with the experience and knowledge</h2>
+                        <h6 class="small-title text-lg">NOSSA HISTÓRIA</h6>
+                        <h2 class="main-title fw-bold">Nossa equipe vem com experiência e conhecimento</h2>
                         <div class="about-five-tab">
                             <nav>
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -107,10 +107,10 @@
                                         aria-selected="true">Who We Are</button>
                                     <button class="nav-link" id="nav-vision-tab" data-bs-toggle="tab"
                                         data-bs-target="#nav-vision" type="button" role="tab"
-                                        aria-controls="nav-vision" aria-selected="false">our Vision</button>
+                                        aria-controls="nav-vision" aria-selected="false">Nossa Visão</button>
                                     <button class="nav-link" id="nav-history-tab" data-bs-toggle="tab"
                                         data-bs-target="#nav-history" type="button" role="tab"
-                                        aria-controls="nav-history" aria-selected="false">our History</button>
+                                        aria-controls="nav-history" aria-selected="false">Nossa história</button>
                                 </div>
                             </nav>
                             <div class="tab-content" id="nav-tabContent">
@@ -173,7 +173,7 @@
                     <div class="col-12">
                         <div class="content">
                             <h6>Services</h6>
-                            <h2 class="fw-bold">Our Best Services</h2>
+                            <h2 class="fw-bold">Nossos melhores serviços</h2>
                             <p>
                                 There are many variations of passages of Lorem Ipsum available,
                                 but the majority have suffered alteration in some form.
@@ -399,7 +399,7 @@
             <div class="row justify-content-center">
                 <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9">
                     <div class="inner-content">
-                        <h2>We love to make perfect <br />solutions for your business</h2>
+                        <h2>Nós amamos fazer a perfeição <br />soluções para o seu Negócio</h2>
                         <p>
                             Why I say old chap that is, spiffing off his nut cor blimey
                             guvnords geeza<br />
@@ -407,9 +407,7 @@
                             fanny around chesed of bum bag old lost the pilot say there
                             spiffing off his nut.
                         </p>
-                        <div class="light-rounded-buttons">
-                            <a href="javascript:void(0)" class="btn primary-btn-outline">Get Started</a>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -588,9 +586,9 @@
                                         <i class="lni lni-phone"></i>
                                     </div>
                                     <div class="contact-content">
-                                        <h4>Contact</h4>
+                                        <h4>Contacto</h4>
                                         <p>0984537278623</p>
-                                        <p>yourmail@gmail.com</p>
+                                        <p>miguelhamuyela44@gmail.com</p>
                                     </div>
                                 </div>
                             </div>
@@ -600,9 +598,9 @@
                                         <i class="lni lni-map-marker"></i>
                                     </div>
                                     <div class="contact-content">
-                                        <h4>Address</h4>
-                                        <p>175 5th Ave, New York, NY 10010</p>
-                                        <p>United States</p>
+                                        <h4>Endereço</h4>
+                                        <p>Av.21 de Janeiro</p>
+                                        <p>Maianga-Angola</p>
                                     </div>
                                 </div>
                             </div>
@@ -612,9 +610,9 @@
                                         <i class="lni lni-alarm-clock"></i>
                                     </div>
                                     <div class="contact-content">
-                                        <h4>Schedule</h4>
-                                        <p>24 Hours / 7 Days Open</p>
-                                        <p>Office time: 10 AM - 5:30 PM</p>
+                                        <h4>Atendimento</h4>
+                                        <p>dias abertos / Das 8H00 as 15H00</p>
+                                        <p>Horário de atendimento: 8h00 - 15h00</p>
                                     </div>
                                 </div>
                             </div>
@@ -626,13 +624,12 @@
                         <div class="row">
                             <div class="col-xl-10 col-lg-8 mx-auto">
                                 <div class="section-title text-center">
-                                    <span> Get in Touch </span>
+                                    <span> Entre em contato </span>
                                     <h2>
-                                        Ready to Get Started
+                                        Pronto para começar
                                     </h2>
                                     <p>
-                                        At vero eos et accusamus et iusto odio dignissimos ducimus
-                                        quiblanditiis praesentium
+                                       
                                     </p>
                                 </div>
                             </div>

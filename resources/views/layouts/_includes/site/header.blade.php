@@ -4,20 +4,17 @@
       <div class="row align-items-center">
         <div class="col-lg-6 col-md-12 col-12">
           <div class="header-content">
-            <h1>Corporate & Business Site Template by Ayro UI.</h1>
+            <h1>Control de Empresas de Restauraçao</h1>
             <p>
-              We are a digital agency that helps brands to achieve their
-              business outcomes. We see technology as a tool to create amazing
-              things.
+             Somos uma agência digital que ajuda marcas a alcançar seus
+             resultados de negócios. Vemos a tecnologia como uma ferramenta para criar
+             coisas incríveis.
             </p>
             <div class="button">
-              <a href="javascript:void(0)" class="btn primary-btn">Get Started</a>
+              <a href="javascript:void(0)" class="btn primary-btn">Comece</a>
               <a href="../../www.youtube.com/watcha5e1.html?v=r44RKWyfcFw&amp;fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM"
                 class="glightbox video-button">
-                <span class="btn icon-btn rounded-full">
-                  <i class="lni lni-play"></i>
-                </span>
-                <span class="text">Watch Intro</span>
+               
               </a>
             </div>
           </div>
