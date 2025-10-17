@@ -309,10 +309,9 @@
                     <div class="col-12">
                         <div class="content">
                             <h6>latest news</h6>
-                            <h2 class="fw-bold">Latest News & Blog</h2>
+                            <h2 class="fw-bold">Direcao Institucional</h2>
                             <p>
-                                There are many variations of passages of Lorem Ipsum available,
-                                but the majority have suffered alteration in some form.
+
                             </p>
                         </div>
                     </div>
