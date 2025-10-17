@@ -468,27 +468,28 @@
                                 </div>
                             </div>
                         </div>
-                        <form action="#" class="contact-form">
+                        <form action="{{ route('site.contact.store') }}" method="POST" class="contact-form">
+                            @csrf
+
                             <div class="row">
                                 <div class="col-md-6">
-                                    <input type="text" name="name" id="name" placeholder="Name" required />
+                                    <input type="text" name="name" id="name" placeholder="Name" value="{{ old('name') }}" required />
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="email" name="email" id="email" placeholder="Email" required />
+                                    <input type="email" name="email" id="email" placeholder="Email" value="{{ old('email') }}" required />
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <input type="text" name="phone" id="phone" placeholder="Phone" required />
+                                    <input type="text" name="phone" id="phone" placeholder="Phone" value="{{ old('phone') }}" required />
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" name="subject" id="email" placeholder="Subject"
-                                        required />
+                                    <input type="text" name="subject" id="subject" placeholder="Subject" value="{{ old('subject') }}" required />
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-12">
-                                    <textarea name="message" id="message" placeholder="Type Message" rows="5"></textarea>
+                                    <textarea name="message" id="message" placeholder="Type Message" rows="5">{{ old('message') }}</textarea>
                                 </div>
                             </div>
                             <div class="row">
@@ -512,7 +513,7 @@
     <section class="map-section map-style-9">
         <div class="map-container">
             <object style="border:0; height: 500px; width: 100%;"
-                data="../../www.google.com/maps/embeda84b.html?pb=!1m18!1m12!1m3!1d3102.7887109309127!2d-77.44196278417968!3d38.95165507956235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDU3JzA2LjAiTiA3N8KwMjYnMjMuMiJX!5e0!3m2!1sen!2sbd!4v1545420879707"></object>
+                data="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d1706.1601021179506!2d13.232730519353515!3d-8.8392111455765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d-8.839722702336857!2d13.232229064538991!5e0!3m2!1spt-PT!2sao!4v1760694943376!5m2!1spt-PT!2sao"></object>
         </div>
         </div>
     </section>
