@@ -100,19 +100,7 @@
                         <h6 class="small-title text-lg">NOSSA HISTÓRIA</h6>
                         <h2 class="main-title fw-bold">Nossa equipe vem com experiência e conhecimento</h2>
                         <div class="about-five-tab">
-                            <nav>
-                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                    <button class="nav-link active" id="nav-who-tab" data-bs-toggle="tab"
-                                        data-bs-target="#nav-who" type="button" role="tab" aria-controls="nav-who"
-                                        aria-selected="true">Quem somos</button>
-                                    <button class="nav-link" id="nav-vision-tab" data-bs-toggle="tab"
-                                        data-bs-target="#nav-vision" type="button" role="tab"
-                                        aria-controls="nav-vision" aria-selected="false">Nossa Visão</button>
-                                    <button class="nav-link" id="nav-history-tab" data-bs-toggle="tab"
-                                        data-bs-target="#nav-history" type="button" role="tab"
-                                        aria-controls="nav-history" aria-selected="false">Nossa história</button>
-                                </div>
-                            </nav>
+                           
                             <div class="tab-content" id="nav-tabContent">
                                 <div class="tab-pane fade show active" id="nav-who" role="tabpanel"
                                     aria-labelledby="nav-who-tab">
@@ -172,7 +160,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="content">
-                            <h6>Services</h6>
+                            <h6>Serviços</h6>
                             <h2 class="fw-bold">Nossos melhores serviços</h2>
                             <p>
                                 There are many variations of passages of Lorem Ipsum available,
