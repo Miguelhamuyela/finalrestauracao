@@ -146,12 +146,7 @@ class AutnspectionsController extends Controller
         return redirect()->route('admin.autinspection.list.index')->with('create', '1');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+  
     public function show($id)
     {
         $response['autinspection'] = Autinspection::with('startupDocuments','payments', 'scheldules', 'members')->find($id);
