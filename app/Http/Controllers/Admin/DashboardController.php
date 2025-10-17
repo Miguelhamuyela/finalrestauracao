@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Classes\Logger;
 use App\Http\Controllers\Controller;
 use App\Models\Auditorium;
+use App\Models\Autinspection;
 use App\Models\Client;
 use App\Models\Cowork;
 use App\Models\Elearning;
@@ -13,6 +14,8 @@ use App\Models\EquipmentRepair;
 use App\Models\Log;
 use App\Models\ManufacturesSoftware;
 use App\Models\MeetingRoom;
+use App\Models\Payment;
+use App\Models\Schedule;
 use App\Models\Startup;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
@@ -78,6 +81,19 @@ class DashboardController extends Controller
 
         $dez = Log::where('USER_ID', Auth::user()->id)->whereMonth('created_at', '=', 12)->count();
         $response['dez'] = json_encode($dez);
+
+        /* relatorio vistoria */
+/*         $response['vistoria'] = Log::where('USER_ID', Auth::user()->id)->where('TYPE', 'vistoria')->count();
+ */
+        /* relatorio agenda de vistoria */
+        $response['agendaVistoria'] = Schedule::count();
+
+        /* relatorio empresas verificadas */
+        $response['empresasVerificadas'] = Autinspection::count();
+
+        /* relatorio pagamentos */
+        $response['pagamentos'] = Payment::count();
+        
         return view('admin.home.index', $response);
     }
 }
