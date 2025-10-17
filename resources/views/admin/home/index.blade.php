@@ -168,7 +168,6 @@
                     <h4 class="card-title mb-0">Registo de Actividades</h4>
                     <div class="d-flex flex-column flex-lg-row">
 
-
                     </div>
                     <div class="d-flex flex-column flex-lg-row">
 
