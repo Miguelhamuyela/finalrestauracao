@@ -490,6 +490,7 @@
                                 <div class="col-12">
                                     <textarea name="message" id="message" placeholder="Type Message" rows="5"></textarea>
                                 </div>
+                                
                             </div>
                             <div class="row">
                                 <div class="col-12">
