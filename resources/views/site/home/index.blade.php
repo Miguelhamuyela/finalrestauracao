@@ -104,7 +104,7 @@
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                     <button class="nav-link active" id="nav-who-tab" data-bs-toggle="tab"
                                         data-bs-target="#nav-who" type="button" role="tab" aria-controls="nav-who"
-                                        aria-selected="true">Who We Are</button>
+                                        aria-selected="true">Quem somos</button>
                                     <button class="nav-link" id="nav-vision-tab" data-bs-toggle="tab"
                                         data-bs-target="#nav-vision" type="button" role="tab"
                                         aria-controls="nav-vision" aria-selected="false">Nossa Visão</button>
@@ -495,7 +495,7 @@
                                 <div class="col-12">
                                     <div class="button text-center rounded-buttons">
                                         <button type="submit" class="btn primary-btn rounded-full">
-                                            Send Message
+                                           Enviar mensagem
                                         </button>
                                     </div>
                                 </div>
