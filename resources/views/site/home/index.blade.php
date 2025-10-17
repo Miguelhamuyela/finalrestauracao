@@ -1,5 +1,5 @@
 @extends('layouts._includes.site.main')
-@section('title', 'Home')
+@section('title', 'inicio')
 @section('content')
 
     <!--====== ABOUT FIVE PART START ======-->
@@ -104,7 +104,7 @@
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                     <button class="nav-link active" id="nav-who-tab" data-bs-toggle="tab"
                                         data-bs-target="#nav-who" type="button" role="tab" aria-controls="nav-who"
-                                        aria-selected="true">Who We Are</button>
+                                        aria-selected="true">Quem somos</button>
                                     <button class="nav-link" id="nav-vision-tab" data-bs-toggle="tab"
                                         data-bs-target="#nav-vision" type="button" role="tab"
                                         aria-controls="nav-vision" aria-selected="false">Nossa Visão</button>
@@ -278,121 +278,8 @@
     <!-- ===== service-area end ===== -->
 
 
-    <!-- Start Pricing  Area -->
-    <section id="pricing" class="pricing-area pricing-fourteen">
-        <!--======  Start Section Title Five ======-->
-        <div class="section-title-five">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="content">
-                            <h6>Pricing</h6>
-                            <h2 class="fw-bold">Pricing & Plans</h2>
-                            <p>
-                                There are many variations of passages of Lorem Ipsum available,
-                                but the majority have suffered alteration in some form.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- row -->
-            </div>
-            <!-- container -->
-        </div>
-        <!--======  End Section Title Five ======-->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="pricing-style-fourteen">
-                        <div class="table-head">
-                            <h6 class="title">Starter</h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing and industry.</p>
-                                <div class="price">
-                                    <h2 class="amount">
-                                        <span class="currency">$</span>0<span class="duration">/mo </span>
-                                    </h2>
-                                </div>
-                        </div>
 
-                        <div class="light-rounded-buttons">
-                            <a href="javascript:void(0)" class="btn primary-btn-outline">
-                                Start free trial
-                            </a>
-                        </div>
-
-                        <div class="table-content">
-                            <ul class="table-list">
-                                <li> <i class="lni lni-checkmark-circle"></i> Cras justo odio.</li>
-                                <li> <i class="lni lni-checkmark-circle"></i> Dapibus ac facilisis in.</li>
-                                <li> <i class="lni lni-checkmark-circle deactive"></i> Morbi leo risus.</li>
-                                <li> <i class="lni lni-checkmark-circle deactive"></i> Excepteur sint occaecat velit.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="pricing-style-fourteen middle">
-                        <div class="table-head">
-                            <h6 class="title">Exclusive</h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing and industry.</p>
-                                <div class="price">
-                                    <h2 class="amount">
-                                        <span class="currency">$</span>99<span class="duration">/mo </span>
-                                    </h2>
-                                </div>
-                        </div>
-
-                        <div class="light-rounded-buttons">
-                            <a href="javascript:void(0)" class="btn primary-btn">
-                                Start free trial
-                            </a>
-                        </div>
-
-                        <div class="table-content">
-                            <ul class="table-list">
-                                <li> <i class="lni lni-checkmark-circle"></i> Cras justo odio.</li>
-                                <li> <i class="lni lni-checkmark-circle"></i> Dapibus ac facilisis in.</li>
-                                <li> <i class="lni lni-checkmark-circle"></i> Morbi leo risus.</li>
-                                <li> <i class="lni lni-checkmark-circle deactive"></i> Excepteur sint occaecat velit.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="pricing-style-fourteen">
-                        <div class="table-head">
-                            <h6 class="title">Premium</h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing and industry.</p>
-                                <div class="price">
-                                    <h2 class="amount">
-                                        <span class="currency">$</span>150<span class="duration">/mo </span>
-                                    </h2>
-                                </div>
-                        </div>
-
-                        <div class="light-rounded-buttons">
-                            <a href="javascript:void(0)" class="btn primary-btn-outline">
-                                Start free trial
-                            </a>
-                        </div>
-
-                        <div class="table-content">
-                            <ul class="table-list">
-                                <li> <i class="lni lni-checkmark-circle"></i> Cras justo odio.</li>
-                                <li> <i class="lni lni-checkmark-circle"></i> Dapibus ac facilisis in.</li>
-                                <li> <i class="lni lni-checkmark-circle"></i> Morbi leo risus.</li>
-                                <li> <i class="lni lni-checkmark-circle"></i> Excepteur sint occaecat velit.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!--/ End Pricing  Area -->
-
-
-
     <!-- Start Cta Area -->
     <section id="call-action" class="call-action">
         <div class="container">
@@ -401,11 +288,7 @@
                     <div class="inner-content">
                         <h2>Nós amamos fazer a perfeição <br />soluções para o seu Negócio</h2>
                         <p>
-                            Why I say old chap that is, spiffing off his nut cor blimey
-                            guvnords geeza<br />
-                            bloke knees up bobby, sloshed arse William cack Richard. Bloke
-                            fanny around chesed of bum bag old lost the pilot say there
-                            spiffing off his nut.
+
                         </p>
 
                     </div>
@@ -522,56 +405,7 @@
     </div>
     <!-- End Latest News Area -->
 
-    <!-- Start Brand Area -->
-    <div id="clients" class="brand-area section">
-        <!--======  Start Section Title Five ======-->
-        <div class="section-title-five">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="content">
-                            <h6>Meet our Clients</h6>
-                            <h2 class="fw-bold">Our Awesome Clients</h2>
-                            <p>
-                                There are many variations of passages of Lorem Ipsum available,
-                                but the majority have suffered alteration in some form.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- row -->
-            </div>
-            <!-- container -->
-        </div>
-        <!--======  End Section Title Five ======-->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-12">
-                    <div class="clients-logos">
-                        <div class="single-image">
-                            <img src="{{ url('site/assets/images/client-logo/graygrids.svg')}}" alt="Brand Logo Images" />
-                        </div>
-                        <div class="single-image">
-                            <img src="{{ url('site/assets/images/client-logo/uideck.svg')}}" alt="Brand Logo Images" />
-                        </div>
-                        <div class="single-image">
-                            <img src="{{ url('site/assets/images/client-logo/ayroui.svg')}}" alt="Brand Logo Images" />
-                        </div>
-                        <div class="single-image">
-                            <img src="{{ url('site/assets/images/client-logo/lineicons.svg')}}" alt="Brand Logo Images" />
-                        </div>
-                        <div class="single-image">
-                            <img src="{{ url('site/assets/images/client-logo/tailwindtemplates.svg')}}" alt="Brand Logo Images" />
-                        </div>
-                        <div class="single-image">
-                            <img src="{{ url('site/assets/images/client-logo/ecomhtml.svg')}}" alt="Brand Logo Images" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Brand Area -->
+
 
     <!-- ========================= contact-section start ========================= -->
     <section id="contact" class="contact-section">
@@ -629,7 +463,7 @@
                                         Pronto para começar
                                     </h2>
                                     <p>
-                                       
+
                                     </p>
                                 </div>
                             </div>
@@ -662,7 +496,7 @@
                                 <div class="col-12">
                                     <div class="button text-center rounded-buttons">
                                         <button type="submit" class="btn primary-btn rounded-full">
-                                            Send Message
+                                           Enviar mensagem
                                         </button>
                                     </div>
                                 </div>

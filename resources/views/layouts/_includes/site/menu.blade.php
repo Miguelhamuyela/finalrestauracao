@@ -18,17 +18,15 @@
             <div class="collapse navbar-collapse sub-menu-bar" id="navbarNine">
               <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                  <a class="page-scroll active" href="#hero-area">Home</a>
+                  <a class="page-scroll active" href="#hero-area">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="page-scroll" href="#services">Services</a>
+                  <a class="page-scroll" href="#services">Serviços</a>
                 </li>
 
+
                 <li class="nav-item">
-                  <a class="page-scroll" href="#pricing">Pricing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="page-scroll" href="#contact">Contact</a>
+                  <a class="page-scroll" href="#contact">Contacto</a>
                 </li>
               </ul>
             </div>
