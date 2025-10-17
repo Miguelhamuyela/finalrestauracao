@@ -13,6 +13,12 @@ Route::middleware(['auth'])->group(function () {
 
     Route::middleware(['Administrador'])->group(function () {
 
+        /* Contact */
+        Route::get('admin/contacts/list', ['as' => 'admin.contacts.list', 'uses' => 'Admin\ContactController@index']);
+        Route::get('admin/contacts/show/{id}', ['as' => 'admin.contacts.show', 'uses' => 'Admin\ContactController@show']);
+        Route::get('admin/contacts/delete/{id}', ['as' => 'admin.contacts.delete', 'uses' => 'Admin\ContactController@destroy']);
+        /* end contact */
+
         /* User */
         Route::get('admin/user/index', ['as' => 'admin.user.index', 'uses' => 'Admin\UserController@index']);
         Route::get('admin/user/show/{id}', ['as' => 'admin.user.show', 'uses' => 'Admin\UserController@show'])->withoutMiddleware('Administrador');
