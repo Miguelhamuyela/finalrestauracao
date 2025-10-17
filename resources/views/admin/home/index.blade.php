@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-lg-2 col-md-6">
+                        <div class="col-lg-2 col-md-6 mx-2">
                             <div class="d-flex">
                                 <div class="wrapper">
                                     <h3 class="mb-0 font-weight-semibold">{{ $user }}</h3>
@@ -19,19 +19,19 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-6 mt-md-0 mt-4">
+                        <div class="col-lg-2 col-md-6 mt-md-0 mt-4 mx-2">
                             <div class="d-flex">
                                 <div class="wrapper">
-                                    <h3 class="mb-0 font-weight-semibold">{{ $startup }}</h3>
+                                    <h3 class="mb-0 font-weight-semibold">{{ $empresasVerificadas }}</h3>
                                     <a class="mb-0 font-weight-medium text-primary h5" href="{{ route('admin.startup.list.index') }}">Vistoria de Empresa</a>
-                                    <p class="mb-0 text-muted">{{ $startup/100 }}%</p>
+                                    <p class="mb-0 text-muted">{{ $empresasVerificadas/100 }}%</p>
                                 </div>
                                 <div class="wrapper my-auto ml-auto ml-lg-2">
                                     <canvas height="50" width="100" id="stats-line-graph-2"></canvas>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-6 mt-md-0 mt-4">
+                        <div class="col-lg-2 col-md-6 mt-md-0 mt-4 mx-2">
                             <div class="d-flex">
                                 <div class="wrapper">
                                     <h3 class="mb-0 font-weight-semibold">{{ $employee }}</h3>
@@ -45,12 +45,12 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-2 col-md-6 mt-md-0 mt-4">
+                        <div class="col-lg-2 col-md-6 mt-md-0 mt-4 mx-2">
                             <div class="d-flex">
                                 <div class="wrapper">
-                                    <h3 class="mb-0 font-weight-semibold">{{ $auditorium }}</h3>
+                                    <h3 class="mb-0 font-weight-semibold">{{ $agendaVistoria }}</h3>
                                     <a class="mb-0 font-weight-medium text-primary h5" href="{{ route('admin.auditoriums.list.index') }}">Agenda de Vistoria</a>
-                                    <p class="mb-0 text-muted">{{ $auditorium/100 }}%</p>
+                                    <p class="mb-0 text-muted">{{ $agendaVistoria/100 }}%</p>
                                 </div>
                                 <div class="wrapper my-auto ml-auto ml-lg-4">
                                     <canvas height="50" width="100" id="stats-line-graph-4"></canvas>
@@ -58,7 +58,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-2 col-md-6 mt-md-0 mt-4">
+                        {{-- <div class="col-lg-2 col-md-6 mt-md-0 mt-4">
                             <div class="d-flex">
 
                                 <div class="wrapper">
@@ -70,9 +70,9 @@
                                     <canvas height="50" width="100" id="stats-line-graph-5"></canvas>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
 
-                        <div class="col-lg-2 col-md-6 mt-md-0 mt-4">
+                        <div class="col-lg-2 col-md-6 mt-md-0 mt-4 mx-2">
                             <div class="d-flex">
                                 <div class="wrapper">
                                     <h3 class="mb-0 font-weight-semibold">{{ $client }}</h3>
@@ -145,9 +145,9 @@
                         <div class="card-body pb-0">
                             <div class="d-flex justify-content-between">
                                 <a class="mb-0 font-weight-medium text-primary h5" href="{{ route('admin.payments.index') }}">Pagamentos</a>
-                                <p class="font-weight-semibold mb-0">{{ $equipmentRepair/100 }}%</p>
+                                <p class="font-weight-semibold mb-0">{{ $pagamentos/100 }}%</p>
                             </div>
-                            <h3 class="font-weight-medium">{{ $equipmentRepair }}</h3>
+                            <h3 class="font-weight-medium">{{ $pagamentos }}</h3>
                         </div>
                         <canvas class="mt-n3" height="90" id="total-equipment">
 
