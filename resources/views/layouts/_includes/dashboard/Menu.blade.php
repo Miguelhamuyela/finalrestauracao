@@ -172,16 +172,17 @@
                 </li>
 
                 --}}
-                <li class="nav-item mb-5">
-                    <a class="nav-link" href="{{ route('admin.user.index') }}">
-                        <i class="menu-icon typcn typcn-document-text"></i>
-                        <span class="menu-title">Utilizadores</span>
-                    </a>
-                </li>
+
                 <li class="nav-item mb-5">
                     <a class="nav-link" href="{{ route('admin.contacts.list') }}">
                         <i class="menu-icon typcn typcn-document-text"></i>
                         <span class="menu-title">Contactos</span>
+                    </a>
+                </li>
+                 <li class="nav-item mb-5">
+                    <a class="nav-link" href="{{ route('admin.user.index') }}">
+                        <i class="menu-icon typcn typcn-document-text"></i>
+                        <span class="menu-title">Utilizadores</span>
                     </a>
                 </li>
             @endif

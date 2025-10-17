@@ -9,10 +9,6 @@
                     <div class="col-md-10">
                         <h5><b>Contactos</b></h5>
                     </div>
-                    <div class="col-md-2 text-center">
-                        <a href="{{ route('admin.coworks.create.index') }}" class="btn btn-primary">Cadastrar</a>
-
-                    </div>
                 </div>
             </div>
         </div>
@@ -53,7 +49,7 @@
                                                     class="dropdown-item">Detalhes</a>
                                                 <a href='{{ route('admin.contacts.delete', ['id' => $item->id]) }}'
                                                     class="dropdown-item">Delete</a>
-                                                
+
                                             </div>
                                         </div>
                                         </td>
