@@ -19,7 +19,12 @@
                                 </div>
                             </div>
                         </div>
+<<<<<<< HEAD
+
+                        <div class="col-lg-2 col-md-6 mt-md-0 mt-4">
+=======
                         <div class="col-lg-2 col-md-6 mt-md-0 mt-4 mx-2">
+>>>>>>> 7609c1699ac0d5d2a417c83fe10c204eed47cf15
                             <div class="d-flex">
                                 <div class="wrapper">
                                     <h3 class="mb-0 font-weight-semibold">{{ $empresasVerificadas }}</h3>
@@ -31,7 +36,14 @@
                                 </div>
                             </div>
                         </div>
+<<<<<<< HEAD
+
+
+
+                        <div class="col-lg-2 col-md-6 mt-md-0 mt-4">
+=======
                         <div class="col-lg-2 col-md-6 mt-md-0 mt-4 mx-2">
+>>>>>>> 7609c1699ac0d5d2a417c83fe10c204eed47cf15
                             <div class="d-flex">
                                 <div class="wrapper">
                                     <h3 class="mb-0 font-weight-semibold">{{ $employee }}</h3>
@@ -167,7 +179,6 @@
                 <div class="card-body">
                     <h4 class="card-title mb-0">Registo de Actividades</h4>
                     <div class="d-flex flex-column flex-lg-row">
-
 
                     </div>
                     <div class="d-flex flex-column flex-lg-row">

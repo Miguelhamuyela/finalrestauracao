@@ -105,7 +105,7 @@ class EmployeeController extends Controller
             'occupation' => 'required|string|max:255',
             'ministry' => 'required|string|max:255',
             'departament' => 'required|string|max:255',
-            'photoEmployee' => 'mimes:jpg,png,gif,SVG,EPS'
+          //  'photoEmployee' => 'mimes:jpg,png,gif,SVG,EPS'
         ]);
 
 
