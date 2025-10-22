@@ -100,7 +100,7 @@
                         <h6 class="small-title text-lg">NOSSA HISTÓRIA</h6>
                         <h2 class="main-title fw-bold">Nossa equipe vem com experiência e conhecimento</h2>
                         <div class="about-five-tab">
-                           
+
                             <div class="tab-content" id="nav-tabContent">
                                 <div class="tab-pane fade show active" id="nav-who" role="tabpanel"
                                     aria-labelledby="nav-who-tab">
@@ -160,11 +160,10 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="content">
-                            <h6>Serviços</h6>
+
                             <h2 class="fw-bold">Nossos melhores serviços</h2>
                             <p>
-                                There are many variations of passages of Lorem Ipsum available,
-                                but the majority have suffered alteration in some form.
+                               SERVIÇOS PRESTADOS PELA DIRECÇAO MUNICIPAL DO TURISMO E CULTURA DO MUNICIPIO DA INGOMBOTA
                             </p>
                         </div>
                     </div>
@@ -182,10 +181,11 @@
                             <i class="lni lni-capsule"></i>
                         </div>
                         <div class="service-content">
-                            <h4>Refreshing Design</h4>
+                            <h4>Nossa Missao e Visao: </h4>
                             <p>
-                                Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
-                                eirmod tempor ividunt labor dolore magna.
+                              Missao: E tornar-se uma instituição localmente reconhecida pela qualidade de serviços prestados aos seus utentes.
+                              <br>Visao: <br>Ser uma instituição economicamente estável, comprometida com a valorização dos seus quadros, e reconhecida pela eficiência dos serviços prestados, e pelo relacionamento ético profissional com  os utentes.
+
                             </p>
                         </div>
                     </div>
@@ -196,10 +196,12 @@
                             <i class="lni lni-bootstrap"></i>
                         </div>
                         <div class="service-content">
-                            <h4>Solid Bootstrap 5</h4>
+                            <h4>A Secção da Promoção da Cultura (SPC)</h4>
                             <p>
-                                Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
-                                eirmod tempor ividunt labor dolore magna.
+                               é o serviço da Direcção Municipal encarregue de legalizar: Saloes de festas, Centros, Recreativos, Grupo de Teatro, Grupo de Dança, Dj, Fotógrafo. ( estes são os serviços)
+                              (Essas são as politicas).
+                            	Investigar, recolher, conservar e valorizar os bens que interesse e valor etnolinguístico, histórico. arquitetónico e paisagístico integram o património cultural e natural
+
                             </p>
                         </div>
                     </div>
@@ -210,56 +212,21 @@
                             <i class="lni lni-shortcode"></i>
                         </div>
                         <div class="service-content">
-                            <h4>100+ Components</h4>
+                            <h4>A Secção do Turismo (ST) </h4>
                             <p>
-                                Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
-                                eirmod tempor ividunt labor dolore magna.
+                               Velar pelo cumprimento das leis e regulamentos que disciplinam a actividade turística, hotelaria e similar;
+	                           Executar tarefas relacionadas com o licenciamento do exercício da actividade turística, hoteleira e similar
+	                           Promover o desenvolvimento da actividade turística, hoteleira e similar;
+	                           Apoiar os agentes económicos do setor turístico hoteleiro e similar;
+	                           Velar pela execução política do setor;
+
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-services">
-                        <div class="service-icon">
-                            <i class="lni lni-dashboard"></i>
-                        </div>
-                        <div class="service-content">
-                            <h4>Speed Optimized</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
-                                eirmod tempor ividunt labor dolore magna.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-services">
-                        <div class="service-icon">
-                            <i class="lni lni-layers"></i>
-                        </div>
-                        <div class="service-content">
-                            <h4>Fully Customizable</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
-                                eirmod tempor ividunt labor dolore magna.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-services">
-                        <div class="service-icon">
-                            <i class="lni lni-reload"></i>
-                        </div>
-                        <div class="service-content">
-                            <h4>Regular Updates</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
-                                eirmod tempor ividunt labor dolore magna.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+
+
+
             </div>
         </div>
     </section>
@@ -274,7 +241,7 @@
             <div class="row justify-content-center">
                 <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9">
                     <div class="inner-content">
-                        <h2>Nós amamos fazer a perfeição <br />soluções para o seu Negócio</h2>
+                        <h2>Nós Amamos fazer a perfeição <br />soluções para o seu Negócio</h2>
                         <p>
 
                         </p>
@@ -286,24 +253,13 @@
     </section>
     <!-- End Cta Area -->
 
-
-
+    
     <!-- Start Latest News Area -->
     <div id="blog" class="latest-news-area section">
         <!--======  Start Section Title Five ======-->
         <div class="section-title-five">
             <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="content">
-                            <h6>latest news</h6>
-                            <h2 class="fw-bold">Direcao Institucional</h2>
-                            <p>
 
-                            </p>
-                        </div>
-                    </div>
-                </div>
                 <!-- row -->
             </div>
             <!-- container -->
@@ -446,9 +402,7 @@
                             <div class="col-xl-10 col-lg-8 mx-auto">
                                 <div class="section-title text-center">
                                     <span> Entre em contato </span>
-                                    <h2>
-                                        Pronto para começar
-                                    </h2>
+
                                     <p>
 
                                     </p>
@@ -468,7 +422,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <input type="text" name="phone" id="phone" placeholder="Phone" value="{{ old('phone') }}" required />
+                                    <input type="text" name="phone" id="phone" placeholder="Telefone" value="{{ old('phone') }}" required />
                                 </div>
                                 <div class="col-md-6">
                                     <input type="text" name="subject" id="subject" placeholder="Subject" value="{{ old('subject') }}" required />
@@ -476,7 +430,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-12">
-                                    <textarea name="message" id="message" placeholder="Type Message" rows="5">{{ old('message') }}</textarea>
+                                    <textarea name="message" id="message" placeholder="Escrever a mensagem" rows="5">{{ old('message') }}</textarea>
                                 </div>
                             </div>
                             <div class="row">

@@ -14,13 +14,13 @@
                   </a>
                 </div>
                 <p>
-                  Making the world a better place through constructing elegant
-                  hierarchies.
+                  Tornando o mundo um lugar melhor através das Empresas de turismo  e Hotolaria
                 </p>
                 <p class="copyright-text">
-                  <span>© 2024 Ayro UI.</span>Designed and Developed by
-                  <a href="../../ayroui.com/index.html" rel="nofollow"> Ayro UI </a>. <br> Distributed by <a
-                    href="../../themewagon.com/index.html" target="_blank">ThemeWagon</a>
+                  <span>© 2025.</span>Projetado e desenvolvido pela Ayro UI.
+                     Distribuído por
+                  <a href="../../ayroui.com/index.html" rel="nofollow">Maria Fernandes</a>. <br> Distribuido pelo <a
+                    href="../../themewagon.com/index.html" target="_blank">Agostinho MPanzu</a>
                 </p>
               </div>
               <!-- End Single Widget -->
@@ -28,10 +28,9 @@
             <div class="col-lg-2 col-md-6 col-12">
               <!-- Single Widget -->
               <div class="footer-widget f-link">
-                <h5>Solutions</h5>
+                <h5>Soluções</h5>
                 <ul>
-                  <li><a href="javascript:void(0)">Marketing</a></li>
-                  <li><a href="javascript:void(0)">Analytics</a></li>
+                  <li><a target="_blank" href="https://www.sepe.gov.ao/ao/">sepe</a></li>
                   <li><a href="javascript:void(0)">Commerce</a></li>
                   <li><a href="javascript:void(0)">Insights</a></li>
                 </ul>
@@ -41,12 +40,10 @@
             <div class="col-lg-2 col-md-6 col-12">
               <!-- Single Widget -->
               <div class="footer-widget f-link">
-                <h5>Support</h5>
+                <h5>Apoiar</h5>
                 <ul>
                   <li><a href="javascript:void(0)">Pricing</a></li>
-                  <li><a href="javascript:void(0)">Documentation</a></li>
-                  <li><a href="javascript:void(0)">Guides</a></li>
-                  <li><a href="javascript:void(0)">API Status</a></li>
+                  <li><a href="javascript:void(0)">Guias</a></li>
                 </ul>
               </div>
               <!-- End Single Widget -->
@@ -55,7 +52,7 @@
               <!-- Single Widget -->
               <div class="footer-widget newsletter">
                 <h5>Subscribe</h5>
-                <p>Subscribe to our newsletter for the latest updates</p>
+                <p>Assine nossa newsletter para receber as últimas atualizações</p>
                 <form action="#" method="get" target="_blank" class="newsletter-form">
                   <input name="EMAIL" placeholder="Email address" required="required" type="email" />
                   <div class="button">

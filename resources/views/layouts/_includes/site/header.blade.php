@@ -4,17 +4,17 @@
       <div class="row align-items-center">
         <div class="col-lg-6 col-md-12 col-12">
           <div class="header-content">
-            <h1>Control de Empresas de Restauraçao</h1>
+            <h1>Control de Empresas de Restauraçao e Hotelaria</h1>
             <p>
              Somos uma agência digital que ajuda marcas a alcançar seus
              resultados de negócios. Vemos a tecnologia como uma ferramenta para criar
-             coisas incríveis.
+             coisas incríveis e servir agentes na area de hotelaria e turismo.
             </p>
             <div class="button">
-              <a href="javascript:void(0)" class="btn primary-btn">Comece</a>
+            
               <a href="../../www.youtube.com/watcha5e1.html?v=r44RKWyfcFw&amp;fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM"
                 class="glightbox video-button">
-               
+
               </a>
             </div>
           </div>
