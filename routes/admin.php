@@ -101,6 +101,9 @@ Route::middleware(['auth'])->group(function () {
         Route::get('admin/client/delete/{id}', ['as' => 'admin.client.delete', 'uses' => 'Admin\ClientsController@destroy']);
         Route::put('admin/client/update/{id}', ['as' => 'admin.client.update', 'uses' => 'Admin\ClientsController@update']);
 
+        /* client nif */
+        Route::get('/get-client-nif/{id}', ['as' => 'admin.client.nif', 'uses' => 'Admin\ClientsController@getClientNif']);
+
         //Relatórios PDF
         Route::get('admin/clients/relatorios', ['as' => 'admin.clients.report', 'uses' => 'Admin\ClientsController@printClient']);
         /**End Clients */

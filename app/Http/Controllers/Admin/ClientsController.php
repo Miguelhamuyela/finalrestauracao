@@ -51,7 +51,7 @@ class ClientsController extends Controller
         $request->validate([
             /**Clients informatio */
             'name' => 'required|string|max:255',
-           // 'TypesHotel' => 'required|string|max:255',
+            // 'TypesHotel' => 'required|string|max:255',
             'email' => 'required|string|max:255',
             'tel' => 'max:50',
             'nif' => 'required|string|max:50',
@@ -140,7 +140,7 @@ class ClientsController extends Controller
     }
 
 
-    
+
     /**
      * Remove the specified resource from storage.
      *
@@ -153,5 +153,17 @@ class ClientsController extends Controller
         return redirect()
             ->route('admin.client.list.index')
             ->with('destroy', '1');
+    }
+
+    /* client nif */
+    public function getClientNif($id)
+    {
+        $client = \App\Models\Client::find($id);
+
+        if ($client) {
+            return response()->json(['nif' => $client->nif]);
+        }
+
+        return response()->json(['nif' => null], 404);
     }
 }
