@@ -14,6 +14,7 @@ use App\Models\Scheldule;
 use App\Models\DocumentsStartup;
 use App\Models\Startup;
 use App\Models\Autinspection;
+use App\Models\Employee;
 use PDF;
 class AutnspectionsController extends Controller
 {
@@ -40,9 +41,9 @@ class AutnspectionsController extends Controller
      */
     public function create()
     {
-
+        $response['clients'] = Client::orderByDesc('id')->get();
         $this->Logger->log('info', 'Criar Agenda de Vistoria');
-        return view('admin.autinspection.create.index');
+        return view('admin.autinspection.create.index', $response);
     }
 
     /**

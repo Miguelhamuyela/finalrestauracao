@@ -1,19 +1,34 @@
+{{-- client nif --}}
+@include('admin.extras._clientNif.index')
+{{-- end client nif --}}
+
 <input type="hidden" name="origin" value="autinspection">
 <div class="row">
     <div class="col-md-8">
         <div class="form-group">
-            <label for="name">Empresa<small class="text-danger"></small></label>
-            <input type="text" name="name" id="name"
-                value="{{ isset($autinspection->name) ? $autinspection->name : old('name') }}" class="form-control border rounded"
-                placeholder="Nome da autinspection " required>
+            <label for="client_id">Empresa <small class="text-danger">*</small></label>
+            <select name="client_id" id="client_id" class="form-control border rounded" data-select2-selector="status" required>
+                <option value="" selected disabled>-- Selecione a Empresa --</option>
+                @foreach ($clients as $item)
+                    <option value="{{ $item->id }}">{{ $item->name }}</option>
+                @endforeach
+            </select>
         </div>
     </div>
-
-    <div class="col-md-4">
+    {{-- <div class="col-md-4">
         <div class="form-group">
             <label for="nif">NIF<small class="text-danger"></small></label>
             <input type="text" name="nif" id="nif" value="{{ isset($autinspection->nif) ? $autinspection->nif : old('nif') }}"
                 class="form-control border rounded" placeholder="Nº de Identificação Fiscal" required>
+        </div>
+    </div> --}}
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="nif">NIF <small class="text-danger">*</small></label>
+            <input type="text" name="nif" id="nif"
+                value="{{ isset($autinspection->nif) ? $autinspection->nif : old('nif') }}"
+                class="form-control border rounded"
+                placeholder="Nº de Identificação Fiscal" required readonly>
         </div>
     </div>
 

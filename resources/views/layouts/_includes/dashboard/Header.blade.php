@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="/dashboard/vendors/iconfonts/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="/dashboard/vendors/css/vendor.bundle.base.css">
     <link rel="stylesheet" href="/dashboard/vendors/css/vendor.bundle.addons.css">
+    <link rel="stylesheet" type="text/css" href="{{ url('dashboard/vendors/css/select2.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url('dashboard/vendors/css/select2-theme.min.css') }}">
     <!-- endinject -->
 
     <link rel="stylesheet" href="/dashboard/vendors/iconfonts/font-awesome/css/font-awesome.min.css" />

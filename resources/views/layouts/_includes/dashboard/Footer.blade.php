@@ -90,6 +90,8 @@
 <script src="/dashboard/vendors/datatables.net/jquery.dataTables.js"></script>
 <script src="/dashboard/vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
 <script src="/dashboard/vendors/datatables.net-fixedcolumns/dataTables.fixedColumns.min.js"></script>
+<script src="{{ url('dashboard/vendors/js/select2.min.js') }}"></script>
+    <script src="{{ url('dashboard/vendors/js/select2-active.min.js') }}"></script>
 
 <script src="/dashboard/js/shared/data-table.js"></script>
 <script src="/dashboard/js/demo_1/dashboard.js"></script>
