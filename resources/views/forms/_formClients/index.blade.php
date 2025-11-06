@@ -138,16 +138,16 @@
 
   <div class="col-md-4">
     <div class="form-group">
-        <label for="typestar">🌟 Classificação por Estrelas<small class="text-danger"></small></label>
-       <select type="text" name="typestar" id="typestar" class="form-control border rounded" required>
+        <label for="classification">🌟 Classificação por Estrelas<small class="text-danger"></small></label>
+       <select type="text" name="classification" id="classification" class="form-control border rounded" required>
 
-          @if (isset($client->typestar))
-              <option value="{{ $client->typestar }}" class="text-primary h6 bg-primary text-white" selected>
-                  {{ $client->typestar }}
+          {{-- @if (isset($client->classification))
+              <option value="{{ $client->classification }}" class="text-primary h6 bg-primary text-white" selected>
+                  {{ $client->classification }}
               </option>
-          @else
+          @else 
               <option disabled selected value="">selecione uma outra opção</option>
-          @endif
+          @endif --}}
            <option>Sem Nenhuma Classificação</option>
           <option>⭐ 1 Estrela – Simples</option>
           <option>⭐⭐ 2 Estrelas – Econômico</option>

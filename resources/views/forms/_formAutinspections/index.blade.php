@@ -1,6 +1,9 @@
 {{-- client nif --}}
 @include('admin.extras._clientNif.index')
 {{-- end client nif --}}
+<br>
+<h4 class="card-title">Dados da Empresa</h4>
+<hr>
 
 <input type="hidden" name="origin" value="autinspection">
 <div class="row">
@@ -32,16 +35,11 @@
         </div>
     </div>
 
-</div>
-
-
-<div class="row">
-
-    <div class="col-md-6">
+    <div class="col-md-4">
         <div class="form-group">
-            <label for="incubatorModel">Classificaçao do Empreendimento<small class="text-danger">*</small></label>
-
-            <select type="text" name="incubatorModel" id="incubatorModel" class="form-control border rounded" required>
+            <label for="classification">Classificaçao do Empreendimento<small class="text-danger">*</small></label>
+            <input type="text" class="form-control" name="classification" id="classification" readonly> 
+            {{-- <select type="text" name="incubatorModel" id="incubatorModel" class="form-control border rounded" required>
 
                 @if (isset($autinspection->incubatorModel))
                     <option value="{{ $autinspection->incubatorModel }}" class="text-primary h6 bg-primary text-white"
@@ -60,7 +58,7 @@
                  <option>⭐⭐⭐⭐⭐ 5 Estrelas – Luxuoso</option>
                  <option>⭐⭐⭐⭐⭐ 5 Estrelas – Luxuoso</option>
 
-            </select>
+            </select> --}}
         </div>
     </div>
 
@@ -68,22 +66,27 @@
         <div class="form-group">
             <label for="tel">Telefone <small class="text-danger"></small></label>
             <input type="text" name="tel" id="tel" value="{{ isset($autinspection->tel) ? $autinspection->tel : old('tel') }}"
-                class="form-control border rounded" placeholder="Telefone" required>
+                class="form-control border rounded" placeholder="Telefone" readonly required>
         </div>
     </div>
 
-
-</div>
-
-<div class="row">
-    <div class="col-md-6">
+    <div class="col-md-4">
         <div class="form-group">
             <label for="email">Email <small class="text-danger"></small></label>
             <input type="email" name="email" id="email"
                 value="{{ isset($autinspection->email) ? $autinspection->email : old('email') }}"
-                class="form-control border rounded" placeholder="Email" required>
+                class="form-control border rounded" placeholder="Email" readonly required>
         </div>
     </div>
+
+</div>
+
+<br>
+<h4 class="card-title">Dados da Vistoria</h4>
+<hr>
+
+<div class="row">
+
 
 <div class="col-md-3">
     <div class="form-group">
@@ -227,49 +230,6 @@
     </div>
 </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <div class="row">

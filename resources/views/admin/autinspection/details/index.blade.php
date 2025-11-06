@@ -158,7 +158,7 @@
                                 <div class="col-md-3">
                                     <p class="text-dark">
                                         <b>CLASSIFICAÇAO DA EMPRESA </b><br>
-                                        <small> {{ $autinspection->incubatorModel }}</small>
+                                        <small> {{ $autinspection->classification }}</small>
                                     </p>
                                 </div>
 

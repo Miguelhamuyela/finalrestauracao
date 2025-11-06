@@ -20,6 +20,7 @@ class CreateClientsTable extends Migration
             $table->string('tel');
             $table->string('email');
             $table->string('nif');
+            $table->string('classification');
           //  $table->string('representative');
           //  $table->string('TypesHotel');
           //  $table->string('address');

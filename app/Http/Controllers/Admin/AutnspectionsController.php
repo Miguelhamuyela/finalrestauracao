@@ -15,7 +15,8 @@ use App\Models\DocumentsStartup;
 use App\Models\Startup;
 use App\Models\Autinspection;
 use App\Models\Employee;
-use PDF;
+use Barryvdh\DomPDF\Facade\Pdf;
+
 class AutnspectionsController extends Controller
 {
 
@@ -28,17 +29,12 @@ class AutnspectionsController extends Controller
 
     public function index()
     {
-        $response['autinspection'] = Autinspection::get();
-        $response['autinspections'] = Autinspection::with('startupDocuments','payments', 'scheldules', 'members')->get();
+        /* $response['autinspection'] = Autinspection::with('clients')->get(); */
+        $response['autinspections'] = Autinspection::with('client','startupDocuments','payments', 'scheldules', 'members')->get();
         $this->Logger->log('info', 'Lista uma Agenda de Vistoria');
         return view('admin.autinspection.list.index', $response);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         $response['clients'] = Client::orderByDesc('id')->get();
@@ -46,36 +42,30 @@ class AutnspectionsController extends Controller
         return view('admin.autinspection.create.index', $response);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
          $request->validate([
-            'name' => 'required|string|max:255',
+
+            /* 'name' => 'required|string|max:255',
+            'classification' => 'string',
             'email' => 'required|string|max:255',
             'tel' => 'max:50',
             'nif' => 'required|string|max:50',
             'StartupDetails' => 'required|string|min:5',
-            'document' => 'mimes:pdf,docx,xlsx',
+            'document' => 'mimes:pdf,docx,xlsx', */
 
+
+            'client_id' => 'required',
             'bedNumber' => 'max:255',
             'tableNumber' => 'required|string|max:50',
             'yearSelfinspection' => 'required|string|max:255',
             'monthselfInspection' => 'max:50',
             'workforce' => 'required|string|max:50',
-
             'men' => 'required|string|max:255',
             'women' => 'max:255',
             'expatriateWork' => 'required|string|max:50',
-
             'expatriateWork' => 'max:255',
             'agreeInstallation' => 'required|string|max:255',
-
-
 
             /***Payment Information */
             'type' => 'required|string|max:255',
@@ -89,10 +79,10 @@ class AutnspectionsController extends Controller
             'end' => 'required|string|max:255',
 
             /**Clients information */
-            'name' => 'required|string|max:255',
+            /* 'name' => 'required|string|max:255',
             'email' => 'required|string|max:255',
             'tel' => 'max:50',
-            'nif' => 'required|string|max:50',
+            'nif' => 'required|string|max:50', */
            // 'address' => 'max:50',
             'clienttype' => 'max:50'
 
@@ -111,12 +101,17 @@ class AutnspectionsController extends Controller
         $schedule = Scheldule::create($request->all());
 
         $autinspection = Autinspection::create([
-            'name' => $request->name,
+
+           /*  'name' => $request->name, */
            // 'roomName' => $request->roomName,
           //  'site' => $request->site,
-            'email' => $request->email,
+            /* 'email' => $request->email,
+            'classification' => $request->classification,
             'tel' => $request->tel,
-            'nif' => $request->nif,
+            'nif' => $request->nif, */
+
+
+            'client_id' => $request->client_id,
             'numberRoomm' => $request->numberRoomm,
             'bedNumber' => $request->bedNumber,
             'tableNumber' => $request->tableNumber,
@@ -135,13 +130,14 @@ class AutnspectionsController extends Controller
 
         ]);
 
-        $client = Client::create([
+        /* $client = Client::create([
             'name' => $autinspection->name,
             'nif' => $autinspection->nif,
             'tel' => $autinspection->tel,
+            'classification' => $autinspection->classification,
             'email' => $autinspection->email,
             'origin' => "Autinspection"
-        ]);
+        ]); */
 
         $this->Logger->log('info', 'Cadastrou uma agenda de Vistoria');
         return redirect()->route('admin.autinspection.list.index')->with('create', '1');
@@ -151,7 +147,7 @@ class AutnspectionsController extends Controller
     public function show($id)
     {
         $response['autinspection'] = Autinspection::with('startupDocuments','payments', 'scheldules', 'members')->find($id);
-        $response['autinspection'] = Autinspection::get();
+        $response['autinspection'] = Autinspection:: findOrFail($id);
         $this->Logger->log('info', 'Detalhes de uma agenda Verificada');
         return view('admin.autinspection.details.index', $response);
     }
@@ -186,22 +182,32 @@ class AutnspectionsController extends Controller
         return view('admin.autinspection.edit.index', $response);
     }
 
-
-
-
-
     public function update(Request $request, $id)
     {
        $request->validate([
-            'name' => 'required|string|max:255',
+            /* 'name' => 'required|string|max:255',
             'roomName' => 'required|string|max:255',
             'site' => 'max:255',
+            'classification' => 'string',
             'email' => 'required|string|max:255',
             'tel' => 'max:50',
             'incubatorModel' => 'required|string|max:50',
             'nif' => 'required|string|max:50',
             'StartupDetails' => 'required|string|min:5',
-            'document' => 'mimes:pdf,docx,xlsx',
+            'document' => 'mimes:pdf,docx,xlsx', */
+
+            'client_id' => 'required',
+            'bedNumber' => 'max:255',
+            'tableNumber' => 'required|string|max:50',
+            'yearSelfinspection' => 'required|string|max:255',
+            'monthselfInspection' => 'max:50',
+            'workforce' => 'required|string|max:50',
+            'men' => 'required|string|max:255',
+            'women' => 'max:255',
+            'expatriateWork' => 'required|string|max:50',
+            'expatriateWork' => 'max:255',
+            'agreeInstallation' => 'required|string|max:255',
+
 
             /**Payments Information */
 
@@ -211,12 +217,12 @@ class AutnspectionsController extends Controller
             'end' => 'required|string|max:255',
 
             /**Clients information */
-            'name' => 'required|string|max:255',
+            /* 'name' => 'required|string|max:255',
             'email' => 'required|string|max:255',
             'tel' => 'max:50',
             'nif' => 'required|string|max:50',
             'address' => 'max:50',
-            'clienttype' => 'max:50'
+            'clienttype' => 'max:50' */
 
         ]);
 
@@ -229,27 +235,43 @@ class AutnspectionsController extends Controller
 
         Autinspection::find($id)->update([
 
-            'name' => $request->name,
+            /* 'name' => $request->name,
             'roomName' => $request->roomName,
             'site' => $request->site,
+            'classification' => $request->classification,
             'email' => $request->email,
             'tel' => $request->tel,
             'incubatorModel' => $request->incubatorModel,
             'nif' => $request->nif,
             'StartupDetails' => $request->StartupDetails,
-            'document' => $file
+            'document' => $file */
+
+            'client_id' => $request->client_id,
+            'numberRoomm' => $request->numberRoomm,
+            'bedNumber' => $request->bedNumber,
+            'tableNumber' => $request->tableNumber,
+            'yearSelfinspection' => $request->yearSelfinspection,
+            'monthselfInspection' => $request->monthselfInspection,
+            'workforce' => $request->workforce,
+            'men' => $request->men,
+            'women' => $request->women,
+            'expatriateWork' => $request->expatriateWork,
+            'expatriateWork' => $request->expatriateWork,
+            'agreeInstallation' => $request->agreeInstallation,
+            'incubatorModel' => $request->incubatorModel,
+            'StartupDetails' => $request->StartupDetails,
 
         ]);
         $autinspection = Autinspection::find($id);
 
 
-        Client::where([['nif', $autinspection->nif], ['origin', '=', 'agenda de vistoria']])->update([
+        /* Client::where([['nif', $autinspection->nif], ['origin', '=', 'agenda de vistoria']])->update([
             'name' => $autinspection->name,
             'email' => $autinspection->email,
             'tel' => $autinspection->tel,
             'nif' => $autinspection->nif,
             'origin' => "autinspection"
-        ]);
+        ]); */
 
         Payment::find($autinspection->fk_Payments_id)->update($request->all());
         Scheldule::find($autinspection->fk_Scheldules_id)->update($request->all());

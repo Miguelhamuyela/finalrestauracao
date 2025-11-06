@@ -41,9 +41,9 @@
                                 @foreach ($autinspections as $item)
                                     <tr class="text-center text-dark">
                                         <td>{{ $item->id }}</td>
-                                        <td>{{ $item->name }} </td>
-                                        <td>{{ $item->tel }} </td>
-                                        <td>{{ $item->nif }} </td>
+                                        <td>{{ $item->client->name ?? 'N/A' }} </td>
+                                        <td>{{ $item->client->tel ?? 'N/A' }} </td>
+                                        <td>{{ $item->client->nif ?? 'N/A' }} </td>
                                         <td>{{ $item->numberRoomm }} </td>
                                         <td>{{ $item->bedNumber }} </td>
                                         <td>{{ $item->workforce }} </td>
