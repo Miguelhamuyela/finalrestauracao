@@ -20,6 +20,9 @@ class CreateAutinspectionsTable extends Migration
             $table->string('nif'); */
           //  $table->enum('incubatorModel', ['Residente', 'Não Residente']);
             /* $table->string('classification'); */
+            
+            
+            /* client relatioship */
             $table->unsignedBigInteger('client_id');
             $table->foreign('client_id')->references('id')->on('clients')->onDelete('CASCADE');
             $table->string('numberRoomm');
@@ -33,12 +36,14 @@ class CreateAutinspectionsTable extends Migration
             $table->string('women');
             $table->string('expatriateWork');
             $table->string('agreeInstallation');
-            /* $table->string('file')->nullable(); */
+            $table->string('file')->nullable();
             /* $table->longText('StartupDetails'); */
 
+            /* scheludes relation */
             $table->unsignedBigInteger('fk_Scheldules_id');
             $table->foreign('fk_Scheldules_id')->references('id')->on('scheldules')->onDelete('CASCADE')->onUpgrade('CASCADE');
 
+            /* payment relation */
             $table->unsignedBigInteger('fk_Payments_id');
             $table->foreign('fk_Payments_id')->references('id')->on('payments')->onDelete('CASCADE')->onUpgrade('CASCADE');
 

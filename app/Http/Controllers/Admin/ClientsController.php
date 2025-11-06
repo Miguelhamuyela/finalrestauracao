@@ -6,8 +6,8 @@ use App\Classes\Logger;
 use Illuminate\Http\Request;
 use App\Models\Client;
 use App\Http\Controllers\Controller;
-
-use PDF;
+use App\Models\DocumentsStartup;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 class ClientsController extends Controller
 {
@@ -17,11 +17,7 @@ class ClientsController extends Controller
     {
         $this->Logger = new Logger();
     }
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
         //
@@ -29,49 +25,64 @@ class ClientsController extends Controller
         return view('admin.clients.list.index', $response);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         //
         return view('admin.clients.create.index');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
         $request->validate([
             /**Clients informatio */
             'name' => 'required|string|max:255',
-            // 'TypesHotel' => 'required|string|max:255',
+            'TypesHotel' => 'required|string|max:255',
             'email' => 'required|string|max:255',
             'classification' => 'string',
             'tel' => 'max:50',
             'nif' => 'required|string|max:50',
             'address' => 'required|string|max:50',
+            'document' => 'file',
         ]);
 
-        $client = Client::create($request->all());
+        $client = Client::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'TypesHotel' => $request->TypesHotel,
+            'classification' => $request->classification,
+            'tel' => $request->tel,
+            'nif' => $request->nif,
+            'address' => $request->address
+        ]);
 
-        return redirect()
+        /* if ($request->document) {
+            //upload do arquivo
+            $fileName = null;
+            if ($request->hasFile('document') && $request->file('document')->isValid()) {
+                $file = $request->file('document');
+                $extension = $file->extension();
+                $fileName = md5($file->getClientOriginalName() . strtotime('now')) . '.' . $extension;
+                $file->move(public_path('files/documents'), $fileName);
+            }
+
+            $document = DocumentsStartup::create([
+                'documentsStartup' => $fileName,
+                'client_id' => $client->id
+            ]);
+        } */
+        /* if ($request->document) {
+            $documentation = DocumentsStartup::create([
+                'documentsStartup' => $request->document,
+                'client_id' => $client->id
+            ]);
+        } */
+        /* return redirect()
             ->back()
-            ->with('create', '1');
+            ->with('create', '1'); */
+            $this->Logger->log('info', 'Cadastrou uma empresa');
+        return redirect()->route('admin.client.list.index')->with('create', '1');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function show($id)
     {
         //
@@ -79,12 +90,6 @@ class ClientsController extends Controller
         return view('admin.clients.details.index', $response);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function edit($id)
     {
         //
@@ -92,13 +97,6 @@ class ClientsController extends Controller
         return view('admin.clients.edit.index', $response);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, $id)
     {
         $request->validate([
@@ -119,9 +117,6 @@ class ClientsController extends Controller
             ->with('edit', '1');
     }
 
-
-
-
     /**Imprimir Lista de Clientes */
     public function printClient(Request $request)
     {
@@ -141,14 +136,6 @@ class ClientsController extends Controller
         return $pdf->setPaper('a4', 'landscape')->stream('pdf');
     }
 
-
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function destroy($id)
     {
         Client::find($id)->delete();

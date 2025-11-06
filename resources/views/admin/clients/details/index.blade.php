@@ -60,7 +60,7 @@
                                     <div class="col-md-3">
                                         <p class="text-dark">
                                             <b>Tipo de Empresa</b><br>
-                                            <small> {{ $client->clienttype}}</small>
+                                            <small> {{ $client->TypesHotel}}</small>
                                         </p>
                                     </div>
 

@@ -38,7 +38,7 @@
                                         <td>{{ $item->id }}</td>
                                         <td>{{ $item->name }} </td>
                                         <td>{{ $item->nif }} </td>
-                                        <td>{{ $item->clienttype }} </td>
+                                        <td>{{ $item->TypesHotel }} </td>
                                         <td>{{ $item->tel }} </td>
                                         <td>
 

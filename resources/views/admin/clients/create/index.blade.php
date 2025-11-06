@@ -6,7 +6,7 @@
 
         <div class="col-lg-12 grid-margin stretch-card ">
             <div class="card">
-                <form  method="POST" action="{{ route('admin.client.store') }}" >
+                <form  method="POST" action="{{ route('admin.client.store') }}" enctype="multipart/form-data">
                     @csrf
                 <div class="card-body bg-light">
                     <h4 class="card-title"><b>Lista de Empresas</b></h4>
