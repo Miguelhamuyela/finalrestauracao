@@ -19,6 +19,10 @@ class Autinspection extends Model
 
     protected $dates = ['deleted_at'];
 
+    public function client(){
+        return $this->belongsTo(Client::class);
+    }
+
     public function payments(){
         return $this->belongsTo(Payment::class, 'fk_Payments_id', 'id');
     }

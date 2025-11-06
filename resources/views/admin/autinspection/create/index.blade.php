@@ -20,7 +20,7 @@
                         @endif
                         <h4 class="card-title"><b>
                                 <a href="{{ url('admin/autinspection/list') }}">Listar Empresas Verificadas</a>
-                                > Empresa
+                                > Cadastrar Empresa Verificada
                             </b></h4>
                         <hr>
                         @include('forms._formAutinspections.index')

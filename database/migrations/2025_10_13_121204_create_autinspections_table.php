@@ -12,27 +12,29 @@ class CreateAutinspectionsTable extends Migration
     {
         Schema::create('autinspections', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            /* $table->string('name'); */
            // $table->string('roomName');
           //  $table->string('site')->nullable();
-            $table->string('email');
+           /*  $table->string('email');
             $table->string('tel');
-            $table->string('nif');
+            $table->string('nif'); */
           //  $table->enum('incubatorModel', ['Residente', 'Não Residente']);
-
+            /* $table->string('classification'); */
+            $table->unsignedBigInteger('client_id');
+            $table->foreign('client_id')->references('id')->on('clients')->onDelete('CASCADE');
             $table->string('numberRoomm');
             $table->string('bedNumber');
             $table->string('tableNumber');
             $table->string('yearSelfinspection');
-
+            
             $table->string('monthselfInspection');
             $table->string('workforce');
             $table->string('men');
             $table->string('women');
             $table->string('expatriateWork');
             $table->string('agreeInstallation');
-
-            $table->longText('StartupDetails');
+            /* $table->string('file')->nullable(); */
+            /* $table->longText('StartupDetails'); */
 
             $table->unsignedBigInteger('fk_Scheldules_id');
             $table->foreign('fk_Scheldules_id')->references('id')->on('scheldules')->onDelete('CASCADE')->onUpgrade('CASCADE');

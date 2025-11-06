@@ -53,6 +53,7 @@ class ClientsController extends Controller
             'name' => 'required|string|max:255',
             // 'TypesHotel' => 'required|string|max:255',
             'email' => 'required|string|max:255',
+            'classification' => 'string',
             'tel' => 'max:50',
             'nif' => 'required|string|max:50',
             'address' => 'required|string|max:50',
@@ -105,6 +106,7 @@ class ClientsController extends Controller
             'name' => 'required|string|max:255',
             'TypesHotel' => 'required|string|max:255',
             'email' => 'required|string|max:255',
+            'classification' => 'string',
             'tel' => 'max:50',
             'nif' => 'required|string|max:50',
             'address' => 'required|string|max:50',
@@ -161,7 +163,7 @@ class ClientsController extends Controller
         $client = \App\Models\Client::find($id);
 
         if ($client) {
-            return response()->json(['nif' => $client->nif]);
+            return response()->json(['data' => $client]);
         }
 
         return response()->json(['nif' => null], 404);
