@@ -170,12 +170,12 @@
         </div>
     </div>
 
-    <div class="col-md-4">
+    {{-- <div class="col-md-4">
         <div class="form-group">
             <label for="document">Documento<small class="text-danger"></small></label>
             <input type="file" name="document" id="document" class="form-control border rounded">
         </div>
-    </div>
+    </div> --}}
 
 </div>
 

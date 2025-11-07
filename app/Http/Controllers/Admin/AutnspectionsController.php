@@ -298,4 +298,27 @@ class AutnspectionsController extends Controller
         $this->Logger->log('info', 'Eliminou  uma agenda de vistoria');
         return redirect()->route('admin.autinspection.list.index')->with('destroy', '1');
     }
+
+    /* print reports */
+    public function autinspectionReport($id){
+
+        $response['autinspection'] = Autinspection::with('client','startupDocuments','payments', 'scheldules', 'members')->find($id);
+        $data = $response['autinspection'] ;
+        $pdf = PDF::loadview('pdf.autinspectionReport.index', $response);
+
+        $pdf->setPaper('A3', 'landscape');
+
+        return $pdf->stream('Emitiu informações sobre a empresa '. $data->name .' verificada');
+    }
+    /* 
+    $this->Logger->Log('info', 'Imprimiu Informações sobre a uma agenda de vistoria com id ' . $id);
+
+        $data = autinspection::where('id', $id)->with('payments', 'scheldules')->first();
+        $response['singleStartup'] = $data;
+
+        $pdf = PDF::loadView('pdf/singleStartup/index', $response);
+        $pdf->setPaper('A3', 'landscape');
+        return $pdf->stream('Emitiu informações sobre a agenda vistoria com id ' . $data->id . ".pdf");
+    }
+    */
 }

@@ -41,8 +41,9 @@ class SchedulesController extends Controller
 
     public function create()
     {
+        $response['clients'] = Client::orderByDesc('id')->get();
          $this->Logger->log('info', 'Criar uma agenda');
-        return view('admin.schedule.create.index');
+        return view('admin.schedule.create.index', $response);
     }
 
 
