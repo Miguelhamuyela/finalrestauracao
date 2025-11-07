@@ -13,16 +13,12 @@ class DocumentsStartup extends Model
 
     protected $guarded = ['id'];
 
+    public function client(){
+        return $this->belongsTo(Client::class);
+    }
 
-    /**
-     * The attributes that should be mutated to dates.
-     *
-     * @var array
-     */
-    protected $dates = ['deleted_at'];
-
-    public function startup(){
-
-        return $this->belongsTo(Startup::class, 'fk_startups_id');
+    public function startup()
+    {
+        return $this->belongsTo(Startup::class);
     }
 }

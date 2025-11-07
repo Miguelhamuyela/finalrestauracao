@@ -28,7 +28,7 @@
 
 
 
-                    <div class="card-body bg-light">
+                    {{-- <div class="card-body bg-light">
                         <h4 class="card-title"><b>Período da Vistoria</b></h4>
                         <hr>
                         @include('forms._formScheldules.index')
@@ -40,7 +40,7 @@
                         <hr>
                         @include('forms._formPayments.index')
                     </div>
-
+ --}}
 
                     <div class="card-body bg-light">
                         <div class="col-md-12">

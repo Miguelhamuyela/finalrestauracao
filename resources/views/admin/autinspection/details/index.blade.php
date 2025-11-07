@@ -10,7 +10,7 @@
                     <div class="col">
                         <h5><b>
                                 <a href="{{ url('admin/autinspection/list') }}">Listar Empresa Verificada</a>
-                                > Detalhes da Empresa Verificada - {{ $autinspection->name }}
+                                > Detalhes da Empresa Verificada - {{ $autinspection->client->name }}
 
 
                             </b></h5>
@@ -66,27 +66,27 @@
                                 <div class="col-md-3">
                                     <p class="text-dark">
                                         <b>Nome da Empresa</b><br>
-                                        <small> {{ $autinspection->name }}</small>
+                                        <small> {{ $autinspection->client->name }}</small>
                                     </p>
                                 </div>
                                 <div class="col-md-3">
                                     <p class="text-dark">
                                         <b>Número de Identificação Fiscal</b><br>
-                                        <small> {{ $autinspection->nif }}</small>
+                                        <small> {{ $autinspection->client->nif }}</small>
                                     </p>
                                 </div>
 
                                 <div class="col-md-3">
                                     <p class="text-dark">
                                         <b>Telefone</b><br>
-                                        <small> {{ $autinspection->tel }}</small>
+                                        <small> {{ $autinspection->client->tel }}</small>
                                     </p>
                                 </div>
 
                                 <div class="col-md-3">
                                     <p class="text-dark">
                                         <b>Email</b><br>
-                                        <small> {{ $autinspection->email }}</small>
+                                        <small> {{ $autinspection->client->email }}</small>
                                     </p>
                                 </div>
 
@@ -158,14 +158,14 @@
                                 <div class="col-md-3">
                                     <p class="text-dark">
                                         <b>CLASSIFICAÇAO DA EMPRESA </b><br>
-                                        <small> {{ $autinspection->classification }}</small>
+                                        <small> {{ $autinspection->client->classification }}</small>
                                     </p>
                                 </div>
 
                                 <div class="col-md-3">
                                     <p class="text-dark">
                                         <b>Detalhes Sobre a verificação da Empresa</b><br>
-                                        <small> {{ $autinspection->StartupDetails }}</small>
+                                        <small> {{ $autinspection->client->StartupDetails }}</small>
                                     </p>
                                 </div>
 

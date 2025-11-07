@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AutnspectionsController;
 use App\Http\Controllers\Admin\DashboardController;
 use Illuminate\Support\Facades\Route;
 
@@ -144,6 +145,8 @@ Route::middleware(['auth'])->group(function () {
         Route::get('admin/autinspection/delete/{id}', ['as' => 'admin.autinspection.delete', 'uses' => 'Admin\AutnspectionsController@destroy']);
         Route::get('admin/autinspection/show/{id}', ['as' => 'admin.autinspection.show', 'uses' => 'Admin\AutnspectionsController@show']);
 
+        Route::get('admin/autinspectionReport/print/{id}', ['as' => 'admin.autinspetionReport.print', 'uses' => 'Admin\AutnspectionsController@autinspectionReport']);
+        /* Route::get('admin/autinspectionReport/print/{id}', [AutnspectionsController::class, 'autinspectionReport'])->name('admin.autinspetionReport.print'); */
         Route::get('admin/autinspection/print/{id}', ['as' => 'admin.autinspection.print', 'uses' => 'Admin\AutnspectionsController@print']);
         /**End Autnspection */
 

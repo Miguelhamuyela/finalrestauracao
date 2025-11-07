@@ -14,12 +14,17 @@ class Client extends Model
 
     protected $guarded = ['id'];
 
+    public function client()
+
+    {
+        return $this->hasMany(Autinspection::class);
+    }
+
     public function Autinspection()
 
     {
 
         return $this->hasMany(Autinspection::class);
-
     }
 
     /**
@@ -29,28 +34,31 @@ class Client extends Model
      */
     protected $dates = ['deleted_at'];
 
-    public function equipaments(){
+    public function equipaments()
+    {
 
         return $this->belongsTo(EquipmentRepair::class, 'fk_Payments_id');
     }
 
-    public function startups(){
+    public function startups()
+    {
 
         return $this->belongsTo(Startup::class, 'fk_Payments_id');
     }
 
-    public function manufacturesSoftware(){
+    public function manufacturesSoftware()
+    {
 
         return $this->belongsTo(ManufacturesSoftware::class, 'fk_Payments_id');
     }
-    public function  Cowork(){
+    public function  Cowork()
+    {
 
         return $this->belongsTo(Cowork::class, 'fk_Payments_id');
     }
-    public function  Auditoriums(){
+    public function  Auditoriums()
+    {
 
         return $this->belongsTo(Auditorium::class, 'fk_Payments_id');
     }
-
-    
 }

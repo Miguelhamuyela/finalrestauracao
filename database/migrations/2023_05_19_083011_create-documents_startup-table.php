@@ -18,9 +18,11 @@ class CreateDocumentsStartupTable extends Migration
             $table->id();
             $table->string('documentStartup',255);
 
-            $table->unsignedBigInteger('fk_startups_id');
-            $table->foreign('fk_startups_id')->references('id')->on('startups')->onDelete('CASCADE')->onUpgrade('CASCADE');
+            $table->unsignedBigInteger('client_id')->nullable();
+            $table->foreign('client_id')->references('id')->on('clients')->onDelete('cascade');
 
+            $table->unsignedBigInteger('fk_startups_id')->nullable();
+            $table->foreign('fk_startups_id')->references('id')->on('startups')->onDelete('cascade')->onUpdate('cascade');
 
             $table->softDeletes();
             $table->timestamps();
