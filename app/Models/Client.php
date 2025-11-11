@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use App\Models\Autinspection;
+use App\Models\Schedule;
 
 class Client extends Model
 {
@@ -25,6 +26,11 @@ class Client extends Model
     {
 
         return $this->hasMany(Autinspection::class);
+    }
+
+    public function Schedule()
+    {
+        return $this->hasMany(Schedule::class);
     }
 
     /**

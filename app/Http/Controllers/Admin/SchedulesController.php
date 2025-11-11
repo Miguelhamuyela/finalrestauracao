@@ -13,7 +13,7 @@ use App\Models\Payment;
 use App\Models\Scheldule;
 use App\Models\DocumentsStartup;
 use App\Models\Schedule;
-use PDF;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 
 
@@ -33,7 +33,7 @@ class SchedulesController extends Controller
 
     public function index()
     {
-        $response['schedules'] = Schedule::with('startupDocuments','payments', 'scheldules', 'members')->get();
+        $response['schedules'] = Schedule::with('startupDocuments','payments', 'scheldules', 'members', 'client')->where('status', false)->get();
         $this->Logger->log('info', 'Lista de autinspection');
         return view('admin.schedule.list.index', $response);
     }
@@ -55,7 +55,7 @@ class SchedulesController extends Controller
 
          $request->validate([
             /**Startup informatio */
-            'name' => 'required|string|max:255',
+            /* 'name' => 'required|string|max:255',
             'roomName' => 'required|string|max:255',
             'site' => 'max:255',
             'email' => 'required|string|max:255',
@@ -63,32 +63,33 @@ class SchedulesController extends Controller
             'nif' => 'required|string|max:50',
             'incubatorModel' => 'required|string|max:50',
             'StartupDetails' => 'required|string|min:5',
-            'document' => 'mimes:pdf,docx,xlsx',
+            'document' => 'mimes:pdf,docx,xlsx', */
 
 
             /***Payment Information */
-            'type' => 'required|string|max:255',
+            /* 'type' => 'required|string|max:255',
             'value' =>  'required|numeric|min:2',
             'reference'  => 'max:255',
             'currency' => 'required|string|max:255',
-            'status' => 'required|string|max:255',
+            'status' => 'required|string|max:255', */
 
             /**Scheldules Information */
             'started' => 'required|string|max:255',
             'end' => 'required|string|max:255',
+            'client_id' => 'required'
 
             /**Clients information */
-            'name' => 'required|string|max:255',
+            /* 'name' => 'required|string|max:255',
             'email' => 'required|string|max:255',
             'tel' => 'max:50',
             'nif' => 'required|string|max:50',
             'address' => 'max:50',
-            'clienttype' => 'max:50'
+            'clienttype' => 'max:50' */
 
         ]);
 
 
-        $payment = Payment::create([
+        /* $payment = Payment::create([
             'type' => $request->type,
             'value' => $request->value,
             'reference' => $request->reference,
@@ -99,24 +100,17 @@ class SchedulesController extends Controller
         ]);
         $schedule = Scheldule::create($request->all());
 
-
+ */
 
 
         $schedule = Schedule::create([
-            'name' => $request->name,
-            'roomName' => $request->roomName,
-            'site' => $request->site,
-            'email' => $request->email,
-            'tel' => $request->tel,
-            'nif' => $request->nif,
-            'incubatorModel' => $request->incubatorModel,
-            'StartupDetails' => $request->StartupDetails,
-            'fk_Payments_id' => $payment->id,
-            'fk_Scheldules_id' => $schedule->id
-
+            
+            'started' => $request->started,
+            'end' => $request->end,
+            'client_id' => $request->client_id
         ]);
 
-        $client = Client::create([
+        /* $client = Client::create([
 
             'name' => $schedule->name,
             'nif' => $schedule->nif,
@@ -124,7 +118,7 @@ class SchedulesController extends Controller
             'email' => $schedule->email,
             'origin' =>"hamuyela"
 
-        ]);
+        ]); */
 
         $this->Logger->log('info', 'Cadastrou uma Agenda de Vistoria');
         return redirect()->route('admin.schedule.list.index')->with('create', '1');
