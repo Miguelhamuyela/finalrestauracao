@@ -20,20 +20,29 @@ class Schedule extends Model
      */
     protected $dates = ['deleted_at'];
 
-    public function payments(){
+    public function payments()
+    {
         return $this->belongsTo(Payment::class, 'fk_Payments_id', 'id');
     }
 
-    public function scheldules(){
+    public function scheldules()
+    {
         return $this->belongsTo(Scheldule::class, 'fk_Scheldules_id', 'id');
     }
 
-    public function members(){
+    public function members()
+    {
 
         return $this->hasMany(Member::class, 'fk_startups_id');
     }
 
-    public function startupDocuments(){
+    public function client()
+    {
+        return $this->belongsTo(Client::class);
+    }
+
+    public function startupDocuments()
+    {
 
         return $this->hasMany(DocumentsStartup::class, 'fk_startups_id');
     }

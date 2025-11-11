@@ -15,7 +15,7 @@ class CreateSchedulesTable extends Migration
     {
         Schema::create('schedules', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            /* $table->string('name');
             $table->string('roomName');
             $table->string('site')->nullable();
             $table->string('email');
@@ -26,7 +26,12 @@ class CreateSchedulesTable extends Migration
             $table->unsignedBigInteger('fk_Scheldules_id');
             $table->foreign('fk_Scheldules_id')->references('id')->on('scheldules')->onDelete('CASCADE')->onUpgrade('CASCADE');
             $table->unsignedBigInteger('fk_Payments_id');
-            $table->foreign('fk_Payments_id')->references('id')->on('payments')->onDelete('CASCADE')->onUpgrade('CASCADE');
+            $table->foreign('fk_Payments_id')->references('id')->on('payments')->onDelete('CASCADE')->onUpgrade('CASCADE'); */
+            $table->dateTime('started')->nullable();
+            $table->dateTime('end')->nullable();
+            $table->boolean('status')->default(false);
+            $table->unsignedBigInteger('client_id');
+            $table->foreign('client_id')->references('id')->on('clients')->onDelete('cascade')->onUpdate('cascade');
             $table->softDeletes();
             $table->timestamps();
 

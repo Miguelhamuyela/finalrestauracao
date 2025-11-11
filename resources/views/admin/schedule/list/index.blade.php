@@ -24,11 +24,12 @@
                             <thead class="bg-primary thead-dark">
                                 <tr class="text-center">
                                     <th>#</th>
+                                    <th>status</th>
                                     <th>NOME DA EMPRESA</th>
                                     <th>TELEFONE</th>
-                                    <th>FIM DE CONTRATO</th>
                                     <th>TIPO DE EMPRESA</th>
-                                    <th>STATUS</th>
+                                    <th>DATA DE INICIO</th>
+                                    <th>DATA DE FIM</th>
                                     <th>ACÇÕES</th>
                                 </tr>
                             </thead>
@@ -36,31 +37,12 @@
                                 @foreach ($schedules as $item)
                                     <tr class="text-center text-dark">
                                         <td>{{ $item->id }}</td>
-                                        <td>{{ $item->name }} </td>
-                                        <td>{{ $item->tel }} </td>
-                                        <td>{{ $item->scheldules->end }} </td>
-                                        <td>{{ $item->incubatorModel }} </td>
-                                        @if ($item->payments->status == 'Pago')
-                                            <td>
-                                                <div class="btn btn-success btn-fw btn-rounded text-dark ">
-                                                    {{ $item->payments->status }}</div>
-                                            </td>
-                                        @elseif($item->payments->status == 'Não Pago')
-                                            <td>
-                                                <div class="btn btn-danger btn-fw btn-rounded text-white ">
-                                                    {{ $item->payments->status }}</div>
-                                            </td>
-                                        @elseif($item->payments->status == 'Em Validação')
-                                            <td>
-                                                <div class="btn btn-warning btn-fw btn-rounded text-dark ">
-                                                    {{ $item->payments->status }}</div>
-                                            </td>
-                                        @else
-                                            <td>
-                                                <div class="btn btn-dark btn-fw btn-rounded text-white ">
-                                                    {{ $item->payments->status }}</div>
-                                            </td>
-                                        @endif
+                                        <td>{{ $item->status }}</td>
+                                        <td>{{ $item->client->name }} </td>
+                                        <td>{{ $item->client->tel }} </td>
+                                        <td>{{ $item->client->TypesHotel }} </td>
+                                        <td>{{ $item->started}}</td>
+                                        <td>{{ $item->end }} </td>
                                         <td>
                                             <div class="dropdown">
                                                 <button class="btn btn-primary text-white btn-sm dropdown-toggle"
@@ -71,10 +53,10 @@
                                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                     <a href='{{ url("admin/schedule/show/{$item->id}") }}'
                                                         class="dropdown-item">Detalhes</a>
-                                                    @if ($item->payments->status == 'Pago')
+                                                    {{-- @if ($item->payments->status == 'Pago')
                                                         <a href="{{ url('admin/pagamentos/fatura/'. $item->payments->code . '/' . $item->payments->origin . '/' . $item->payments->value . '/' . $item->name. '/' . $item->payments->status.'/'.$item->nif.'/'.$item->updated_at) }}"
                                                             class="dropdown-item mt-2" target="_blank">Emitir Fatura</a>
-                                                    @endif
+                                                    @endif --}}
                                                 </div>
                                             </div>
                                         </td>

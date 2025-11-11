@@ -15,6 +15,7 @@ use App\Models\DocumentsStartup;
 use App\Models\Startup;
 use App\Models\Autinspection;
 use App\Models\Employee;
+use App\Models\Schedule;
 use Barryvdh\DomPDF\Facade\Pdf;
 
 class AutnspectionsController extends Controller
@@ -129,7 +130,10 @@ class AutnspectionsController extends Controller
             'fk_Scheldules_id' => $schedule->id
 
         ]);
-
+        
+    // Marca o(s) schedule(s) associado(s) ao client_id como ativo(s)
+    // Caso haja vários schedules para o mesmo client_id, todos serão atualizados.
+    Schedule::where('client_id', $autinspection->client_id)->update(['status' => true]);
         /* $client = Client::create([
             'name' => $autinspection->name,
             'nif' => $autinspection->nif,
