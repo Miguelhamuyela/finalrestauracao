@@ -14,7 +14,7 @@
                 required>
                 <option value="" selected disabled>-- Selecione a Empresa --</option>
                 @foreach ($clients as $item)
-                    <option value="{{ $item->id }}">{{ $item->name }}</option>
+                    <option value="{{ $item->client_id }}">{{ $item->client->name }}</option>
                 @endforeach
             </select>
         </div>
