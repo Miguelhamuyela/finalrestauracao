@@ -38,7 +38,7 @@ class AutnspectionsController extends Controller
 
     public function create()
     {
-        $response['clients'] = Client::orderByDesc('id')->get();
+        $response['clients'] = Schedule::with('client')->where('status', false)->orderByDesc('id')->get();
         $this->Logger->log('info', 'Criar Agenda de Vistoria');
         return view('admin.autinspection.create.index', $response);
     }
